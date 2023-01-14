@@ -1,0 +1,39 @@
+. ${GRIMOIRE}/MESON_DEPENDS &&
+depends glib2               &&
+depends lcms2               &&
+depends colord              &&
+
+optional_depends gtk+2                     \
+                 'gtk2=true'               \
+                 'gtk2=false'              \
+                 'Build Gtk2 library?'     &&
+
+optional_depends gtk+3                     \
+                 'gtk3=true'               \
+                 'gtk3=false'              \
+                 'Build Gtk3 library?'     &&
+
+optional_depends gtk+4                     \
+                 'gtk4=true'               \
+                 'gtk4=false'              \
+                 'Build Gtk4 library?'     &&
+
+optional_depends gobject-introspection     \
+                 'introspection=true'      \
+                 'introspection=false'     \
+                 'Enable introspection?'   &&
+
+optional_depends vala                      \
+                 'vapi=true'               \
+                 'vapi=false'              \
+                 'Build vala bindings?'    &&
+
+optional_depends man                       \
+                 'man=true'                \
+                 'man=false'               \
+                 'Generate man pages?'     &&
+
+optional_depends gtk-doc                   \
+                 'docs=true'               \
+                 'docs=false'              \
+                 'Generate documentation?' 

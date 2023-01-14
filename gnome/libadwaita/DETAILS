@@ -1,0 +1,13 @@
+. ${GRIMOIRE}/MESON_FUNCTIONS
+           SPELL=libadwaita
+         VERSION=1.2.1
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=https://gitlab.gnome.org/GNOME/${SPELL}/-/archive/${VERSION}/${SOURCE}
+     SOURCE_HASH=sha256:783e3fc02dbae077eb2206b2f1be35fbd90c987cf18381e41adccc7b9fd5547f
+      LICENSE[0]=GPL
+        WEB_SITE=https://gitlab.gnome.org/GNOME/libadwaita
+         ENTERED=20230106
+           SHORT="building blocks for modern GNOME applications"
+cat << EOF
+EOF

@@ -1,0 +1,44 @@
+. ${GRIMOIRE}/MESON_DEPENDS      &&
+depends glib2                    &&
+depends json-glib                &&
+#depends -sub SOUP_GNOME libsoup &&
+depends libxml2                  &&
+
+optional_depends gtk+3                                    \
+                 'gtk=enabled'                            \
+                 'gtk=disabled'                           \
+                 'Enable gtk+3 support?'                  &&
+
+optional_depends gcr                                      \
+                 'gnome=enabled'                          \
+                 'gnome=disabled'                         \
+                 'Enable gnome support?'                  &&
+
+optional_depends gnome-online-accounts                    \
+                 'goa=enabled'                            \
+                 'goa=disabled'                           \
+                 'Enable Gnome Online Accounts support?'  &&
+
+optional_depends liboauth                                 \
+                 'oauth1=enabled'                         \
+                 'oauth1=disabled'                        \
+                 'Enable OAuth 1.0 support? (deprecated)' &&
+
+optional_depends man                                      \
+                 'man=true'                               \
+                 'man=false'                              \
+                 'Generate man pages?'                    &&
+
+optional_depends vala                                     \
+                 'vapi=true'                              \
+                 'vapi=false'                             \
+                 'Build vala bindings?'                   &&
+
+if is_depends_enabled $SPELL vala; then
+  depends gobject-introspection 'introspection=true'
+else
+  optional_depends gobject-introspection   \
+                   'introspection=true'    \
+                   'introspection=false'   \
+                   'Enable introspection?'
+fi

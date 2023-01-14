@@ -1,0 +1,367 @@
+2013-05-08 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 3.8.1
+
+2012-10-23 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 3.6.1
+
+2012-10-07 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 3.6.0
+
+2012-04-16 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 3.4.1
+
+2012-03-27 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 3.4.0
+
+2011-10-18 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 3.2.1
+	* DEPENDS: gtk+2 -> gtk+3
+
+2011-09-30 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 3.2.0
+
+2011-05-26 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 3.0.2
+
+2011-04-11 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 3.0.0
+
+2010-11-17 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 2.32.1
+
+2010-10-31 Robin Cook <rcook@wyrms.net> 
+	* DEPENDS: changed devicekit-power to upower
+
+2010-09-30 Vasil Yonkov <spirtbrat@sourcemage.org>
+	* DETAILS: updated spell to 2.32.0
+
+2010-09-19 Vasil Yonkov <spirtbrat@sourcemage.org>
+	* DETAILS: updated spell to 2.31.6
+
+2010-06-22 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 2.30.2
+
+2010-03-31 Vasil Yonkov <spirtbrat@sourcemage.org>
+	* DETAILS: updated spell to 2.30.0
+
+2010-03-24 Vasil Yonkov <spirtbrat@sourcemage.org>
+	* DETAILS: updated spell to 2.29.92
+
+2010-02-08 Vasil Yonkov <spirtbrat@sourcemage.org>
+	* DEPENDS: changed gnome-keyring to libgnome-keyring
+
+2010-02-07 Vasil Yonkov <spirtbrat@sourcemage.org>
+	* BUILD, CONFIGURE: added splash screen option
+	* DEPENDS: removed libgnomeui
+
+2010-02-03 Vasil Yonkov <spirtbrat@sourcemage.org>
+	* DETAILS: updated spell to 2.29.6
+
+2009-11-23 Vasil Yonkov <spirtbrat@sourcemage.org>
+	* DEPENDS: removed libglade2
+
+2009-09-27 Arjan Bouter <abouter@sourcemage.org>
+        * DEPENDS: commented out the at-spi dependency. it should probably
+	  either be optional or moved in the dependency chain as
+	  gnome-session doesn't depend on it directly
+
+2009-09-25 Ladislav Hagara <hgr@vabo.cz>
+	* DEPENDS: added devicekit-power #15430
+
+2009-09-23 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 2.28.0
+
+2009-07-19 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
+	* DEPENDS: added missing chain
+
+2009-07-18 Arjan Bouter <abouter@sourcemage.org>
+	* DEPENDS: disabled esound
+
+2009-07-03 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 2.26.2
+
+2009-04-15 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 2.26.1
+
+2009-03-27 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.26.0
+
+2009-03-08 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.25.92
+
+2008-11-26 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 2.24.2
+
+2008-10-05 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.24.0
+	* CONFIGURE: changed config_query to config_query_option
+	* BUILD: modified to match CONFIGURE change
+	* DEPENDS: added xorg libs and gnome depends
+
+2008-07-24 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 2.22.3
+
+2008-04-10 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.22.1.1
+
+2008-03-13 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.22.0
+
+2008-03-06 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.21.93
+
+2008-02-27 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.21.92
+
+2008-01-13 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.20.3
+
+2008-01-13 Robin Cook <rcook@wyrms.net>
+	* PREPARE: removed as now sub-depends
+	* DEPENDS: added subdepends on gtk+2 for gconf2
+
+2007-11-26 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.20.2
+
+2007-10-16 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.20.1
+
+2007-09-27 Eric Sandall <sandalle@sourcemage.org>
+	* REPAIR^f28a3645c12b689590aaf423d217e22e^FUNCTIONS: Fix Bug #14014
+
+2007-09-21 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.20.0
+
+2007-09-07 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.19.92
+
+2007-07-02 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.18.3
+
+2007-05-28 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.18.2
+
+2007-03-16 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.18.0
+
+2007-03-04 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.17.92
+
+2007-02-28 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.17.91
+
+2007-02-11 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.16.3
+
+2006-11-28 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.16.2
+
+2006-10-03 Flavien Bridault <vlaaad@sourcemage.org>
+	* DETAILS: Updated to 2.16.1
+
+2006-09-09 Robin Cook <rcook@wyrms.net>
+	* DEPENDS: added control-center2
+
+2006-09-07 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.16.0
+
+2006-08-30 Flavien Bridault <vlaaad@sourcemage.org>
+	* DETAILS: Updated to 2.14.3
+
+2006-08-15 Juuso Alasuutari <iuso@sourcemage.org>
+	* DETAILS: [automated] Removed UPDATED (deprecated in favor of 
+	  PATCHLEVEL).
+
+2006-05-30 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.14.2
+
+2006-05-21 Robin Cook <rcook@wyrms.net>
+	* DETAILS: added PATCHLEVEL
+	* G_SCHEMAS: added
+
+2006-04-15 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.14.1
+
+2006-03-13 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.14.0
+
+2006-03-12 Karsten Behrmann <BearPerson@sourcemage.org>
+	* DETAILS: (automated) Add KEYWORDS
+
+2006-03-01 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.13.92
+
+2006-02-19 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.13.91
+
+2005-09-06 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.12.0
+
+2005-08-14 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.11.91
+	  converted from MD5 to GPG
+	* CONFIGURE: added to query IPV6
+	* BUILD: added to set OPTS for IPV6
+
+2005-03-18 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.10.0
+	  updated MD5
+
+2005-02-08 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.9.4
+	  updated MD5
+	  remove BUILD_API
+
+2005-01-03 Eric Sandall <sandalle@sourcemage.org>
+	* PREPARE: That's gconf2 and gtk+2, not python and expat that need checking
+
+2004-12-16 Eric Sandall <sandalle@sourcemage.org>
+	* PREPARE: Python renamed to python
+	  Use spell_ok instead of spell_installed
+	  Cleaned up formatting
+
+2004-10-12 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.8.1
+	  updated MD5
+
+2004-09-14 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.8.0
+	  updated MD5
+
+2004-09-04 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.7.91
+	  updated MD5
+	* WIP: added
+
+2004-08-06 Robin Cook <rcook@wyrms.net>
+	* DETAILS: added BUILD_API=2
+
+2004-07-18 Eric Sandall <sandalle@sourcemage.org>
+	* PREPARE: GConf2 renamed to gconf2
+	* DEPENDS: GConf2 renamed to gconf2
+	  Formatted to Guru Handbook
+
+2004-06-24 Andrew Stitt <astitt@sourcemage.org>
+	* PREPARE: change search_depends_status_exact to a grep, bug 7038
+
+2004-06-14 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.6.2
+	  updated MD5
+
+2004-04-19 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.6.1
+	  updated MD5
+
+2004-03-22 Robin Cook <rcook@wyrms.net>
+	* PREPARE: added to check if GConf2 was compile with
+	  optional_depends gtk+2
+
+2004-03-22 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.6.0
+	  updated MD5
+
+2004-03-16 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.5.92
+	  updated MD5
+
+2004-03-10 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.5.91
+	  updated MD5
+
+2004-03-07 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.5.90
+	  updated MD5
+	  removed MAINTAINER
+
+2004-02-22 Robin Cook <rcook@wyrms.net>
+	* DEPENDS: added GConf2
+
+2004-01-19 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.4.2
+	  updated MD5
+
+2003-10-14 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.4.1
+	  updated MD5
+
+2003-09-09 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.4.0
+	  updated MD5
+
+2003-09-07 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.3.90
+	  updated MD5
+
+2003-05-24 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.2.2
+	  updated MD5
+
+2003-03-10 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.2.1
+	  updated MD5
+
+2003-02-03 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.2.0.2
+	  updated MD5
+
+2003-01-21 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.2.0.1
+	  updated MD5
+
+2003-01-06 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.1.90
+	  updated MD5
+
+2002-12-30 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.1.5
+	  updated MD5
+
+2002-11-23 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.0.9
+	  updated MD5
+
+2002-11-03 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.0.8
+	  updated MD5
+
+2002-10-23 Robin Cook <rcook@wyrms.net>
+	* DETAILS: add MD5
+
+2002-09-20 Jon Svendsen <jon-sven@frisurf.no>
+	* DETAILS: URLs now match new ftp.gnome.org layout
+
+2002-09-05 Jon Svendsen <jon-sven@frisurf.no>
+	* DETAILS: updated VERSION to 2.0.7
+
+2002-08-27 Jon Svendsen <jon-sven@frisurf.no>
+	* DETAILS: updated VERSION to 2.0.6
+	  s/2.0.0/2.0.1 on URLs
+	* BUILD: Removed broken BUILD
+
+2002-08-08 Jon Svendsen <jon-sven@frisurf.no>
+	* DETAILS: updated VERSION to 2.0.5
+
+2002-08-06 Jon Svendsen <jon-sven@frisurf.no>
+	* DETAILS: updated VERSION to 2.0.4
+
+2002-07-30 Jon Svendsen <jon-sven@frisurf.no>
+	* DETAILS: updated VERSION to 2.0.3
+
+2002-07-16 Jon Svendsen <jon-sven@frisurf.no>
+	* DETAILS: updated VERSION to 2.0.2
+
+2002-06-17 Jon Svendsen <jon-sven@frisurf.no>
+	* DETAILS: updated VERSION to 2.0.1
+
+2002-06-11 Jon Svendsen <jon-sven@frisurf.no>
+	* DETAILS: updated VERSION to 2.0.0
+
+2002-06-04 Jon Svendsen <jon-sven@frisurf.no>
+	* DETAILS: updated VERSION to 1.5.21
+
+2002-05-28 Jon Svendsen <jon-sven@frisurf.no>
+	* DETAILS: updated VERSION to 1.5.20
+
+2002-05-17 Jon Svendsen <jon-sven@frisurf.no>
+	* Initial version of spell
+

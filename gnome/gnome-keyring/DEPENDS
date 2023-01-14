@@ -1,0 +1,43 @@
+depends glib2     &&
+depends gtk+3     &&
+depends gconf2    &&
+depends libgcrypt &&
+depends libtasn1  &&
+depends dbus      &&
+depends p11-kit   &&
+depends gcr       &&
+
+optional_depends linux-pam                                  \
+                 '--enable-pam'                             \
+                 '--disable-pam'                            \
+                 'Build GNOME keyring PAM helper?'          &&
+
+optional_depends openssh                                    \
+                 '--enable-ssh-agent'                       \
+                 '--disable-ssh-agent'                      \
+                 'Include SSH agent in gnome-keyring?'      &&
+
+optional_depends libselinux                                 \
+                 '--enable-selinux'                         \
+		 '--disable-selinux'                        \
+		 'Enable selinux support?'                  &&
+
+optional_depends valgrind                                   \
+                 '--enable-valgrind'                        \
+		 '--disable-valgrind'                       \
+		 'Run gnome-keyring-daemon using valgrind?' &&
+
+optional_depends libcap-ng                                  \
+                 '--with-libcap-ng'                         \
+		 '--without-libcap-ng'                      \
+		 'Enable Linux capabilities?'               &&
+
+optional_depends systemd                                    \
+                 '--with-systemd'                           \
+		 '--without-systemd'                        \
+		 'Enable systemd support?'                  &&
+
+optional_depends libxslt                                    \
+                 '--enable-doc'                             \
+		 '--disable-doc'                            \
+		 'Build documentation?'

@@ -1,0 +1,36 @@
+. ${GRIMOIRE}/MESON_DEPENDS &&
+depends cairo               &&
+depends libsoup-2.4         &&
+depends sqlite              &&
+depends clutter-gtk         &&
+depends cogl                &&
+
+# DISABLED PENDING SPELL
+#optional_depends libmemphis                \
+#                 'memphis=true'            \
+#                 'memphis=false'           \
+#                 'Enable Memphis support?' &&
+
+optional_depends vala                      \
+                 'vapi=true'               \
+                 'vapi=false'              \
+                 'Build vala bindings?'    &&
+
+if is_depends_enabled $SPELL vala; then
+  depends gobject-introspection 'introspection=true'
+else
+  optional_depends gobject-introspection   \
+                   'introspection=true'    \
+                   'introspection=false'   \
+                   'Enable introspection?'
+fi &&
+
+optional_depends gtk+3                     \
+                 'widgetry=true'           \
+                 'widgetry=false'          \
+                 'Build GTK+ widgetry?'    &&
+
+optional_depends gtk-doc                   \
+                 'gtk_doc=true'            \
+                 'gtk_doc=false'           \
+                 'Build documentation?'

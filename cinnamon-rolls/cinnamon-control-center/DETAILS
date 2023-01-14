@@ -1,0 +1,16 @@
+source $GRIMOIRE/MESON_FUNCTIONS
+           SPELL=cinnamon-control-center
+         VERSION=5.6.0
+     MINTVERSION=master.mint21
+     SOURCE_HASH=sha256:d4c7e15c24445af8244c366504e4445d954e019f58ed4eb893c3681227a03ac1
+          SOURCE=${SPELL}-${MINTVERSION}.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$MINTVERSION
+   SOURCE_URL[0]=https://github.com/linuxmint/${SPELL}/archive/refs/tags/${MINTVERSION}.tar.gz
+       WEB_SITE=https://www.github.com/linuxmint/cinnamon-control-center/
+      LICENSE[0]=GPL
+         ENTERED=20230101
+        KEYWORDS="cinnamon"
+           SHORT="cinnamon control center"
+cat << EOF
+A collection of configuration plugins used in cinnamon-settings
+EOF

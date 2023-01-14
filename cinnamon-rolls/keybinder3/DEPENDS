@@ -1,0 +1,14 @@
+depends PKG-CONFIG            &&
+depends libx11                &&
+depends libxext               &&
+depends libxrender            &&
+depends gtk+3                 &&
+
+optional_depends gobject-introspection        \
+                 '--enable-introspection=yes' \
+                 '--enable-introspection=no'  &&
+
+optional_depends gtk-doc                      \
+                 '--enable-gtk-doc'           \
+                 ''                           \
+                 'Build documentation?'

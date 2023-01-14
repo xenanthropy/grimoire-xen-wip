@@ -1,0 +1,55 @@
+source $GRIMOIRE/MESON_DEPENDS    &&
+depends PKG-CONFIG                &&
+depends libhandy                  &&
+depends accountsservice           &&
+depends colord                    &&
+depends gdk-pixbuf2               &&
+depends gobject-introspection     &&
+depends glib2                     &&
+depends gnome-desktop3            &&
+depends gnome-settings-daemon     &&
+depends gnome-online-accounts     && #PROBABLY NEEDS UPDATED
+depends gsettings-desktop-schemas &&
+depends libxml2                   &&
+depends pulseaudio                &&
+depends upower                    &&
+depends libgudev                  &&
+depends libx11                    &&
+depends libxi                     &&
+depends libepoxy                  &&
+depends gcr                       &&
+depends libpwquality              &&
+depends policykit                 &&
+depends network-manager           &&
+depends libnma                    &&
+depends modemmanager              &&
+depends gnome-bluetooth-1.0       && #PROBABLY NEEDS UPDATED
+
+
+optional_depends cheese                           \
+                 'cheese=true'                    \
+                 'cheese=false'                   \
+                 'Build cheese webcam support?'   &&
+
+optional_depends gtk-doc                          \
+                 'documentation=true'             \
+                 'documentation=false'            \
+                 'Build documentation?'           &&
+
+optional_depends ibus                             \
+                 'ibus=true'                      \
+                 'ibus=false'                     \
+                 'Build with IBus support?'       &&
+
+# TO BE ADDED PENDING SPELL
+#optional_depends libmalcontent                    \
+#                 'malcontent=true'                \
+#                 'malcontent=false'               \
+#                 'Build with malcontent support?' &&
+
+optional_depends wayland                          \
+                 'wayland=true'                   \
+                 'wayland=false'                  \
+                 'Build with wayland support?'    &&
+
+suggest_depends cups '' '' 'CUPS support'

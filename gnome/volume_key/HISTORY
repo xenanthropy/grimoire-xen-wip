@@ -1,0 +1,18 @@
+2022-07-27 Vlad Glagolev <stealth@sourcemage.org>
+	* DEPENDS: switch to PKG-CONFIG provider (automated)
+
+2019-05-18 Ismael Luceno <ismael@sourcemage.org>
+	* DEPENDS: Update dependency; s/gettext/GETTEXT/
+
+2019-03-05 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: version 0.3.12
+
+2018-05-04 Treeve Jelbert <treeve@sourcemage.org>
+	* DEPENDS: add json-c, used indirectly by cryptsetup
+
+2018-01-21 Treeve Jelbert <treeve@sourcemage.org>
+	* PRE_BUILD *.patches: upstream patch
+
+2017-07-25 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: version 0.3.9
+	  spell created

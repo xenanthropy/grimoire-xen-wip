@@ -1,0 +1,46 @@
+. "$GRIMOIRE"/MESON_DEPENDS &&
+
+depends dbus          &&
+depends glib2         &&
+depends intltool      &&
+depends lcms2         &&
+depends libgudev      &&
+depends libgusb       &&
+depends policykit     &&
+depends sqlite        &&
+depends gobject-introspection &&
+
+optional_depends gtk-doc \
+                 'docs=true' \
+                 'docs=false' \
+                 'install documentation' &&
+
+optional_depends docbook-utils \
+                 'man=true' \
+                 'man=false' \
+                 'install manpages' &&
+
+optional_depends bash-completion \
+                 'bash_completion=true' \
+                 'bash_completion=false' \
+                 'install bash completion' &&
+
+optional_depends vala \
+                 'vapi=true' \
+                 'vapi=false' \
+                 'build vala bindings' &&
+
+optional_depends argyllcms \
+                 'argyllcms_sensor=true' \
+                 'argyllcms_sensor=false' \
+                  'ArgllCMS sensor' &&
+
+optional_depends systemd \
+                 'systemd=true' \
+                 'systemd=false' \
+                 'SystemD support' &&
+
+optional_depends sane-backends \
+                 "sane=true" \
+                 "sane=false" \
+                 "for scanner support"

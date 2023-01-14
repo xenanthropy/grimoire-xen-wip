@@ -1,0 +1,61 @@
+source $GRIMOIRE/MESON_DEPENDS &&
+depends PKG-CONFIG             &&
+depends glib2                  &&
+depends fribidi                &&
+depends at-spi2-core           &&
+depends json-glib              &&
+depends libgudev               &&
+depends cinnamon-desktop       &&
+depends zenity                 &&
+depends graphene               &&
+depends libcanberra            &&
+depends libglvnd               &&
+depends mesa                   &&
+depends pipewire               &&
+depends dbus                   &&
+depends gettext                &&
+depends xhost                  &&
+depends xorgproto              &&
+depends xserver                &&
+depends cairo                  &&
+depends gdk-pixbuf2            &&
+depends gtk+3                  &&
+depends libice                 &&
+depends libsm                  &&
+depends libx11                 &&
+depends libxau                 &&
+depends libxcomposite          &&
+depends libxcursor             &&
+depends libxdamage             &&
+depends libxext                &&
+depends libxfixes              &&
+depends libxi                  &&
+depends libxinerama            &&
+depends libxrandr              &&
+depends libxrender             &&
+depends libxtst                &&
+depends libxcb                 &&
+depends libxkbcommon           &&
+depends libxkbfile             &&
+depends pango                  &&
+depends xkeyboard-config       &&
+
+optional_depends startup-notification                   \
+                 'startup_notification=true'            \
+                 'startup_notification=false'           \
+                 'Enable startup notification support?' &&
+
+optional_depends udev                                   \
+                 'udev=true'                            \
+                 'udev=false'                           \
+                 'Enable Udev support?'                 &&
+
+optional_depends libwacom                               \
+                 'libwacom=true'                        \
+                 'libwacom=false'                       \
+                 'Enable libwacom support?'             &&
+
+optional_depends gobject-introspection                  \
+                 'introspection=true'                   \
+                 'introspection=false'                  \
+                 'Build gobject-introspection support?'

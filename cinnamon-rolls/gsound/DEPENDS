@@ -1,0 +1,24 @@
+source $GRIMOIRE/MESON_DEPENDS &&
+depends PKG-CONFIG             &&
+depends glib2                  &&
+depends libcanberra            &&
+depends xz-utils               &&
+
+optional_depends gtk-doc                                 \
+                 'gtk_doc=true'                          \
+                 'gtk_doc=false'                         \
+                 'Generate API reference using gtk-doc?' &&
+
+if is_depends_enabled $SPELL gtk-doc; then
+  depends docbook-dtd
+fi &&
+
+optional_depends gobject-introspection                   \
+                 'introspection=true'                    \
+                 'introspection=false'                   \
+                 'Generate GObject Introspection data?'  &&
+
+optional_depends vala                                    \
+                 'enable_vala=true'                      \
+                 'enable_vala=false'                     \
+                 'Build vala tools and VAPI?'

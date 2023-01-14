@@ -1,0 +1,39 @@
+. ${GRIMOIRE}/MESON_DEPENDS &&
+depends PKG-CONFIG          &&
+depends glib2               &&
+depends gtk+3               &&
+depends libcanberra         &&
+depends libxcb              &&
+depends accountsservice     &&
+depends libx11              &&
+depends libxau              &&
+depends xserver             &&
+depends linux-pam           &&
+
+
+optional_depends keyutils '' '' 'keyutils support?' &&
+
+optional_depends audit                          \
+                 'libaudit=enabled'             \
+                 'libaudit=disabled'            \
+                 'Enable audit support?'        &&
+
+optional_depends libselinux                     \
+                 'selinux=enabled'              \
+                 'selinux=disabled'             \
+                 'Enable selinux support?'      &&
+
+optional_depends systemd                        \
+                 'systemd-journal=true'         \
+                 'systemd-journal=false'        \
+                 'Enable journald support?'     &&
+
+optional_depends wayland                        \
+                 'wayland-support=true'         \
+                 'wayland-support=false'        \
+                 'Enable wayland support?'      &&
+
+optional_depends libxdmcp                       \
+                 'xdmcp=enabled'                \
+                 'xdmcp=disabled'               \
+                 'Enable remote login support?' 

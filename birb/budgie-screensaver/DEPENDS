@@ -1,0 +1,30 @@
+source $GRIMOIRE/MESON_DEPENDS    &&
+depends PKG-CONFIG                &&
+depends glib2                     &&
+depends gobject-introspection     &&
+depends dbus-glib                 &&
+depends gtk+3                     &&
+depends gnome-desktop3            &&
+depends gsettings-desktop-schemas &&
+depends linux-pam                 &&
+depends libx11                    &&
+
+optional_depends systemd                                    \
+                 'with-systemd=true'                        \
+                 'with-systemd=false'                       \
+                 'Enable systemd integration?'              &&
+
+optional_depends CONSOLE-MANAGER                            \
+                 'with-console-kit=true'                    \
+                 'with-console-kit=false'                   \
+                 'Enable ConsoleKit support?'               &&
+
+optional_depends libgnomekbd                                \
+                 'without-kbd-layout-indicator=false'       \
+                 'without-kbd-layout-indicator=true'        \
+                 'Enable keyboard layout indicator?'        &&
+
+optional_depends libxxf86vm                                 \
+                 'with-xf86gamma-ext=true'                  \
+                 'with-xf86gamma-ext=false'                 \
+                 'Enable support for XFree86 gamma fading?' 

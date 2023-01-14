@@ -1,0 +1,57 @@
+. ${GRIMOIRE}/MESON_DEPENDS &&
+depends PKG-CONFIG          &&
+depends glib2               &&
+depends libxml2             &&
+depends json-glib           &&
+depends sqlite              &&
+depends dbus                &&
+depends python3             &&
+
+
+optional_depends libsoup                                        \
+                 'soup=soup3'                                   \
+                 'soup=soup2'                                   \
+                 'Use libsoup3? (requires libsoup-2.4 if no)'   &&
+
+if !(is_depends_enabled $SPELL libsoup); then
+  depends libsoup-2.4
+fi &&
+
+optional_depends snowball                                       \
+                 'stemmer=enabled'                              \
+                 'stemmer=disabled'                             \
+                 'Stem words while indexing?'                   &&
+
+optional_depends icu                                            \
+                 'unicode_support=icu'                          \
+                 'unicode_support=unistring'                    \
+                 'Use icu for unicode? (if no, uses unistring)' &&
+
+if !(is_depends_enabled $SPELL  icu); then
+  depends libunistring
+fi &&
+
+optional_depends systemd                                        \
+                 'systemd_user_services=true'                   \
+                 'systemd_user_services=false'                  \
+                 'Install systemd service files?'               &&
+
+optional_depends bash-completion                                \
+                 'bash_completion=true'                         \
+                 'bash_completion=false'                        \
+                 'Install bash completion files?'               &&
+
+optional_depends gobject-introspection                          \
+                 'introspection=enabled'                        \
+                 'introspection=disabled'                       \
+                 'Enable introspection?'                        &&
+
+optional_depends man                                            \
+                 'man=true'                                     \
+                 'man=false'                                    \
+                 'Generate man pages?'                          &&
+
+optional_depends gtk-doc                                        \
+                 'docs=true'                                    \
+                 'docs=false'                                   \
+                 'Build documentation?'

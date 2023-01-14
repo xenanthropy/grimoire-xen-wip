@@ -1,0 +1,3 @@
+. ${GRIMOIRE}/MESON_CONFIGURE &&
+config_query_option RENDERER "Build experimental vector tile renderer?" n "vector_renderer=true" "vector_renderer=false" &&
+config_query_option DEMOS "Build demos?" n "demos=true" "demos=false"

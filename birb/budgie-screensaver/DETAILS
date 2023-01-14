@@ -1,0 +1,16 @@
+source $GRIMOIRE/MESON_FUNCTIONS
+           SPELL=budgie-screensaver
+         VERSION=5.1.0
+     SOURCE_HASH=sha256:563ac3f845729e9e6d184d2dbf036ab3f51ff244c27f5b286cfcb89acc147f0c
+          SOURCE=${SPELL}-${VERSION}.tar.xz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=https://github.com/BuddiesOfBudgie/${SPELL}/releases/download/v${VERSION}/${SPELL}-v${VERSION}.tar.xz
+       WEB_SITE=https://www.github.com/BuddiesOfBudgie/budgie-screensaver
+      LICENSE[0]=GPL
+         ENTERED=20230106
+        KEYWORDS="budgie"
+           SHORT="budgie screensaver"
+cat << EOF
+Budgie Screensaver is a fork of old gnome screensaver
+for purposes of providing an authentication prompt on wake. 
+EOF

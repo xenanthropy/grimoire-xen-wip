@@ -1,0 +1,17 @@
+           SPELL=cogl
+         VERSION=1.22.8
+          BRANCH=$(echo $VERSION|cut -d . -f 1,2)
+          SOURCE=$SPELL-$VERSION.tar.xz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=$GNOME_URL/sources/$SPELL/$BRANCH/$SOURCE
+     SOURCE_HASH=sha512:702d5b1b22dc34bffaa82c9c57021caf036ee3a13fa7ca24a90cca1ebc0f8b7a86070cc1fe5125757132b02774fa874bb55675c96d1ccbc233fac0e6132da65f
+      LICENSE[0]=GPL
+        WEB_SITE=http://developer.gnome.org/cogl/
+         ENTERED=20110929
+           SHORT="library for using 3D graphics hardware for rendering"
+cat << EOF
+Cogl is a small open source library for using 3D graphics hardware for
+rendering. The API departs from the flat state machine style of OpenGL and is
+designed to make it easy to write orthogonal components that can render without
+stepping on each others toes.
+EOF

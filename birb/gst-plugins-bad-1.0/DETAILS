@@ -1,0 +1,25 @@
+source "${GRIMOIRE}/MESON_FUNCTIONS"
+           SPELL=gst-plugins-bad-1.0
+         VERSION=1.21.2
+          SOURCE=gst-plugins-bad-$VERSION.tar.xz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/gst-plugins-bad-$VERSION
+   SOURCE_URL[0]=https://gstreamer.freedesktop.org/src/gst-plugins-bad/$SOURCE
+         SOURCE2=${SOURCE}.asc
+  SOURCE2_URL[0]=${SOURCE_URL[0]}.asc
+      SOURCE_GPG="freedesktop.gpg:${SOURCE2}:UPSTREAM_KEY"
+  SOURCE2_IGNORE="signature"
+      LICENSE[0]=LGPL
+        WEB_SITE=https://gstreamer.freedesktop.org
+         ENTERED=20121005
+            DOCS="ChangeLog COPYING NEWS README"
+        KEYWORDS="gstreamer video libs"
+           SHORT="lower quality plugins for gstreamer"
+cat << EOF
+Plugins for gstreamer.
+A set of plug-ins that aren't up to par compared to the rest.  They might be
+close to being good quality, but they're missing something - be it a good code
+review, some documentation, a set of tests, a real live maintainer, or some
+actual wide use.  If the blanks are filled in they might be upgraded to become
+part of either gst-plugins-good or gst-plugins-ugly, depending on the other
+factors.
+EOF

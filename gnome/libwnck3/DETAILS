@@ -1,0 +1,16 @@
+. ${GRIMOIRE}/MESON_FUNCTIONS
+           SPELL=libwnck3
+         VERSION=43.0
+          SOURCE=libwnck-$VERSION.tar.gz
+SOURCE_DIRECTORY="$BUILD_DIRECTORY/libwnck-$VERSION"
+   SOURCE_URL[0]=https://gitlab.gnome.org/GNOME/libwnck/-/archive/${VERSION}/${SOURCE}
+     SOURCE_HASH=sha256:394f61c79650e5aba0235d38de7504cf97d6e9ef5ec63edb5128dd0e7caaba2a
+      LICENSE[0]=GPL
+      LICENSE[1]=LGPL
+        WEB_SITE=http://www.gnome.org
+         ENTERED=20110424
+           SHORT="Window Navigator Construction Kit"
+cat << EOF
+libwnck is Window Navigator Construction Kit, i.e. a library to use
+for writing pagers and taskslists and stuff.
+EOF

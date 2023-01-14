@@ -1,0 +1,14 @@
+. "${GRIMOIRE}/MESON_FUNCTIONS"
+           SPELL=libnma
+         VERSION=1.10.4
+          SOURCE="$SPELL-${VERSION}.tar.gz"
+   SOURCE_URL[0]=https://gitlab.gnome.org/GNOME/${SPELL}/-/archive/${VERSION}/${SOURCE}
+     SOURCE_HASH=sha256:d74c1819cf2db4652492cb4ccdf9d86bf3f2dc1300bf3c3146c172f6aba9f7f8
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}"
+        WEB_SITE="https://gitlab.gnome.org/GNOME/libnma"
+      LICENSE[0]="GNU General Public License v2"
+         ENTERED=20230104
+           SHORT=" networkmanager gui library"
+cat << EOF
+NetworkManager GUI library
+EOF

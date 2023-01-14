@@ -1,0 +1,76 @@
+source $GRIMOIRE/MESON_DEPENDS    &&
+depends PKG-CONFIG                &&
+depends glib2                     &&
+depends dbus                      &&
+depends python3                   &&
+depends gobject-introspection     &&
+depends keybinder3                &&
+depends libtimezonemap            &&
+depends libxml2                   &&
+depends dbus-python               &&
+depends python3                   &&
+depends pexpect                   &&
+depends pillow                    &&
+depends py3cairo                  &&
+depends pygobject3                &&
+depends pyinotify                 &&
+depends python-pam                &&
+depends python3-xapp              &&
+depends pytz                      &&
+depends requests                  &&
+depends py-setproctitle           &&
+depends tinycss2                  &&
+depends desktop-file-utils        &&
+depends intltool                  &&
+depends dconf                     &&
+depends gsettings-desktop-schemas &&
+depends libgnomekbd               &&
+depends cinnamon-control-center   &&
+depends cinnamon-desktop          &&
+depends cinnamon-menus            &&
+depends cinnamon-screensaver      &&
+depends cinnamon-settings-daemon  &&
+# SPELL TO ADD
+#depends cinnamon-translations     &&
+depends cjs                       &&
+depends muffin                    &&
+depends xapp                      &&
+#depends evolution-data-server     &&
+depends nemo                      &&
+depends policykit-gnome           &&
+depends gsound                    &&
+depends libsoup                   &&
+depends network-manager           &&
+depends wget                      &&
+depends accountsservice           && # NEEDS TO BE UPDATED
+depends coreutils                 &&
+depends pciutils                  &&
+depends util-linux                &&
+depends policykit                 &&
+depends gettext                   &&
+depends upower                    &&
+depends OPENGL                    &&
+depends gdk-pixbuf2               &&
+depends gtk+3                     &&
+depends libx11                    &&
+depends libxfixes                 &&
+depends libnotify                 &&
+depends pango                     &&
+depends shared-mime-info          &&
+depends xdg-utils                 &&
+depends adwaita-icon-theme        &&
+depends gnome-themes-standard     &&
+
+optional_depends gstreamer-1.0                                  \
+                 'build_recorder=true'                          \
+                 'build_recorder=false'                         \
+                 'Build cinnamon screen recorder?'              &&
+
+if is_depends_enabled $SPELL gstreamer-1.0; then
+  depends gst-plugins-base-1.0
+fi &&
+
+optional_depends network-manager                                \
+                 'disable_networkmanager=false'                 \
+                 'disable_networkmanager=true'                  \
+                 'Enable NetworkManager support? (recommended)'

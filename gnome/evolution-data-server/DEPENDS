@@ -1,0 +1,79 @@
+. ${GRIMOIRE}/CMAKE_DEPENDS   &&
+depends PKG-CONFIG            &&
+depends glib2                 &&
+depends libsoup               &&
+depends libical               &&
+depends libsecret             &&
+depends libxml2               &&
+depends sqlite                &&
+depends gobject-introspection &&
+depends icu                   &&
+depends gperf                 &&
+depends json-glib             &&
+depends db                    &&
+depends nss                   &&
+#depends libaccounts-glib      &&
+#depends libsignon-glib        &&
+
+optional_depends gtk+3                   \
+                 "-DENABLE_GTK=ON"       \
+                 "-DENABLE_GTK=OFF"      \
+                 "Enable Gtk+3 support?" &&
+
+if is_depends_enabled $SPELL gtk+3; then
+  optional_depends webkitgtk3 \
+                   "-DENABLE_OAUTH2_WEBKITGTK=ON"  \
+                   "-DENABLE_OAUTH2_WEBKITGTK=OFF" \
+                   "Enable WebkitGtk3 for built-in OAuth2 authentications?"
+fi &&
+
+optional_depends gtk+4                   \
+                 "-DENABLE_GTK4=ON"      \
+                 "-DENABLE_GTK4=OFF"     \
+                 "Enable Gtk+4 support?" &&
+
+if is_depends_enabled $SPELL gtk+4; then
+  optional_depends webkitgtk4 \
+                   "-DENABLE_OAUTH2_WEBKITGTK4=ON" \
+                   "-DENABLE_OAUTH2_WEBKITGTK4=OFF" \
+                   "Enable WebkitGtk4 for built-in OAuth2 authentication?"
+fi &&
+
+optional_depends openldap                                                  \
+                 "-DWITH_OPENLDAP=ON"                                      \
+                 "-DWITH_OPENLDAP=OFF"                                     \
+                 "Enable LDAP support?"
+
+optional_depends vala                                                      \
+                 "-DENABLE_VALA_BINDINGS=ON"                               \
+                 "-DENABLE_VALA_BINDINGS=OFF"                              \
+                 "Build vala bindings? (Also requires introspection)"      &&
+
+if is_depends_enabled $SPELL vala; then
+  depends gobject-introspection "-DENABLE_INTROSPECTION=ON"
+else
+  optional_depends gobject-introspection        \
+                   "-DENABLE_INTROSPECTION=ON"  \
+                   "-DENABLE_INTROSPECTION=OFF" \
+                   "Enable introspection?"
+fi &&
+
+optional_depends gtk-doc                                                   \
+                 "-DENABLE_GTK_DOC=ON"                                     \
+                 "-DENABLE_GTK_DOC=OFF"                                    \
+                 "Install documentation?"                                  &&
+
+optional_depends libcanberra                                               \
+                 "-DENABLE_CANBERRA=ON"                                    \
+                 "-DENABLE_CANBERRA=OFF"                                   \
+                 "Enable libcanberra for sound in evolution-alarm-notify?" &&
+
+optional_depends gnome-online-accounts                                     \
+                 "-DENABLE_GOA=ON"                                         \
+                 "-DENABLE_GOA=OFF"                                        \
+                 "Enable Gnome Online Accounts support?"                   &&
+
+optional_depends libgweather                                               \
+                 "-DENABLE_WEATHER=ON"                                     \
+                 "-DENABLE_WEATHER=OFF"                                    \
+                 "Build weather calendar backend?"

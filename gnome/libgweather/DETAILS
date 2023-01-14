@@ -1,0 +1,16 @@
+. ${GRIMOIRE}/MESON_FUNCTIONS           
+           SPELL=libgweather
+         VERSION=4.2.0
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=https://gitlab.gnome.org/GNOME/${SPELL}/-/archive/${VERSION}/${SOURCE}
+      SOURCE_HASH=sha256:37d4c41547df512a6a602df1b859c12b1bb77bf7e9075756fac2742ac298a459
+      LICENSE[0]=GPL
+        WEB_SITE=https://gitlab.gnome.org/GNOME/libgweather/
+         ENTERED=20080226
+        KEYWORDS="gnome2 libs"
+           SHORT="Library to access weather information"
+cat << EOF
+libgweather is a library to access weather information from online
+services for numerous locations.
+EOF

@@ -1,0 +1,54 @@
+. ${GRIMOIRE}/MESON_DEPENDS                    &&
+depends git                                    &&
+depends fontconfig                             &&
+depends geoclue                                &&
+depends gnome-desktop3                         &&
+depends lcms2                                  &&
+depends libcanberra                            &&
+depends libgweather                            && #PROBABLY NEEDS UPDATED
+depends pango                                  &&
+depends libnotify                              &&
+depends librsvg2                               &&
+depends libwacom                               &&
+depends pulseaudio                             &&
+depends upower                                 &&
+depends xf86-input-wacom                       &&
+depends alsa-lib 'alsa=true'                   &&
+depends libgudev 'gudev=true'                  &&
+depends network-manager 'network_manager=true' &&
+depends libnma                                 &&
+depends rfkill 'rfkill=true'                   &&
+depends gcr 'gcr3=true'                        &&
+depends geocode-glib                           &&
+depends libxfixes                              &&
+depends libx11                                 &&
+depends policykit                              &&
+depends gtk+3                                  &&
+depends gsettings-desktop-schemas              &&
+depends glib2                                  &&
+
+# DISABLED PENDING SPELL ADD
+#optional_depends libsmartcard                    \
+#                 'smartcard=true'                \
+#                 'smartcard=false'               \
+#                 'Build with smartcard support?' &&
+
+optional_depends systemd                        \
+                 'systemd=true'                 \
+                 'systemd=false'                \
+                 'Enable systemd integration?'  &&
+
+optional_depends cups                           \
+                 'cups=true'                    \
+                 'cups=false'                   \
+                 'Build with CUPS support?'     &&
+
+optional_depends wayland                        \
+                 'wayland=true'                 \
+                 'wayland=false'                \
+                 'Build with Wayland support?'  &&
+
+optional_depends colord                         \
+                 'colord=true'                  \
+                 'colord=false'                 \
+                 'Build with colord support?'

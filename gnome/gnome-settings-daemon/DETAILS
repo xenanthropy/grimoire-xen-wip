@@ -1,0 +1,16 @@
+. ${GRIMOIRE}/MESON_FUNCTIONS
+           SPELL=gnome-settings-daemon
+         VERSION=43.0
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=https://gitlab.gnome.org/GNOME/${SPELL}/-/archive/${VERSION}/${SOURCE}
+      SOURCE_HASH=sha256:87d5d09fae34dad88cab315155b3cf7f1a212b024640dc0cca6270ac5d23cf5d
+      LICENSE[0]=GPL
+        WEB_SITE=https://gitlab.gnome.org/GNOME/gnome-settings-daemon/
+         ENTERED=20080228
+        KEYWORDS="gnome2 libs"
+           SHORT="gnome settings daemon"
+cat << EOF
+The GNOME Settings Daemon is responsible for setting various parameters of a
+GNOME Session and the applications that run under it.
+EOF

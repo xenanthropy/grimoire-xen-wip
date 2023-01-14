@@ -1,0 +1,61 @@
+. ${GRIMOIRE}/MESON_DEPENDS       &&
+depends PKG-CONFIG                &&
+depends git                       &&
+depends python3                   &&
+depends at-spi2-core              &&
+depends evolution-data-server     &&
+depends gcr                       &&
+depends glib2                     &&
+depends gdk-pixbuf2               &&
+depends gobject-introspection     &&
+depends gjs                       &&
+depends gtk+3                     &&
+depends gtk+4                     &&
+depends libxml2                   &&
+depends clutter                   &&
+depends cogl                      &&
+depends mutter                    &&
+depends policykit                 &&
+depends startup-notification      &&
+depends ibus                      &&
+depends libx11                    &&
+depends gsettings-desktop-schemas &&
+depends gnome-desktop3            &&
+depends gnome-bluetooth           &&
+depends gstreamer-1.0             &&
+depends gst-plugins-base-1.0      &&
+depends pipewire                  &&
+
+if [[ $CLI == "extensions_tool=true" ]]; then
+  depends gnome-autoar &&
+  depends json-glib
+fi &&
+
+if [[ $APP == "extensions_app=true" ]]; then
+  depends appstream &&
+  depends desktop-file-utils
+fi &&
+
+optional_depends gtk-doc                          \
+                 'gtk_doc=true'                   \
+                 'gtk_doc=false'                  \
+                 'Build documentation?'           &&
+
+optional_depends man                              \
+                 'man=true'                       \
+                 'man=false'                      \
+                 'Generate manpages?'             &&
+
+optional_depends network-manager                  \
+                 'networkmanager=true'            \
+                 'networkmanager=false'           \
+                 'Enable NetworkManager support?' &&
+
+if is_depends_enabled $SPELL network-manager; then
+  depends libsecret
+fi &&
+
+optional_depends systemd                          \
+                 'systemd=true'                   \
+                 'systemd=false'                  \
+                 'Enable systemd support?'

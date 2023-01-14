@@ -1,0 +1,17 @@
+. ${GRIMOIRE}/MESON_FUNCTIONS
+           SPELL=libcloudproviders
+         VERSION=0.3.1
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=https://gitlab.gnome.org/World/${SPELL}/-/archive/${VERSION}/${SOURCE}
+     SOURCE_HASH=sha256:bd00e7b85d84d201bd36f6e460555d8ba41246d63d5f3607ff7542a257f27236
+      LICENSE[0]=LGPL
+        WEB_SITE=https://gitlab.gnome.org/World/libcloudproviders/
+         ENTERED=20230113
+        KEYWORDS="dbus cloud lib nautilus"
+           SHORT="dbus api for cloud storage sync clients"
+cat << EOF
+libcloudproviders is a DBus API that allows cloud storage sync clients to expose
+their services. Clients such as file managers and desktop environments can then
+provide integrated access to the cloud providers services.
+EOF

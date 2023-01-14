@@ -1,0 +1,14 @@
+. "${GRIMOIRE}/MESON_FUNCTIONS"
+           SPELL=accountsservice
+         VERSION=22.08.8
+     SOURCE_HASH=sha512:b9a3a8643de5509ed806286d1131113bdc33566a3b6e37c4dfe50de7f557aee32bba809abf786cb8b7a2396d23afb341e881856a78b198b289cc8164b4651e38
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=https://gitlab.freedesktop.org/${SPELL}/${SPELL}/-/archive/${VERSION}/${SOURCE}
+        WEB_SITE=https://gitlab.freedesktop.org/accountsservice/accountsservice
+         ENTERED=20110426
+      LICENSE[0]=GPL
+           SHORT="D-Bus interface for user account query and manipulation"
+cat << EOF
+D-Bus interface for user account query and manipulation.
+EOF

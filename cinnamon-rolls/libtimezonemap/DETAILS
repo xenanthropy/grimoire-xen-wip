@@ -1,0 +1,14 @@
+           SPELL=libtimezonemap
+         VERSION=0.4.6
+     SOURCE_HASH=sha256:0d634cc2476d8f57d1ee1864bd4f442180ae4bf040a9ae4bf73b66bbd85d7195
+          SOURCE=${SPELL}_${VERSION}.orig.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=https://debian-repo.stanford.edu/debian/pool/main/libt/libtimezonemap/$SOURCE
+       WEB_SITE=https://launchpad.net/timezonemap
+      LICENSE[0]=GPL
+         ENTERED=20230104
+        KEYWORDS="cinnamon"
+           SHORT="gtk+3 timezone map widget"
+cat << EOF
+A GTK+3 timezone map widget
+EOF

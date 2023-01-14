@@ -1,0 +1,19 @@
+. ${GRIMOIRE}/MESON_DEPENDS  &&
+depends glib2                &&
+depends gtk+4                &&
+depends bluez5 'sendto=true' &&
+depends libadwaita           &&
+depends gsound               &&
+depends upower               &&
+depends libnotify            &&
+depends DEVICE-MANAGER       &&
+
+optional_depends gobject-introspection   \
+                 "introspection=true"    \
+                 "introspection=false"   \
+                 "Enable introspection?" &&
+
+optional_depends gtk-doc                 \
+                 "gtk_doc=true"          \
+                 "gtk_doc=false"         \
+                 "Build documentation?"

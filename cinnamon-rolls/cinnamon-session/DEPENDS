@@ -1,0 +1,26 @@
+source $GRIMOIRE/MESON_DEPENDS &&
+depends PKG-CONFIG             &&
+depends OPENGL                 &&
+depends python3                &&
+depends glib2                  &&
+depends cinnamon-desktop       &&
+depends libcanberra            &&
+depends LOGIN-DAEMON           &&
+depends cairo                  &&
+depends gdk-pixbuf2            &&
+depends gtk+3                  &&
+depends libice                 &&
+depends libsm                  &&
+depends libx11                 &&
+depends libxau                 &&
+depends libxcomposite          &&
+depends libxext                &&
+depends libxrender             &&
+depends libxtst                &&
+depends pango                  &&
+depends xapp                   &&
+
+optional_depends xtrans      \
+                 'xtrans=true'   \
+                 'xtrans=false'  \
+                 'xtrans support?'

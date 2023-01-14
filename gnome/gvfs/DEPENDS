@@ -1,0 +1,136 @@
+. ${GRIMOIRE}/MESON_DEPENDS       &&
+depends glib2                     &&
+depends gsettings-desktop-schemas &&
+depends dbus                      &&
+depends intltool                  &&
+depends expat                     &&
+depends openssh                   &&
+
+
+optional_depends libgcrypt                           \
+                 "gcrypt=true"                       \
+                 "gcrypt=false"                      \
+                 "Enable gcrypt support?"            &&
+
+optional_depends gcr                                 \
+                 "gcr=true"                          \
+                 "gcr=false"                         \
+                 "Enable gcr support?"               &&
+
+optional_depends libcap                              \
+                 "admin=true"                        \
+                 "admin=false"                       \
+                 "Build with admin backend?"         &&
+
+if is_depends_enabled $SPELL libcap; then
+  depends policykit
+fi &&
+
+optional_depends -sub SOUP_GNOME libsoup             \
+                      "http=true"                    \
+                      "http=false"                   \
+                      "Build with http/dav backend?" &&
+
+if is_depends_enabled $SPELL libsoup; then
+  depends libxml2
+fi &&
+
+optional_depends avahi                               \
+                 "dnssd=true"                        \
+                 "dnssd"                             \
+                 "Build with DNS-SD backend?"        &&
+
+optional_depends libgudev                            \
+                 "gudev=true"                        \
+                 "gudev=false"                       \
+                 "Build with gudev support?"         &&
+
+if is_depends_enabled $SPELL libgudev; then
+  optional_depends udisks2                       \
+                   "udisks2=true"                \
+                   "udisks2=false"               \
+                   "Build with udisks2 support?" &&
+
+  optional_depends libcdio-paranoia              \
+                   "cdda=true"                   \
+                   "cdda=false"                  \
+                   "Build with CDDA backend?"    &&
+
+  optional_depends libgphoto2                    \
+                   "gphoto2=true"                \
+                   "gphoto2=false"               \
+                   "Build with gphoto2 support?" &&
+
+  optional_depends libmtp                        \
+                   "mtp=true"                    \
+                   "mtp=false"                   \
+                   "Build with MTP support?"
+fi &&
+
+optional_depends fuse3                               \
+                 "fuse=true"                         \
+                 "fuse=false"                        \
+                 "Build with fuse support?"          &&
+
+optional_depends LOGIN-DAEMON                        \
+                 "logind=true"                       \
+                 "logind=false"                      \
+                 "Logind support?"                   &&
+
+# DISABLED PENDING SPELL (libimobiledevice)
+#optional_depends libimobiledevice                    \
+#                 "afc=true"                          \
+#                 "afc=false"                         \
+#                 "Build with AFC backend?"           &&
+#
+#if is_depends_enabled $SPELL libimobiledevice; then
+#  depends libplist
+#fi &&
+
+optional_depends gnome-online-accounts                \
+                 "goa=true"                           \
+                 "goa=false"                          \
+                 "Build with GOA volume monitor?"     &&
+
+if is_depends_enabled $SPELL gnome-online-accounts; then
+  optional_depends libgdata                     \
+                   "google=true"                \
+                   "google=false"               \
+                   "Build with Google backend?"
+fi &&
+
+optional_depends libsecret                            \
+                 "keyring=true"                       \
+                 "keyring=false"                      \
+                 "Build with gnome keyring support?"  &&
+
+optional_depends libbluray                            \
+                 "bluray=true"                        \
+                 "bluray=false"                       \
+                 "Build with bluray support?"         &&
+
+optional_depends libusb                               \
+                 "libusb=true"                        \
+                 "libusb=false"                       \
+                 "Build with libusb support?"         &&
+
+optional_depends samba4                               \
+                 "smb=true"                           \
+                 "smb=false"                          \
+                 "Build with Samba support?"          &&
+
+optional_depends libarchive                           \
+                 "archive=true"                       \
+                 "archive=false"                      \
+                 "Build with libarchive support?"     &&
+
+# DISABLED PENDING SPELL
+#optional_depends libnfs                               \
+#                 "nfs=true"                           \
+#                 "nfs=false"                          \
+#                 "Build with NFS backend?"            &&
+
+optional_depends man                                  \
+                 "man=true"                           \
+                 "man=false"                          \
+                 "Generate manpages?"

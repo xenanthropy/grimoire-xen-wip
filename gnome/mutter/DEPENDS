@@ -1,0 +1,96 @@
+. ${GRIMOIRE}/MESON_DEPENDS       &&
+depends PKG-CONFIG                &&
+depends libx11                    &&
+depends graphene                  &&
+depends gtk+3                     &&
+depends gdk-pixbuf2               &&
+depends pango 'pango_ft2=true'    &&
+depends -sub GOBJ cairo           &&
+depends fribidi                   &&
+depends gsettings-desktop-schemas &&
+depends glib2                     &&
+depends gnome-settings-daemon     &&
+depends json-glib                 &&
+depends libxcomposite             &&
+depends libxcursor                &&
+depends libxdamage                &&
+depends libxext                   &&
+depends libxfixes                 &&
+depends libxi                     &&
+depends libxtst                   &&
+depends libxkbfile                &&
+depends xkeyboard-config          &&
+depends libxkbcommon              &&
+depends libxrender                &&
+depends libxcb                    &&
+depends xrandr                    &&
+depends libxrandr                 &&
+depends libxinerama               &&
+depends libxau                    &&
+depends libice                    &&
+depends atk                       &&
+depends libcanberra               &&
+depends dbus                      &&
+depends libgudev                  &&
+
+if [[ $BACKEND == "native_backend=true" ]]; then
+  depends libdrm &&
+  depends wayland 'wayland=true' &&
+  depends libinput
+fi &&
+
+optional_depends OPENGL                                   \
+                 'opengl=true'                            \
+                 'opengl=false'                           \
+                 'Enable OpenGL?'                         &&
+
+if [[ $BACKEND == n ]]; then
+  optional_depends wayland                                  \
+                   'wayland=true'                           \
+                   'wayland=false'                          \
+                   'Enable Wayland support?'
+fi &&
+
+if is_depends_enabled $SPELL wayland; then
+  depends wayland-protocols &&
+  depends xwayland
+fi &&
+
+optional_depends pipewire                                 \
+                 'remote_desktop=true'                    \
+                 'remote_desktop=false'                   \
+                 'Enable remote desktop support?'         &&
+
+optional_depends systemd                                  \
+                 'systemd=true'                           \
+                 'systemd=false'                          \
+                 'Enable systemd support?'                &&
+
+if !(is_depends_enabled $SPELL systemd); then
+  depends elogind
+fi &&
+
+optional_depends gnome-desktop3                           \
+                 'libgnome_desktop=true'                  \
+                 'libgnome_desktop=false'                 \
+                 'Build with gnome-desktop?'              &&
+
+optional_depends libwacom                                 \
+                 'libwacom=true'                          \
+                 'libwacom=false'                         \
+                 'Enable libwacom support?'               &&
+
+optional_depends startup-notification                     \
+                 'startup_notification=true'              \
+                 'startup_notification=false'             \
+                 'Enable startup notification support?'   &&
+
+optional_depends libsm                                    \
+                 'sm=true'                                \
+                 'sm=false'                               \
+                 'Enable X11 session management support?' &&
+
+optional_depends gobject-introspection                    \
+                 'introspection=true'                     \
+                 'introspection=false'                    \
+                 'Enable introspection?'

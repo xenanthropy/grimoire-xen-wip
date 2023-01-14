@@ -1,0 +1,11 @@
+source $GRIMOIRE/MESON_DEPENDS &&
+depends PKG-CONFIG             &&
+depends glib2                  &&
+depends gobject-introspection  &&
+depends shared-mime-info       &&
+depends desktop-file-utils     &&
+
+optional_depends gtk-doc                \
+                 'enable_docs=true'     \
+                 'enable_docs=false'    \
+                 'Build documentation?'

@@ -1,0 +1,21 @@
+. "${GRIMOIRE}/MESON_DEPENDS" &&
+depends PKG-CONFIG            &&
+depends atk                   &&
+depends glib2                 &&
+depends json-glib             &&
+depends libgudev              &&
+depends libinput              &&
+depends cogl                  
+
+#optional_depends wayland --
+#depends libxslt &&
+
+#optional_depends gobject-introspection      \
+#                 "--enable-introspection"   \
+#                 "--disable-introspection"  \
+#                 "to enable introspection"  &&
+
+#optional_depends  gtk-doc                   \
+#        "--enable-gtk-doc"                  \
+#        "--disable-gtk-doc"                 \
+#        "Build documentation with gtk-doc?"   

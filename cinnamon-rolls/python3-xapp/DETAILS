@@ -1,0 +1,14 @@
+source $GRIMOIRE/MESON_FUNCTIONS
+           SPELL=python3-xapp
+         VERSION=2.4.0
+     SOURCE_HASH=sha256:fb907ffb0d777e13f0235eaed3e7dd4d2ecf9e66d9dab578d78af115e817c10e
+          SOURCE=${SPELL}-${VERSION}.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=https://github.com/linuxmint/${SPELL}/archive/refs/tags/${VERSION}.tar.gz
+       WEB_SITE=https://www.github.com/linuxmint/python3-xapp/
+      LICENSE[0]=GPL
+         ENTERED=20230104
+        KEYWORDS="cinnamon"
+           SHORT="python3 xapp library"
+cat << EOF
+EOF

@@ -1,0 +1,4 @@
+. ${GRIMOIRE}/MESON_CONFIGURE &&
+config_query_option XSESSION "Install gdm Xsession file?" y "gdm-xsession=true" "gdm-xsession=false" &&
+config_query_option IPV6 "Enable ipv6?" n "ipv6=true" "ipv6=false" 
+

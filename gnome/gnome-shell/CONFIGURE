@@ -1,0 +1,4 @@
+. ${GRIMOIRE}/MESON_CONFIGURE &&
+config_query_option TESTS "Build tests?" n "tests=true" "tests=false" &&
+config_query_option CLI "Build gnome-extensions CLI tool?" y "extensions_tool=true" "extensions_tool=false" &&
+config_query_option APP "Build gnome-extensions GUI app?" y "extensions_app=true" "extensions_app=false"

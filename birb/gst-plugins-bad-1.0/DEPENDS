@@ -1,0 +1,51 @@
+. "$GRIMOIRE"/MESON_DEPENDS &&
+depends gstreamer-1.0         &&
+depends gst-plugins-base-1.0  &&
+
+depends orc     &&
+depends glib2   &&
+depends libdrm  &&
+depends MESA    &&
+optional_depends wayland   '' '' 'Wayland support' &&
+optional_depends wayland-protocols '' '' '' &&
+
+optional_depends bzip2     '' ''  'bzip2 compressor/decompressor plugin'  &&
+optional_depends cairo     '' '' '' &&
+optional_depends curl      '' '' '' &&
+optional_depends directfb  '' '' 'directfb video output'  &&
+optional_depends libdvdnav '' '' '' &&
+optional_depends libdvdread '' '' '' &&
+optional_depends faac      '' '' '' &&
+optional_depends faad2     '' ''   'AAC audio decoding'  &&
+optional_depends fluidsynth '' '' 'FluidSynth support' &&
+optional_depends JPEG      '' '' '' &&
+optional_depends ladspa    '' '' 'LADSPA element'
+optional_depends libdca    '' '' 'DTS audio decoding'  &&
+optional_depends libexif   '' '' '' &&
+optional_depends libgudev  '' '' '' &&
+optional_depends libmms    '' ''  'mms protocol support'  &&
+optional_depends librsvg2  '' '' '' &&
+optional_depends libssh2   '' '' '' &&
+optional_depends libsrtp   '' '' '' &&
+optional_depends libsrtp2  '' '' '' &&
+optional_depends libusb    '' '' '' &&
+optional_depends libwebp   '' '' '' &&
+optional_depends libx11    '' '' '' &&
+optional_depends libxml2   '' '' '' &&
+optional_depends mjpegtools '' '' 'mpeg2 encoder'   &&
+optional_depends nettle    '' '' '' &&
+optional_depends opencv    '' '' '' &&
+optional_depends openh264  '' '' '' &&
+optional_depends opus      '' '' '' &&
+optional_depends pango     '' '' '' &&
+optional_depends sbc       '' '' '' &&
+optional_depends schroedinger '' '' 'dirac encoder/decoder' &&
+optional_depends soundtouch '' ''  'soundtouch plugin'  &&
+optional_depends SSL       '' '' 'encryption support'
+optional_depends x265      '' '' '' &&
+optional_depends rtmpdump  '' '' ''
+
+#optional_depends gobject-introspection \
+#                'disable_introspection=false' \
+#                'disable_introspection=true' \
+#                'introspection support'

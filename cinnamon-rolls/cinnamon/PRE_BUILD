@@ -1,0 +1,12 @@
+default_pre_build &&
+cd ${SOURCE_DIRECTORY} &&
+
+# Set default theme
+sedit 's:<default>""</default>:<default>"cinnamon"</default>:' \
+       data/org.cinnamon.gschema.xml &&
+
+# Cinnamon has no upstream backgrounds, use GNOME backgrounds instead
+sedit 's|/usr/share/cinnamon-background-properties|/usr/share/gnome-background-properties|' \
+       files/usr/share/cinnamon/cinnamon-settings/modules/cs_backgrounds.py &&
+
+apply_patch_dir patches

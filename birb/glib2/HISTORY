@@ -1,0 +1,958 @@
+2023-01-06 Pavel Vinpgradov <public@sourcemage.org>
+	* DETAILS: version 2.75.2
+
+2023-01-05 Ismael Luceno <ismael@sourcemage.org>
+	* DEPENDS: removed deprecated iconv option
+
+2022-12-25 Treeve Jelbert <treeve@sourcemage.org>
+	* DEPENDS: now uses pcre2, python3
+
+2022-12-22 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: version 2.75.1
+
+2022-11-11  Florian Franzmann  <bwlf@bandrate.org>
+	* DETAILS: version 2.75.0
+
+2022-09-18  Florian Franzmann  <bwlf@bandrate.org>
+	* DETAILS: version 2.74.0
+
+2022-07-27 Vlad Glagolev <stealth@sourcemage.org>
+	* DEPENDS: switch to PKG-CONFIG provider (automated)
+
+2022-06-30  Florian Franzmann  <bwlf@bandrate.org>
+	* DETAILS: version 2.72.3
+
+2022-05-31 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: version 2.72.2
+
+2022-04-15 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: version 2.72.1
+
+2022-03-17 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: version 2.72.0
+	* DEPENDS: use grimoire-wide MESON_DEPENDS
+
+2022-03-05 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: version 2.71.3
+
+2022-02-16 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: version 2.71.2
+
+2022-01-27 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: version 2.71.1
+	* PRE_BUILD, patches/0001-Add-missing-include.patch: dropped, were never used
+	  anyway
+
+2022-01-17 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: version 2.71.0
+
+2021-12-03 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: version 2.70.2
+
+2021-10-28 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: version 2.70.1
+	* CONFIGURE: added for meson build type query
+
+2021-09-18  Florian Franzmann  <bwlf@bandrate.org>
+	* DETAILS: version 2.70.0
+
+2021-08-20 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: version 2.68.4
+	* BUILD: dropped, no longer needed
+
+2021-06-10  Florian Franzmann  <bwlf@bandrate.org>
+	* DETAILS: version 2.68.3
+	* patches/0001-Add-missing-include.patch, PRE_BUILD: fix missing include
+
+2021-05-22  Florian Franzmann  <bwlf@bandrate.org>
+	* DETAILS: version 2.68.2
+
+2021-04-09 Florian Franzmann <bwlf@bandrate.org>
+	* DETAILS: version 2.68.1
+
+2021-03-19 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: version 2.68.0
+
+2021-02-12 Florian Franzmann <bwlf@bandrate.org>
+	* DETAILS: version 2.66.7
+
+2021-01-08 Ismael Luceno <ismael@sourcemage.org>
+	  updated spell to 2.66.4
+
+2020-11-26 Florian Franzmann <bwlf@bandrate.org>
+	* DETAILS: version 2.66.3
+
+2020-10-23 Florian Franzmann <bwlf@bandrate.org>
+	* DETAILS: version 2.66.2
+
+2020-10-10 Florian Franzmann <bwlf@bandrate.org>
+	* DETAILS: version 2.66.1
+
+2020-09-30 Thomas Orgis <sobukus@sourcemage.org>
+	* UP_TRIGGERS: .la files are gone, trigger dependents
+
+2020-09-13 Florian Franzmann <bwlf@bandrate.org>
+	* DETAILS: version 2.66.0
+
+2020-08-22 Florian Franzmann <bwlf@bandrate.org>
+	* DETAILS: version 2.64.4
+
+2020-07-03 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: version 2.64.4
+
+2020-05-22 Florian Franzmann <bwlf@bandrate.org>
+	* DETAILS: version 2.64.3
+
+2020-04-11 Florian Franzmann <bwlf@bandrate.org>
+	* DETAILS: version 2.64.2
+
+2020-04-03 Ismael Luceno <ismael@sourcemage.org>
+	* DETAILS, PRE_SUB_DEPENDS, SUB_DEPENDS: removed GLIB_VER and GLIB_DEVEL
+	* PREPARE: removed, no longer needed
+	* DETAILS: updated to 2.64.1
+
+2020-02-26 Treeve Jelbert <treeve@sourcemage.org>
+	* DEPENDS: fix libmount flags
+
+2020-02-26 Florian Franzmann <bwlf@bandrate.org>
+	* DETAILS: version 2.63.6
+
+2020-02-23 Remko van der Vossen <wich@sourcemage.org>
+	* DEPENDS: correct option value for libmount
+
+2020-02-06 Florian Franzmann <bwlf@bandrate.org>
+	* DETAILS, DEPENDS: version 2.63.5
+
+2020-01-25 Florian Franzmann <bwlf@bandrate.org>
+	* DETAILS: version 2.63.4
+
+2019-12-20 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: version 2.62.4
+
+2019-12-17 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: devel version 2.63.3
+
+2019-11-25 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: versions 2.63.2/2.62.3
+
+2019-11-01 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: devel version 2.63.1
+
+2019-10-22 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: version 2.62.2
+
+2019-10-05 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: devel version 2.63.0
+
+2019-10-04 Florian Franzmann <bwlf@bandrate.org>
+	* DETAILS: version 2.62.1
+
+2019-09-09 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: version 2.62.0
+	* DEPENDS: updated libiconv flag
+	* PRE_BUILD, patches/libiconv.patch: dropped, fixed by upstream
+
+2019-09-06 Pavel Vinogradov <public@sourcemage.org>
+	* PRE_BUILD, patches/libiconv.patch: fixed libiconv test in stable
+
+2019-09-02 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: versions 2.61.3/2.60.7
+
+2019-07-30 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: versions 2.61.2/2.60.6, SECURITY_PATCH++, (CVE-2019-12450)
+
+2019-05-25 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: devel version 2.61.1
+
+2019-05-25 Ismael Luceno <ismael@sourcemage.org>
+	* DEPENDS: Added dependency on libiconv for non-glibc systems
+
+2019-05-24 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: version 2.60.3
+
+2019-05-18 Ismael Luceno <ismael@sourcemage.org>
+	* DEPENDS: Update dependency; s/gettext/GETTEXT/
+
+2019-04-15 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: versions 2.61.0/2.60.1
+
+2019-03-06 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: version 2.60.0
+	* DEPENDS: unified libselinux flags
+
+2019-02-18 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: devel version 2.59.3
+
+2019-02-04 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: devel version 2.59.2
+
+2019-01-26 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: devel version 2.59.1
+
+2019-01-21 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: stable version 2.58.3
+
+2019-01-09 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: devel version 2.59.0
+	* DEPENDS: split libselinux flags
+
+2018-12-18 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: version 2.58.2
+
+2018-09-21 Florian Franzmann <bwlf@bandrate.org>
+	* DETAILS: devel version 2.58.1
+
+2018-08-31 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: version 2.58.0
+	* BUILD: set locale to C.UTF-8
+
+2018-08-24 Florian Franzmann <bwlf@bandrate.org>
+	* DETAILS: devel version 2.57.3
+
+2018-08-17 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: stable version 2.56.2
+	* PRE_BUILD, patches/pkgconfig-generator.patch: removed, fixed in
+	  upstream
+
+2018-08-01 Florian Franzmann <bwlf@bandrate.org>
+	* DETAILS: devel version version 2.57.2
+
+2018-07-15 Florian Franzmann <bwlf@bandrate.org>
+	* BUILD: set LANG and LC_ALL to avoid python unicode error
+
+2018-05-23 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: devel version 2.57.1
+	* PRE_BUILD: apply patches for stable branch only
+
+2018-05-17 Treeve Jelbert <treeve@sourcemage.org>
+	* DEPENDS: reverse pcre flags, optional elfutils
+
+2018-04-10 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: PATCHLEVEL++
+	* PRE_BUILD, patches/pkgconfig-generator.patch: added slightly
+	  modified upstream patch to fix generation of .pc files
+
+2018-04-07 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS, DEPENDS: version 2.56.1, converted to meson build system
+	* BUILD: added to fix compilation with noexec /tmp
+
+2018-03-13 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: version 2.56.0
+
+2018-02-07 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: version 2.55.2, removed BRANCH variable
+
+2018-01-09 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: versions 2.55.1/2.54.3
+
+2017-11-22 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: devel version 2.55.0
+
+2017-10-28 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: version 2.54.2
+
+2017-10-02 Florian Franzmann <bwlf@bandrate.org>
+	* DETAILS: version 2.54.1
+
+2017-09-11 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: version 2.54.0
+
+2017-09-04 Florian Franzmann <bwlf@bandrate.org>
+	* DETAILS: devel version 2.53.7
+
+2017-08-20 Florian Franzmann <bwlf@bandrate.org>
+	* DETAILS: devel version 2.53.6
+
+2017-08-07 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: devel version 2.53.5
+
+2017-07-18 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: devel version 2.53.4
+
+2017-06-23 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: stable version 2.52.3
+
+2017-06-20 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: devel version 2.53.3
+
+2017-05-22 Florian Franzmann <bwlf@bandrate.org>
+	* DETAILS: devel version 2.53.2
+
+2017-05-08 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: stable version 2.52.2
+
+2017-04-25 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: devel version 2.53.1
+
+2017-04-08 Florian Franzmann <bwlf@bandrate.org>
+	* DETAILS: version 2.52.1
+
+2017-03-19 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: updated both branches to version 2.52.0, SOURCE and
+	  SECURITY_PATCH are shared now
+
+2017-03-13 Florian Franzmann <bwlf@bandrate.org>
+	* DETAILS: devel version 2.51.5
+
+2017-03-02 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: updated devel version to 2.51.4
+	* PRE_BUILD: removed, fixed by upstream
+
+2017-02-27 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: updated devel version to 2.51.3
+	* PRE_BUILD: added to fix missing Makefile problem
+
+2017-02-13 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: versions 2.51.2/2.50.3
+
+2017-01-17 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: updated devel branch to 2.51.1
+
+2016-11-09 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: versions 2.51.0/2.50.2
+
+2016-09-29 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: updated both branches to 2.50.0,
+	  switched to UPSTREAM_HASH
+
+2016-09-06 Florian Franzmann <bwlf@bandrate.org>
+	* DETAILS: devel version 2.49.6
+
+2016-08-19 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: updated devel branch to 2.49.5
+
+2016-08-18 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 2.48.2
+
+2016-06-08 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: 2.48.1 (both)
+
+2016-03-25 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: 2.48.0 for devel branch too
+
+2016-03-23 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: 2.48.0
+
+2016-03-18 Florian Franzmann <bwlf@bandrate.org>
+	* DETAILS: devel version 2.47.92
+
+2015-11-14 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: 2.46.2
+
+2015-05-24 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: updated spell to 2.44.1
+
+2015-04-07 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: updated spell to 2.44.0, removed trailing space in SPELL
+
+2015-03-15 Florian Franzmann <bwlf@bandrate.org>
+	* DETAILS: use hash provided by upstream
+
+2014-11-23 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: 2.42.1
+
+2014-10-01 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: 2.42.0
+	* PRE_BUILD: not needed
+
+2014-08-28 Thomas Orgis <sobukus@sourcemage.org>
+	* DEPENDS: some PYTHON is always needed now to avoid failure during
+	  INSTALL (for a dbus codegen tool, also the modular-tests option
+	  doesn't exist anymore)
+
+2014-08-13 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: 2.41.2
+
+2014-07-01 Florian Franzmann <bwlf@bandrate.org>
+	* DETAILS: version 2.41.1
+
+2014-06-09 Treeve Jelbert <treeve@sourcemage.org>
+	* PRE_BUILD: do not use autogen.sh, use autoreconf
+	  do not disable gdbus-codegen, it is needed by gtk+3
+	* DETAILS: PATCHLEVEL=1
+
+2014-04-19 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: 2.40.0
+
+2014-01-23 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: 2.38.2
+
+2013-10-29 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 2.38.1
+
+2013-04-13 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: 2.38.0
+
+2013-08-18 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 2.36.4
+	* PRE_BUILD: ./autogen.sh to work with automake 1.14
+
+2013-07-12 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 2.36.3
+
+2013-05-10 Remko van der Vossen <wich@sourcemage.org>
+	* DEPENDS, PRE_BUILD: make python optional again
+
+2013-04-22 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 2.36.1
+
+2013-04-13 Treeve Jelbert <treeve@sourcemage.org>
+	* DEPENDS: gettext is required
+
+2013-04-04 Florian Franzmann <bwlf@bandrate.org>
+	* DETAILS: version 2.36.0
+
+2013-02-10 Vlad Glagolev <stealth@sourcemage.org>
+	* DEPENDS: fixed circular glib2 -> gamin -> glib2 dependency
+
+2012-12-27 Florian Franzmann <bwlf@bandrate.org>
+	* DEPENDS: removed dependency on FAM since it's already there
+	  as an optional dependency
+	* DETAILS: PATCH_LEVEL -> PATCHLEVEL
+
+2012-12-26 Florian Franzmann <bwlf@bandrate.org>
+	* DEPENDS: added dependencies on gamin and zlib
+	* DETAILS: bumped PATCH_LEVEL
+
+2012-04-22 Treeve Jelbert <treeve@sourcemage.org>
+	* PRE_BUILD ,py3.patch.xz: deleted
+
+2012-12-08 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 2.34.3
+
+2012-11-11 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 2.34.2
+
+2012-10-18 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 2.34.1
+
+2012-09-26 Sukneet Basuta <sukneet@sourcemage.org>
+	* DETAILS: updated spell to 2.34.0
+
+2012-07-15 Sukneet Basuta <sukneet@sourcemage.org>
+	* DETAILS: updated spell to 2.32.4
+
+2012-06-06 Arjan Bouter <abouter@sourcemage.org>
+	* PRE_BUILD: fixed patching, is_depends_enabled doesn't like
+	  providers.
+	* PRE_SUB_DEPENDS, SUB_DEPENDS: added python
+
+2012-05-27 Remko van der Vossen <wich@sourcemage.org>
+	* DEPENDS, PRE_BUILD: Make python optional
+
+2012-05-15 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 2.32.3
+
+2012-05-13 Remko van der Vossen <wich@sourcemage.org>
+        * DEPENDS: added xz-utils, it's not part of basesystem...
+
+2012-05-01 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 2.32.2
+
+2012-04-22 Treeve Jelbert <treeve@sourcemage.org>
+	* DEPENDS: python => PYTHON
+	* PRE_BUILD ,py3.patch.xz: added, fix build with python3
+
+2012-04-15 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 2.32.1
+
+2012-04-05 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 2.32.0 (stable)
+
+2012-03-25 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: 2.32.0
+
+2012-03-12 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 2.30.3
+
+2012-02-09 Treeve Jelbert <treeve@sourcemage.org>
+	* DEPENDS: elfutils is optional
+
+2012-02-06 Florian Franzmann <bwlf@bandrate.org>
+	* DEPENDS: only depend on elfutils if DEVEL is selected
+
+2012-02-05 Florian Franzmann <bwlf@bandrate.org>
+	* DEPENDS: added dependency on elfutils
+
+2012-02-01 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 2.31.14
+
+2012-01-11 Sukneet Basuta <sukneet@sourcemage.org>
+	* DETAILS: updated devel to 2.31.8
+
+2011-12-22 Sukneet Basuta <sukneet@sourcemage.org>
+	* DETAILS:  updated devel to 2.31.6
+	  bz2 -> xz
+	* PRE_BUILD: added to handle xz archive
+
+2011-11-26 Sukneet Basuta <sukneet@sourcemage.org>
+	* DETAILS: updated devel to 2.31.2
+
+2011-11-12 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 2.30.2
+
+2011-10-31 Sukneet Basuta <sukneet@sourcemage.org>
+	* DETAILS: updated devel to 2.31.0
+
+2011-10-31 David C. Haley <khoralin@gmail.com>
+	* DEPENDS: added python
+
+2011-10-17 Bor Kraljič <pyrobor@ver.si>
+	* DEPENDS: added libffi as dependency
+
+2011-10-15 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 2.30.1
+
+2011-09-28 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 2.30.0
+
+2011-06-24 Vlad Glagolev <stealth@sourcemage.org>
+	* DEPENDS: force pcre version when needed
+
+2011-06-06 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 2.28.8
+
+2011-05-21 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 2.28.7
+
+2011-04-14 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 2.28.6
+
+2011-04-04 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 2.28.5
+
+2011-03-22 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 2.28.4
+
+2011-03-15 George Sherwood <gsherwood@sourcemage.org>
+	* DETAILS: Updated to version 2.28.3
+
+2011-03-07 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 2.28.2
+
+2011-02-19 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 2.28.1
+
+2011-02-12 George Sherwood <gsherwood@sourcemage.org>
+	* DETAILS: Updated stable and devel to 2.28.0
+
+2011-01-30 George Sherwood <gsherwood@sourcemage.org>
+	* DETAILS: Updated devel to version 2.27.93
+
+2011-01-16 George Sherwood <gsherwood@sourcemage.org>
+	* DETAILS: Updated devel to version 2.27.91
+
+2011-01-08 George Sherwood <gsherwood@sourcemage.org>
+	* DETAILS: Updated devel to version 2.27.90
+
+2010-12-24 George Sherwood <gsherwood@sourcemage.org>
+	* DETAILS: Updated devel to version 2.27.5
+
+2010-11-15 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 2.26.1
+
+2010-11-13 George Sherwood <gsherwood@sourcemage.org>
+	* DETAILS: Updated devel to version 2.27.3
+
+2010-10-10 George Sherwood <gsherwood@sourcemage.org>
+	* DETAILS: Updated devel to version 2.27.0
+
+2010-09-29 Vasil Yonkov <spirtbrat@sourcemage.org>
+	* DETAILS: updated spell to 2.26.0
+
+2010-09-25 George Sherwood <gsherwood@sourcemage.org>
+	* DETAILS: Updated devel to version 2.25.17
+
+2010-09-19 Vasil Yonkov <spirtbrat@sourcemage.org>
+	* DETAILS: updated GLIB_VER=stable to 2.25.15
+
+2010-09-06 George Sherwood <gsherwood@sourcemage.org>
+	* DETAILS: Updated devel to version 2.25.15
+
+2010-08-17 George Sherwood <gsherwood@sourcemage.org>
+	* DETAILS: Updated devel to version 2.25.14
+
+2010-08-09 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 2.24.2
+
+2010-05-03 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 2.24.1
+
+2010-04-21 Vasil Yonkov <spirtbrat@sourcemage.org>
+	* DETAILS: updated GLIB_VER=devel to 2.25.1
+
+2010-03-30 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* DEPENDS: added UTFPROP sub depends to pcre, bug #15630
+
+2010-03-27 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 2.24.0
+
+2010-03-23 Sukneet Basuta <sukneet@sourcemage.org>
+	* DETAILS: updated devel to 2.23.6
+	* DEPENDS: added opt depends on FAM, libselinux, pcre
+	* PRE_BUILD: removed, no longer needed, was used for libiconv
+
+2010-03-16 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 2.22.5
+
+2010-01-07 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 2.22.4
+
+2009-12-01 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 2.22.3
+
+2009-10-07 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 2.22.2
+
+2009-10-01 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 2.22.1
+
+2009-09-22 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 2.22.0
+
+2009-09-06 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: version 2.21.6 (devel)
+
+2009-08-29 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 2.20.5 [stable], 2.21.5 [devel]
+
+2009-08-24 George Sherwood <gsherwood@sourcemage.org>
+	* SUB_DEPENDS: Added for devel version of glib2
+	* PRE_SUB_DEPENDS: Added for devel version of glib2
+
+2009-07-22 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* DETAILS: moved SOURCE into the branches so the stable version can be
+	  cast
+
+2008-09-22 Treeve Jelbert <treeve@sourcemage.org>
+	* PREPARE: added
+	* DETAILS: version 2.21.4 (devel)
+	  add support for devel version
+
+2009-06-28 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 2.20.4
+
+2009-05-30 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 2.20.3
+
+2009-05-18 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 2.20.2
+	* PRE_BUILD: cleaned up the garbage
+
+2009-04-10 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 2.20.1
+
+2009-03-15 Robin Cook <rcook@wyrms.net>
+	* DETAILS: change hash to sig and put in correct place
+
+2009-03-14 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 2.20.0; quoting paths
+
+2009-03-07 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.19.10
+
+2009-01-10 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 2.18.4; fixed short desc
+
+2008-11-25 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 2.18.3
+
+2008-10-17 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 2.18.2
+
+2008-09-18 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 2.18.1
+
+2008-09-06 George Sherwood <gsherwood@sourcemage.org>
+	* DETAILS: Updated to version 2.18.0
+	* PRE_BUILD: Removed applicaton of patch
+	* glib-2.16.5-docsbuild.patch: removed. docs build fine
+
+2008-07-24 Ladislav Hagara <hgr@vabo.cz>
+	* PRE_BUILD, glib-2.16.5-docsbuild.patch: added patch from Gentoo
+	  http://bugs.gentoo.org/show_bug.cgi?id=232417
+
+2008-07-23 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: version 2.16,5
+
+2008-07-02 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 2.16.4, SECURITY_PATCH=1 (CVE-2008-2371)
+
+2008-04-12 Eric Sandall <sandalle@sourcemage.org>
+	* DEPENDS: glib2 really depends on pkgconfig, so if pkgconfig
+	  decides it wants the latest glib2, but pkgconfig is not
+	  installed yet, install pkgconfig first, and then glib2
+
+2008-04-08 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.16.3
+
+2008-04-03 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 2.16.2
+
+2008-03-11 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 2.16.1
+
+2008-02-26 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.15.6
+
+2008-02-07 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 2.14.6
+
+2008-01-09 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 2.14.5, cleaned up
+
+2007-11-24 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.14.4
+
+2007-11-12 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.14.3
+
+2007-10-16 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.14.2
+
+2007-09-19 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.14.1
+
+2007-08-04 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.14.0
+
+2007-07-16 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.12.13
+
+2007-05-02 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.12.12
+
+2007-03-09 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.12.11
+
+2007-01-17 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.12.9
+
+2007-01-15 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.12.8
+	  removed SOURCE_URL[0]
+	  renamed SOURCE_URL[1] to [0]
+
+2007-01-13 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.12.7
+
+2007-01-13 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.12.6
+
+2007-01-13 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.12.5
+
+2006-10-03 Flavien Bridault <vlaaad@sourcemage.org>
+	* DETAILS: Updated to 2.12.4
+
+2006-08-30 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: version 2.12.3
+
+2006-07-02 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.12.0
+
+2006-05-27 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.10.3
+
+2006-04-08 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.10.2
+
+2006-03-12 Karsten Behrmann <BearPerson@sourcemage.org>
+	* DETAILS: (automated) Add KEYWORDS
+
+2006-03-10 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.10.1
+
+2006-02-24 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.10.0
+
+2006-02-19 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.9.6
+
+2006-01-18 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.8.6
+
+2006-01-04 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.8.5
+
+2005-11-19 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.8.4
+
+2005-10-05 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.8.3
+
+2005-09-26 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.8.2
+	* DEPENDS: added gettext as optional depends
+	* BUILD: removed
+	* PRE_BUILD: sedit moved to here from BUILD
+	  apply sedit only if gettext is no
+
+2005-09-16 Seth Woolley <seth@tautology.org>
+	* BUILD: gettext now really not needed
+
+2005-08-25 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.8.1
+
+2005-08-12 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.8.0
+
+2005-08-09 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.7.7
+
+2005-08-05 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.7.6
+	  converted from MD5 to GPG
+	  removed BUILD_API
+	* DEPENDS: added gtk-doc as optional depends
+
+2005-08-03 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.6.6
+	  updated MD5
+
+2005-06-13 Eric Sandall <sandalle@sourcemage.org>
+	* g++.patch.bz2,PRE_BUILD: No longer needed
+
+2005-06-11 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.6.5
+	  updated MD5
+
+2005-04-08 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.6.4
+	  updated MD5
+
+2005-03-01 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.6.3
+	  updated MD5
+
+2005-02-07 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.6.2
+	  updated MD5
+
+2005-01-07 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.6.1
+	  updated MD5
+
+2005-01-03 Robin Cook <rcook@wyrms.net>
+	* BUILD: moved OPTS option in CONFIGURE to BUILD
+	* CONFIGURE: removed
+	* DETAILS: updated VERSION to 2.6.0
+	  updated MD5
+	* PRE_BUILD: disabled applying patch until g++ patch is updated.
+
+2004-12-15 Eric Sandall <sandalle@sourcemage.org>
+	* PRE_BUILD: Apply g++ removal patch:
+	* g++.patch.bz2: Remove g++ checks from configure, otherwise
+	  this fails without g++ installed (stupid packagers!)
+
+2004-12-02 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.4.8
+	  updated MD5
+
+2004-09-09 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.4.7
+	  updated MD5
+
+2004-08-13 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.4.6
+	  updated MD5
+
+2004-07-31 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.4.5
+	  updated MD5
+
+2004-07-10 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.4.4
+	  updated MD5
+
+2004-06-04 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.4.2
+	  updated MD5
+	  added BUILD_API=2
+
+2004-05-01 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.4.1
+	  updated MD5
+
+2004-03-16 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.4.0
+	  updated SOURCE_URL[0]
+	  updated MD5
+
+2004-03-10 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.3.6
+	  updated MD5
+
+2004-03-06 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.3.5
+	  updated SOURCE_URL[0]
+	  updated MD5
+	  removed MAINTAINER
+
+2003-10-17 Sergey Lipnevich <sergey@sourcemage.org>
+	* CONFIGURE: added to supply libiconv option to ./configure;
+	  the idea is that when --with-libiconv=no is passed, the
+	  ./configure script is designed to detect support for iconv()
+	  in glibc and use it. The relevant parts of config.log are:
+	  configure:4410: checking for iconv_open
+	  configure:4460: gcc -o conftest -g -O2 conftest.c >&5
+	  configure:4463: $? = 0
+	  configure:4466: test -s conftest
+	  configure:4469: $? = 0
+	  configure:4480: result: yes
+	  ...
+	  ac_cv_func_iconv_open=yes
+	  ...
+
+2003-08-23 Robin Cook <rcook@wyrms.net>
+	* Updated to 2.2.3
+
+2003-07-30 Robin Cook <rcook@wyrms.net>
+	* Removed the optional_depends on libiconv
+
+2003-07-21 Robin Cook <rcook@wyrms.net>
+	* Change disable command for optional_depends libiconv
+
+2003-07-08 Sergey Lipnevich <sergey@sourcemage.org>
+	* Fix the problem where glib2 would fail to compile
+	  if libiconv is present but not specified in the
+	  configure options.
+
+2003-06-09 Robin Cook <rcook@wyrms.net>
+	* Updated to 2.2.2
+
+2003-02-02 Robin Cook <rcook@wyrms.net>
+	* Updated to 2.2.1
+
+2002-12-28 Robin Cook <rcook@wyrms.net>
+	* Updated to 2.2.0
+	* Updated SOURCE_URL[0]
+	* Added BRANCH variable
+	* Added SOURCE_URL[1]
+
+2002-11-08 Robin Cook <rcook@wyrms.net>
+	* Updated to 2.0.7
+
+2002-10-23 Robin Cook <rcook@wyrms.net>
+	* Add MD5
+
+2002-08-09 Jon Svendsen <jon-sven@frisurf.no>
+	* Added perl dependency
+
+2002-08-04 Jon Svendsen <jon-sven@frisurf.no>
+	* Updated to 2.0.6
+
+2002-06-19 Jon Svendsen <jon-sven@frisurf.no>
+	* Added licensing information
+
+2002-06-16 Jon Svendsen <jon-sven@frisurf.no>
+	* Updated to 2.0.4
+
+2002-05-29 Jon Svendsen <jon-sven@frisurf.no>
+	* Updated to 2.0.3
+
+2002-03-30 Jon Svendsen <jon-sven@frisurf.no>
+	* Updated to 2.0.1
+
+2002-03-14 Jon Svendsen <jon-sven@frisurf.no>
+	* Added to section (me)

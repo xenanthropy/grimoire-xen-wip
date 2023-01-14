@@ -1,0 +1,23 @@
+source $GRIMOIRE/MESON_FUNCTIONS
+           SPELL=cinnamon-menus
+         VERSION=5.6.0
+     MINTVERSION=master.mint21
+     SOURCE_HASH=sha256:3fce7ee8b0812065b00a4d3b47763d26caa6912085c17e650fad838c9cd0d82c
+          SOURCE=${SPELL}-${MINTVERSION}.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$MINTVERSION
+   SOURCE_URL[0]=https://github.com/linuxmint/${SPELL}/archive/refs/tags/${MINTVERSION}.tar.gz
+       WEB_SITE=https://www.github.com/linuxmint/cinnamon-menus/
+      LICENSE[0]=GPL
+         ENTERED=20230101
+        KEYWORDS="cinnamon"
+           SHORT="cinnamon-menu library"
+cat << EOF
+cinnamon-menus contains the libcinnamon-menu library, the layout configuration
+files for the Cinnamon menu, as well as a simple menu editor.
+
+The libcinnamon-menu library implements the "Desktop Menu Specification"
+from freedesktop.org:
+
+  http://freedesktop.org/wiki/Specifications/menu-spec
+  http://specifications.freedesktop.org/menu-spec/menu-spec-latest.html
+EOF

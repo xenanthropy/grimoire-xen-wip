@@ -1,0 +1,8 @@
+. ${GRIMOIRE}/MESON_CONFIGURE &&
+config_query_list CHAR "Enable charset detection in MP3s?" none enca icu &&
+config_query_list BATTERY "Enable batter/mains power detection?" none hal upower &&
+config_query_list EXTRACT "Use which media extractor backend?" gstreamer libav &&
+
+if [[ $EXTRACT == "gstreamer" ]]; then
+  config_query_list BACKEND "Use discoverer for gstreamer backend?" discoverer gupnp
+fi

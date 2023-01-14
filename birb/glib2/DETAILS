@@ -1,0 +1,19 @@
+. "${GRIMOIRE}/MESON_FUNCTIONS"
+           SPELL=glib2
+         VERSION=2.74.4
+     SOURCE_HASH="sha256:360d6fb75202c0eb0d07f0ab812b19b526f1c05ccc0a8ed7e5d2c988616d343a:UPSTREAM_HASH"
+  SECURITY_PATCH=2
+          SOURCE=glib-$VERSION.tar.xz
+SOURCE_DIRECTORY="$BUILD_DIRECTORY/glib-$VERSION"
+   SOURCE_URL[0]="${GNOME_URL}/sources/glib/${VERSION%.*}/${SOURCE}"
+      LICENSE[0]=LGPL
+        WEB_SITE=https://www.gtk.org/
+         ENTERED=20020314
+        KEYWORDS="gnome2 libs"
+           SHORT="library that forms the basis of GTK+ and GNOME"
+cat << EOF
+GLib is the low-level core library that forms the basis of GTK+ and
+GNOME. It provides data structure handling for C, portability
+wrappers, and interfaces for such runtime functionality as an event
+loop, threads, dynamic loading, and an object system.
+EOF

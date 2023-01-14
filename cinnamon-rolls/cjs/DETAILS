@@ -1,0 +1,16 @@
+source $GRIMOIRE/MESON_FUNCTIONS
+           SPELL=cjs
+         VERSION=5.6.1
+     MINTVERSION=master.mint21
+     SOURCE_HASH=sha256:ac9686f0652f40af6f81cfe051048c7532f342e496638d0f3aa7d28f724258d4
+          SOURCE=${SPELL}-${MINTVERSION}.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$MINTVERSION
+   SOURCE_URL[0]=https://github.com/linuxmint/${SPELL}/archive/refs/tags/${MINTVERSION}.tar.gz
+       WEB_SITE=https://www.github.com/linuxmint/cjs/
+      LICENSE[0]=GPL
+         ENTERED=20230101
+        KEYWORDS="cinnamon"
+           SHORT="cinnamon javascript interpreter"
+cat << EOF
+JavaScript bindings for Cinnamon
+EOF

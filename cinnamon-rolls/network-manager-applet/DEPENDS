@@ -1,0 +1,23 @@
+. "${GRIMOIRE}/MESON_DEPENDS" &&
+depends PKG-CONFIG            &&
+depends xz-utils              &&
+depends network-manager       &&
+depends jansson               &&
+depends dbusmenu              &&
+depends libgudev              &&
+depends libxml2               &&
+depends libnma                &&
+depends network-manager       &&
+depends gtk+3                 &&
+depends libsecret             &&
+
+# DISABLED PENDING SPELL ADD
+#optional_depends libappindicator                                              \
+#                 'appindicator=yes'                                           \
+#                 'appindicator=no'                                            \
+#                 'Build with libappindicator support/xembed systray support?' &&
+
+optional_depends libselinux                                                   \
+                 'selinux=true'                                               \
+                 'selinux=false'                                              \
+                 'Enable adjusting SELinux labels in config editor?'

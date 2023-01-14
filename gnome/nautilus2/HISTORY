@@ -1,0 +1,436 @@
+2018-02-06 Treeve Jelbert <treeve@sourcemage.org>
+	* DEPENDS: use xorgproto
+
+2013-06-24 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 3.6.3
+	  SOURCE matches upstream posted SHA256
+
+	* Fix compilation with gnome-desktop3 3.8+ and libgnome API 3.8
+	* PRE_BUILD: Apply 000-gnome-desktop-3.8.patch,
+	  001-do-not-use-NautilusDesktopBackground.patch,
+	  002-add_receive_dropped_background_image.patch,
+	  003-remove_gnome_bg_set_draw_background.patch
+	* gnome-desktop-3.8.patch: Borrowed from
+	  http://git.pld-linux.org/gitweb.cgi/packages/gnome-panel.git/commitdiff/fd33e2e0d0dd96ab56e3ee8b297e7de83556c0e0
+
+2012-10-31 Eric Sandall <sandalle@sourcemage.org>
+	* DEPENDS: Depends on tracker
+
+2012-10-28 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 3.6.1
+	* DEPENDS: exempi added
+
+2012-07-11 Eric Sandall <sandalle@sourcemage.org>
+	* DEPENDS: Suggest gvfs for Connect to Server funcionality
+
+2012-05-17 Sukneet Basuta <sukneet@sourcemage.org>
+	* DETAILS: updated spell to 3.4.2
+
+2012-04-01 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 3.4.0
+
+2012-01-13 Robin Cook <rcook@wyrms.net>
+        * DEPENDS: change unique to libunique
+
+2011-10-18 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 3.2.1
+	* DEPENDS: gtk+2 -> gtk+3, gnome-desktop -> gnome-desktop3
+
+2011-10-06 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 3.2.0
+
+2011-05-25 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 3.0.2
+
+2011-05-03 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 3.0.1.1
+
+2011-04-25 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 3.0.1
+
+2011-04-10 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 3.0.0
+
+2011-01-01 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 2.32.2.1
+
+2010-12-09 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 2.32.2
+
+2010-11-15 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 2.32.1
+
+2010-09-30 Vasil Yonkov <spirtbrat@sourcemage.org>
+	* DETAILS: updated spell to 2.32.0
+
+2010-09-19 Vasil Yonkov <spirtbrat@sourcemage.org>
+	* DETAILS: updated spell to 2.31.90
+
+2010-05-09 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 2.30.1
+
+2010-04-12 Vasil Yonkov <spirtbrat@sourcemage.org>
+	* DEPENDS: added pango, glib2, libxml2, dbus-glib, intltool
+	  removed gnome-icon-theme, gnome-themes, beagle, tracker
+
+2010-03-30 Vasil Yonkov <spirtbrat@sourcemage.org>
+	* DETAILS: updated spell to 2.30.0
+
+2010-03-24 Vasil Yonkov <spirtbrat@sourcemage.org>
+	* DETAILS: updated spell to 2.29.92.1
+
+2010-02-07 Vasil Yonkov <spirtbrat@sourcemage.org>
+	* DEPENDS: added optional gtk-doc
+
+2010-02-03 Vasil Yonkov <spirtbrat@sourcemage.org>
+	* DETAILS: updated spell to 2.29.2
+
+2009-12-15 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 2.28.4
+	* DEPENDS: removed librsvg2
+
+2009-11-30 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 2.28.2
+	* DEPENDS: removed eel2
+
+2009-11-23 Vasil Yonkov <spirtbrat@sourcemage.org>
+	* DEPENDS: removed libgnomeui
+
+2009-10-20 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 2.28.1
+
+2009-09-23 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 2.28.0
+
+2009-07-18 Arjan Bouter <abouter@sourcemage.org>
+	* DEPENDS: disabled esound and rarian
+
+2009-05-20 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 2.26.3
+
+2009-04-15 George Sherwood <gsherwood@sourcemage.org>
+	* DETAILS: Updated to version 2.26.2
+
+2009-04-09 George Sherwood <gsherwood@sourcemage.org>
+	* DETAILS: Updated to version 2.26.1
+
+2009-03-30 Eric Sandall <sandalle@sourcemage.org>
+	* DEPENDS: Depends on unique
+
+2009-03-23 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.26.0
+
+2009-03-08 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.25.92
+
+2008-11-25 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 2.24.2
+
+2008-10-22 George Sherwood <gsherwood@sourcemage.org>
+	* DETAILS: Updated to version 2.24.1
+
+2008-09-30 Robin Cook <rcook@wyrms.net>
+	* DEPENDS: added xorg libs and explicit depends
+
+2008-09-28 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.24.0
+
+2008-07-24 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 2.22.5.1
+
+2008-07-01 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 2.22.4
+
+2008-04-17 Thomas Orgis <sobukus@sourcemage.org>
+	* DEPENDS: removing MPG123 provider, plain depend on mpg123
+
+2008-04-09 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.22.2
+
+2008-03-13 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.22.0
+
+2008-02-26 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.21.92
+
+2007-09-27 Eric Sandall <sandalle@sourcemage.org>
+	* REPAIR^f28a3645c12b689590aaf423d217e22e^FUNCTIONS: Fix Bug #14014
+
+2007-09-20 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.20.0
+	* DEPENDS: changed scrollkeeper to rarian
+
+2007-09-06 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.19.91
+
+2007-07-02 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.18.3
+
+2007-04-10 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.18.1
+
+2007-03-16 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.18.0.1
+
+2007-03-04 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.17.92
+
+2007-02-28 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.17.91
+
+2006-11-28 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.16.3
+
+2006-11-28 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.16.2
+
+2006-11-13 Flavien Bridault <vlaaad@sourcemage.org>
+	* BUILD: added, disable mime database rebuild during install
+	* FINAL: added, update mime database there
+	* POST_REMOVE: added, update mime database after removal
+	* DETAILS: PATCHLEVEL++
+
+2006-10-03 Flavien Bridault <vlaaad@sourcemage.org>
+	* DETAILS: Updated to 2.16.1
+
+2006-09-07 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.16.0
+
+2006-08-30 Flavien Bridault <vlaaad@sourcemage.org>
+	* DETAILS: Updated to 2.14.3
+
+2006-08-15 Juuso Alasuutari <iuso@sourcemage.org>
+	* DETAILS: [automated] Removed UPDATED (deprecated in favor of 
+	  PATCHLEVEL).
+
+2006-05-24 Robin Cook <rcook@wyrms.net>
+	* DEPENDS: added esound (bug #11934)
+	  added tracker as optional depends 
+	  added beagle as optional depends
+
+2006-05-21 Robin Cook <rcook@wyrms.net>
+	* DETAILS: added PATCHLEVEL
+	* G_SCHEMAS: added
+
+2006-04-15 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.14.1
+
+2006-03-13 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.14.0
+
+2006-03-12 Karsten Behrmann <BearPerson@sourcemage.org>
+	* DETAILS: (automated) Add KEYWORDS
+
+2006-03-01 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.13.92
+
+2006-02-19 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.13.91
+
+2005-11-28 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.12.2
+
+2005-10-06 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.12.1
+
+2005-09-05 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.12.0
+
+2005-08-14 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.11.91
+	  converted MD5 to GPG
+
+2005-04-11 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.10.1
+	  updated MD5
+
+2005-03-23 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* DEPENDS: depends on libexif, bug #8326
+
+2005-03-18 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.10.0
+	  updated MD5
+
+2005-03-01 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.9.92
+	  updated MD5
+
+2005-02-11 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.9.91
+	  updated MD5
+
+2005-02-08 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.9.90
+	  updated MD5
+	  removed BUILD_API
+
+2004-10-28 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.8.2
+	  updated MD5
+
+2004-10-11 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.8.1
+	  updated MD5
+
+2004-09-13 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.8.0
+	  updated MD5
+
+2004-09-04 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.7.92
+	  updated MD5
+	* WIP: added
+
+2004-06-04 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.6.3
+	  updated MD5
+
+2004-06-09 Robin Cook <rcook@wyrms.net>
+	* DEPENDS: corrected missing "
+
+2004-06-04 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.6.2
+	  updated MD5
+	  added BUILD_API=2
+	* DEPENDS: added libexif as optional depends
+
+2004-05-23 Robin Cook <rcook@wyrms.net>
+	* DEPENDS: changed the depends on mpg123 to the provides MPG123
+
+2004-04-19 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.6.1
+	  updated MD5
+
+2004-03-22 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.6.0
+	  updated MD5
+
+2004-03-16 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.5.91
+	  updated MD5
+
+2004-03-11 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.5.90
+	  updated MD5
+	* BUILD: removed
+
+2004-03-04 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.5.8
+	  updated MD5
+	  removed MAINTAINER
+
+2004-03-02 Robin Cook <rcook@wyrms.net>
+	* BUILD: added --enable-hardware option
+
+2004-02-07 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.4.2
+	  updated MD5
+
+2003-10-13 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.4.1
+	  updated MD5
+
+2003-09-09 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.4.0
+	  updated MD5
+
+2003-09-07 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.3.90
+	  updated MD5
+
+2003-05-10 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.2.4
+	  updated MD5
+
+2003-04-01 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.2.3.1
+	  updated MD5
+
+2003-03-10 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.2.2
+	  updated MD5
+
+2003-02-12 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.2.1
+	  updated MD5
+	* DEPENDS: added gnome-icon-theme and gnome-themes as depends
+
+2003-01-30 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.2.0.2
+	  updated MD5
+
+2003-01-23 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.2.0.1
+	  updated MD5
+
+2003-01-20 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.2.0
+	  updated MD5
+
+2003-01-14 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.1.91
+	  updated MD5
+
+2003-01-06 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.1.6
+	  updated MD5
+
+2002-12-30 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.1.5
+	  updated MD5
+
+2002-11-23 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.0.8
+	  updated MD5
+
+2002-10-23 Robin Cook <rcook@wyrms.net>
+	* DETAILS: add MD5
+
+2002-09-20 Jon Svendsen <jon-sven@frisurf.no>
+	* DETAILS: URLs now match new ftp.gnome.org layout
+
+2002-09-14 Jon Svendsen <jon-sven@frisurf.no>
+	* DETAILS: updated VERSION to 2.0.7
+	  s/2.0.1/2.0.2 on URLs
+
+2002-08-30 Jon Svendsen <jon-sven@frisurf.no>
+	* DETAILS: updated VERSION to 2.0.6
+
+2002-08-27 Jon Svendsen <jon-sven@frisurf.no>
+	* BUILD: Removed broken BUILD
+
+2002-08-25 Jon Svendsen <jon-sven@frisurf.no>
+	* DETAILS: updated VERSION to 2.0.5
+	  s/2.0.0/2.0.1 on URLs
+
+2002-08-16 Jon Svendsen <jon-sven@frisurf.no>
+	* DETAILS: updated VERSION to 2.0.4
+
+2002-08-06 Jon Svendsen <jon-sven@frisurf.no>
+	* DETAILS: updated VERSION to 2.0.3
+
+2002-07-25 Jon Svendsen <jon-sven@frisurf-no>
+	* DETAILS: updated VERSION to 2.0.2
+
+2002-07-23 Jon Svendsen <jon-sven@frisurf.no>
+	* DETAILS: updated VERSION to 2.0.1
+	  fixed SOURCE_URL[1]
+
+2002-06-11 Jon Svendsen <jon-sven@frisurf.no>
+	* DETAILS: updated VERSION to 2.0.0
+
+2002-06-04 Jon Svendsen <jon-sven@frisurf.no>
+	* DETAILS: updated VERSION to 1.1.19
+
+2002-05-27 Jon Svendsen <jon-sven@frisurf.no>
+	* DETAILS: updated VERSION to 1.1.18
+	* DEPENDS: actually depends on gnome-desktop
+
+2002-05-20 Jon Svendsen <jon-sven@frisurf.no>
+	* DETAILS: updated VERSION to 1.1.17
+	  Changed WEB_SITE to new non-eazel page
+	  Added short and long descriptions
+
+2002-05-17 Jon Svendsen <jon-sven@frisurf.no>
+	* Initial version of spell
+

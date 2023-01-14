@@ -1,0 +1,16 @@
+. ${GRIMOIRE}/MESON_FUNCTIONS
+           SPELL=libpeas
+         VERSION=1.34.0
+          SOURCE=$SPELL-$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY="$BUILD_DIRECTORY/$SPELL-${SPELL}-${VERSION}"
+   SOURCE_URL[0]=https://gitlab.gnome.org/GNOME/${SPELL}/-/archive/${SPELL}-${VERSION}/${SOURCE}
+     SOURCE_HASH=sha256:514b0576d9a56460915490bdb61dcb88634fdacfb2801e28dcbb9a730348858f
+      LICENSE[0]=LGPL
+        WEB_SITE=https://wiki.gnome.org/Projects/Libpeas
+         ENTERED=20110407
+           SHORT="gobject-based plugins engine"
+cat << EOF
+libpeas is a gobject-based plugins engine, and is targetted at giving every
+application the chance to assume its own extensibility. It is currently used by
+several Gnome applications like gedit and Totem.
+EOF

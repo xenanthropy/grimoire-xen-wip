@@ -1,0 +1,47 @@
+. ${GRIMOIRE}/MESON_DEPENDS &&
+depends PKG-CONFIG          &&
+depends glib2               &&
+depends dbus                &&
+depends rest                && 
+
+if [[ $BACKEND == "goabackend=true" ]]; then
+  depends gtk+3      &&
+  depends gjs        &&
+  depends json-glib  &&
+  depends libsecret  &&
+  depends libsoup    &&
+  depends libxml2    &&
+  depends webkitgtk3 # NEEDS SUB GTK4
+fi &&
+
+if [[ $FEDORA == "fedora=true" ]]; then
+  depends gcr  &&
+  depends krb5
+fi &&
+
+if !(is_depends_enabled $SPELL krb5); then
+  optional_depends krb5                        \
+                   'kerberos=true'             \
+                   'kerberos=false'            \
+                   'Enable kerberos provider?'
+fi &&
+
+optional_depends gtk-doc                 \
+                 'gtk_doc=true'          \
+                 'gtk_doc=false'         \
+                 'Build documentation?'  &&
+
+optional_depends man                     \
+                 'man=true'              \
+                 'man=false'             \
+                 'Build manpages?'       &&
+
+optional_depends vala                    \
+                 'vapi=true'             \
+                 'vapi=false'            \
+                 'Build vala bindings?'  &&
+
+optional_depends gobject-introspection   \
+                 'introspection=true'    \
+                 'introspection=false'   \
+                 'Enable introspection?'

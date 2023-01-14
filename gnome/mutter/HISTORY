@@ -1,0 +1,59 @@
+2012-10-23 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 3.6.1
+
+2012-10-05 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 3.6.0
+
+2012-06-25 Sukneet Basuta <sukneet@sourcemage.org>
+	* DEPENDS: Updated gobject-introspection flags.
+	  Removed gconf2 flags as they are no longer valid, but gconf2
+	  is still optional.
+	* BUILD: added, add flag to treat warnings as warnings not errors.
+
+2012-04-17 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 3.4.1
+
+2012-03-28 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 3.4.0
+
+2012-01-18 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 3.2.2, bz2 -> xz
+
+2011-11-09 Eric Sandall <sandalle@sourcemage.org>
+	* DEPENDS: Merged two optional dependencies on libxext
+
+2011-10-18 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 3.2.1
+
+2011-09-29 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 3.2.0
+
+2011-05-26 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 3.0.2.1
+
+2011-05-25 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 3.0.2
+
+2011-04-25 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 3.0.1
+
+2011-04-07 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 3.0.0
+
+2010-09-19 Vasil Yonkov <spirtbrat@sourcemage.org>
+	* DETAILS: updated spell to 2.31.5
+
+2010-04-01 Arjan Bouter <abouter@sourcemage.org>
+	* DETAILS: version 2.29.1
+
+2010-03-08 Vasil Yonkov <spirtbrat@sourcemage.org>
+	* DETAILS: Fixed SOURCE_URL[0], fixed WEB_SITE, updated spell to 2.29.0
+	* DEPENDS: removed libglade2, orbit2, made libcanberra optional,
+	  removed libxcomposite, libxrender
+
+2009-11-14 Arjan Bouter <abouter@sourcemage.org>
+	* DEPENDS: made rarian and gobject-introspection optional
+
+2009-10-24 Bearcat M. Sandor <sourcemage@feline-soul.com>
+	* DEPENDS, DETAILS: spell created
+

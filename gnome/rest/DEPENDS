@@ -1,0 +1,15 @@
+. ${GRIMOIRE}/MESON_DEPENDS &&
+depends glib2               &&
+depends libsoup             &&
+depends json-glib           &&
+depends libxml2             &&
+
+optional_depends gobject-introspection   \
+                 'introspection=true'    \
+                 'introspection=false'   \
+                 'Enable introspection?' &&
+
+optional_depends gtk-doc                 \
+                 'gtk_doc=true'          \
+                 'gtk_doc=false'         \
+                 'Build documentation?'

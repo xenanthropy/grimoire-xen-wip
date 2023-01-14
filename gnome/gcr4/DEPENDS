@@ -1,0 +1,13 @@
+. "$GRIMOIRE"/MESON_DEPENDS &&
+
+depends GNUPG &&
+depends -sub PYTHON glib2 &&
+depends gtk+4     &&
+depends libgcrypt &&
+depends p11-kit   &&
+optional_depends gobject-introspection \
+                 introspection={true,false} \
+                 'for introspection support'
+optional_depends gtk-doc \
+                 gtk_doc={true,false} \
+                 'to build the documentation'

@@ -1,0 +1,35 @@
+source $GRIMOIRE/MESON_DEPENDS    &&
+depends PKG-CONFIG                &&
+depends gtk+3                     &&
+depends glib2                     &&
+depends libpeas                   &&
+depends vala                      &&
+depends ibus                      &&
+depends libnotify                 &&
+depends gnome-desktop3            &&
+depends gsettings-desktop-schemas &&
+depends gnome-settings-daemon     &&
+depends libwnck3                  &&
+depends accountsservice           &&
+depends mutter                    &&
+depends gnome-menus               && # MIGHT NEED UPDATED
+depends gnome-session             &&
+
+optional_depends gtk-doc                          \
+                 'with-gtk-doc=true'              \
+                 'with-gtk-doc=false'             \
+                 'Build documentation?'           &&
+
+optional_depends policykit                        \
+                 'with-polkit=true'               \
+                 'with-polkit=false'              \
+                 'Build policykit support?'       &&
+
+optional_depends gnome-screensaver                \
+                 'with-gnome-screensaver=true'    \
+                 'with-gnome-screensaver=false'   \
+                 'Use gnome-screensaver instead of budgie-screensaver?' &&
+
+if !(is_depends_enabled gnome-screensaver); then
+  depends budgie-screensaver
+fi

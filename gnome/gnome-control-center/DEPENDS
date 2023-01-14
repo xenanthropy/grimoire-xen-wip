@@ -1,0 +1,50 @@
+. ${GRIMOIRE}/MESON_DEPENDS       &&
+depends PKG-CONFIG                &&
+depends python3                   &&
+depends libadwaita                &&
+depends accountsservice           &&
+depends colord                    &&
+depends colord-gtk                && #NEEDS SUB on GTK4
+depends gdk-pixbuf2               &&
+depends glib2                     &&
+depends gnome-desktop3            && #NEEDS SUB on GTK4
+depends gnome-settings-daemon     &&
+depends gnome-online-accounts     &&
+depends gsettings-desktop-schemas &&
+depends libxml2                   &&
+depends pulseaudio                &&
+depends upower                    &&
+depends libgudev                  &&
+depends libx11                    &&
+depends libxi                     &&
+depends libepoxy                  &&
+depends gcr                       &&
+depends libpwquality              &&
+depends gtk+4                     &&
+depends policykit                 &&
+depends modemmanager              &&
+depends network-manager           &&
+depends libnma                    && #NEEDS SUB ON GTK4
+depends gnome-bluetooth           &&
+depends libwacom                  &&
+depends udisks2                   &&
+depends libgtop2                  &&
+depends samba4                    &&
+
+optional_depends ibus                             \
+                 'ibus=true'                      \
+                 'ibus=false'                     \
+                 'Build with  IBus support?'      &&
+
+optional_depends wayland                          \
+                 'wayland=true'                   \
+                 'wayland=false'                  \
+                 'Build with wayland support?'    &&
+
+# DISABLED PENDING SPELL
+#optional_depends libmalcontent                    \
+#                 'malcontent=true'                \
+#                 'malcontent=false'               \
+#                 'Build with malcontent support?' &&
+
+suggest_depends cups '' '' 'CUPS support'

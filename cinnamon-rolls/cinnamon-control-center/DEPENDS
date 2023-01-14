@@ -1,0 +1,61 @@
+source $GRIMOIRE/MESON_DEPENDS   &&
+depends PKG-CONFIG               &&
+depends glib2                    &&
+depends iso-codes                &&
+depends libgudev                 &&
+depends desktop-file-utils       &&
+depends libgnomekbd              &&
+depends cinnamon-desktop         &&
+depends cinnamon-menus           &&
+depends cinnamon-settings-daemon &&
+depends fontconfig               &&
+depends policykit                &&
+depends gettext                  &&
+depends upower                   &&
+depends xhost                    &&
+depends xorgproto                &&
+depends xserver                  &&
+depends gdk-pixbuf2              &&
+depends gtk+3                    &&
+depends libx11                   &&
+depends libxi                    &&
+depends libnotify                &&
+depends libxklavier              &&
+depends colord                   &&
+depends shared-mime-info         &&
+depends adwaita-icon-theme       &&
+
+optional_depends gnome-color-manager         \
+                 'color=true'                \
+                 'color=false'               \
+                 'Color management support?' &&
+
+optional_depends modemmanager                \
+                 'modemmanager=true'         \
+                 'modemmanager=false'        \
+                 'ModemManager support?'     &&
+
+optional_depends network-manager             \
+                 'networkmanager=true'       \
+                 'networkmanager=false'      \
+                 'NetworkManager support?'   &&
+
+if  is_depends_enabled $SPELL network-manager; then
+  depends libnma &&
+  depends network-manager-applet
+fi &&
+
+#if is_depends_enabled $SPELL network-manager; then
+#  depends network-manager-applet &&
+#  depends libnma
+#fi &&
+
+optional_depends gnome-online-accounts       \
+                 'onlineaccounts=true'       \
+                 'onlineaccounts=false'      \
+                 'Online Accounts support?'  &&
+
+optional_depends libwacom                    \
+                 'wacom=true'                \
+                 'wacom=false'               \
+                 'Wacom Management support?'

@@ -1,0 +1,17 @@
+. ${GRIMOIRE}/MESON_FUNCTIONS
+           SPELL=gnome-bluetooth
+         VERSION=42.5
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=https://gitlab.gnome.org/GNOME/${SPELL}/-/archive/${VERSION}/${SOURCE}
+     SOURCE_HASH=sha256:3501e1696235b536f003bab05599dcae4467eeb05b407e344176f60502a30374
+      LICENSE[0]=GPL
+        WEB_SITE=https://gitlab.gnome.org/GNOME/gnome-bluetooth
+         ENTERED=20091026
+           SHORT="an application that let you manage Bluetooth in the GNOME desktop"
+cat << EOF
+gnome-bluetooth is an application that let you manage Bluetooth in the GNOME
+desktop. It permits to send files to your Bluetooth devices, or browse their
+content. Connect to your devices, like headset or audio gateway. You can add
+or delete Bluetooth devices, or manage their permissions.
+EOF

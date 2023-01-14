@@ -1,0 +1,17 @@
+. ${GRIMOIRE}/MESON_FUNCTIONS
+           SPELL=gnome-control-center
+         VERSION=43.2
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=https://gitlab.gnome.org/GNOME/${SPELL}/-/archive/${VERSION}/${SOURCE}
+     SOURCE_HASH=sha256:60b4ebfd32ba38aac01219b5a4e7e9213e29234e905bdedbf9ab3c4a8a2b29b5
+      LICENSE[0]=GPL
+        WEB_SITE=http://www.gnome.org
+         ENTERED=20020510
+        KEYWORDS="gnome2 libs"
+           SHORT="gnome control center"
+cat << EOF
+The GNOME Control Center
+ 
+A collection of gnome preference dialogs.
+EOF

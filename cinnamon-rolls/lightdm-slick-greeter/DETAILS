@@ -1,0 +1,14 @@
+           SPELL=lightdm-slick-greeter
+         VERSION=1.6.0
+     MINTVERSION=master.mint21
+     SOURCE_HASH=sha256:5df2b634b0d2c63b24e4688781e7f5d8e68d8fc7da0b2a9b4957e2fe22f336cd
+          SOURCE=slick-greeter-${MINTVERSION}.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/slick-greeter-$MINTVERSION
+   SOURCE_URL[0]=https://github.com/linuxmint/slick-greeter/archive/refs/tags/${MINTVERSION}.tar.gz
+       WEB_SITE=https://www.github.com/linuxmint/slick-greeter/
+      LICENSE[0]=GPL
+         ENTERED=20230105
+        KEYWORDS="cinnamon"
+           SHORT="slick-looking lightdm greeter"
+cat << EOF
+EOF

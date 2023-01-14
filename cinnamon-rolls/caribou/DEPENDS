@@ -1,0 +1,25 @@
+depends PKG-CONFIG                   &&
+depends at-spi2-core                 &&
+depends xz-utils                     &&
+depends python3                      &&
+depends glib2                        &&
+depends libgee                       &&
+depends libxml2                      &&
+depends pyatspi2                     &&
+depends pygobject3                   &&
+depends intltool                     &&
+depends gsettings-desktop-schemas    &&
+depends librsvg2                     &&
+depends clutter                      &&
+depends dbus                         &&
+depends libxklavier                  &&
+depends libxtst                      &&
+depends gobject-introspection        &&
+depends vala                         &&
+depends gtk+3 '--enable-gtk3-module' &&
+depends libgee                       &&
+
+optional_depends gtk+2                  \
+                 '--enable-gtk2-module' \
+                 ''                     \
+                 'Build gtk+2 module?'

@@ -1,0 +1,33 @@
+. ${GRIMOIRE}/MESON_DEPENDS &&
+depends glib2               &&
+depends libxml2             &&
+
+
+optional_depends libsoup                        \
+                 'enable-grl-net=true'          \
+                 'enable-grl-net=false'         \
+                 'Enable Grilo Net library?'    &&
+
+optional_depends totem-pl-parser                \
+                 'enable-grl-pls=true'          \
+                 'enable-grl-pls=false'         \
+                 'Enable Grilo Pls library?'    &&
+
+optional_depends vala                           \
+                 'enable-vala=true'             \
+                 'enable-vala=false'            \
+                 'Build vala bindings?'         &&
+
+if is_depends_enabled $SPELL vala; then
+  depends gobject-introspection 'enable-introspection=true'
+else
+  optional_depends gobject-introspection        \
+                   'enable-introspection=true'  \
+                   'enable-introspection=false' \
+                   'Enable introspection?'
+fi &&
+
+optional_depends gtk-doc                        \
+                 'enable-gtk-doc=true'          \
+                 'enable-gtk-doc=false'         \
+                 'Build documentation?'

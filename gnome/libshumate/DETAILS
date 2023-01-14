@@ -1,0 +1,22 @@
+. ${GRIMOIRE}/MESON_FUNCTIONS
+           SPELL=libshumate
+         VERSION=1.0.3
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=https://gitlab.gnome.org/GNOME/${SPELL}/-/archive/${VERSION}/${SOURCE}
+     SOURCE_HASH=sha256:91760d5cae518db6d0c52dcc7cfff6d94b768bc82e368bb46fa52a055dd8086a
+      LICENSE[0]=LGPL
+        WEB_SITE=https://gitlab.gnome.org/GNOME/libshumate/
+         ENTERED=20230111
+        KEYWORDS="gnome2 libs"
+           SHORT="gtk toolkit providing widgets for embedded maps"
+cat << EOF
+libshumate is a C library providing a GtkWidget to display maps.
+It supports numerous free map sources such as OpenStreetMap,
+OpenCycleMap, OpenAerialMap and Maps for free.
+
+libshumate is named after Jessamine Shumate, an American artist, historian,
+and cartographer. libshumate is forked from, and tries to follow similar
+principles in the API as libchamplain.
+The library is as of now still in early development. 
+EOF

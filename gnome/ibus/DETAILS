@@ -1,0 +1,14 @@
+           SPELL=ibus
+         VERSION=1.5.27
+          SOURCE="${SPELL}-${VERSION}.tar.gz"
+     SOURCE_HASH=sha256:6efbda5adb96f607cf7108d1e270962c0729a59c9ea6d58eea2dde0e3cbb97df
+   SOURCE_URL[0]=https://github.com/${SPELL}/${SPELL}/releases/download/${VERSION}/${SOURCE}
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}"
+        WEB_SITE="https://github.com/ibus/ibus/"
+      LICENSE[0]=LGPL
+         ENTERED=20100331
+           SHORT="Intelligent Input Bus"
+cat << EOF
+IBus (Intelligent Input Bus) is a next generation input framework for UNIX
+and UNIX-like operating systems.
+EOF

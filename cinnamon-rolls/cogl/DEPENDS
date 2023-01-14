@@ -1,0 +1,71 @@
+depends PKG-CONFIG            &&
+depends mesa                  &&
+depends cairo                 &&
+depends gdk-pixbuf2           &&
+depends libx11                &&
+depends libxcomposite         &&
+depends libxdamage            &&
+depends libxext               &&
+depends libxfixes             &&
+depends libxrandr             &&
+depends libdrm                &&
+
+optional_depends glib2                                  \
+                 '--enable-glib=yes'                    \
+                 '--enable-glib=no'                     \
+                 'Enable glib support?'                 &&
+
+optional_depends -sub GI pango                          \
+                 '--enable-cogl-pango=yes'              \
+                 '--enable-cogl-pango=no'               \
+                 'Enable pango support?'                &&
+
+optional_depends gstreamer-1.0                          \
+                 '--enable-cogl-gst=yes'                \
+                 '--enable-cogl-gst=no'                 \
+                 'Enable gstreamer support?'            &&
+
+if is_depends_enabled $SPELL gstreamer-1.0; then
+  depends gst-plugins-base-1.0
+fi &&
+
+optional_depends gdk-pixbuf2                               \
+                 '--enable-gdk-pixbuf=yes'                 \
+                 '--enable-gdk-pixbuf=no'                  \
+                 'Enable image loading via gdk-pixbuf?'    &&
+
+optional_depends OPENGL                                    \
+                 '--enable-gl=yes'                         \
+                 '--enable-gl=no'                          \
+                 'Enable support for OpenGL?'              &&
+
+optional_depends sdl                                       \
+                 '--enable-sdl=yes'                        \
+                 '--enable-sdl=no'                         \
+                 'Enable sdl support?'                     &&
+
+if !(is_depends_enabled $SPELL sdl); then
+  optional_depends sdl2                                      \
+                   '--enable-sdl2=yes'                       \
+                   '--enable-sdl2=no'                        \
+                   'Enable sdl2 support?'
+fi &&
+
+optional_depends wayland                                   \
+                 '--enable-wayland-egl-platform=yes'       \
+                 '--enable-wayland-egl-platform=no'        \
+                 'Enable support for wayland EGL plaform?' &&
+
+if is_depends_enabled $SPELL wayland; then
+  OPTS+=' --enable-wayland-egl-server=yes'
+fi &&
+
+optional_depends gtk-doc                                   \
+                 '--enable-gtk-doc=yes'                    \
+                 '--enable-gtk-doc=no'                     \
+                 'Use gtk-doc to build documentation?'     &&
+
+optional_depends gobject-introspection                     \
+                 '--enable-introspection=yes'              \
+                 '--enable-introspection=no'               \
+                 'Enable introspection?'

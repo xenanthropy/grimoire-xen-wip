@@ -1,0 +1,16 @@
+source $GRIMOIRE/MESON_FUNCTIONS
+           SPELL=cinnamon-translations
+         VERSION=5.6.1
+     MINTVERSION=master.mint21
+     SOURCE_HASH=sha256:837ee68b36bedc5bcf03b7856bbfd2b0c2e4e8cb06e315137cafa97734877c7b
+          SOURCE=${SPELL}-${MINTVERSION}.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$MINTVERSION
+   SOURCE_URL[0]=https://github.com/linuxmint/${SPELL}/archive/refs/tags/${MINTVERSION}.tar.gz
+       WEB_SITE=https://www.github.com/linuxmint/cinnamon-translations/
+      LICENSE[0]=GPL
+         ENTERED=20230101
+        KEYWORDS="cinnamon"
+           SHORT="cinnamon translations"
+cat << EOF
+translations for cinnamon libs and apps
+EOF

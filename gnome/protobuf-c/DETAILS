@@ -1,0 +1,18 @@
+           SPELL=protobuf-c
+         VERSION=1.4.1
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=https://github.com/${SPELL}/${SPELL}/releases/download/v${VERSION}/${SOURCE}
+     SOURCE_HASH=sha256:4cc4facd508172f3e0a4d3a8736225d472418aee35b4ad053384b137b220339f
+      LICENSE[0]=
+        WEB_SITE=https://gitlab.gnome.org/protobuf-c/protobuf-c/
+         ENTERED=20230111
+        KEYWORDS="protobuf libs"
+           SHORT="protocol buffers implementation in C"
+cat << EOF
+This is protobuf-c, a C implementation of the Google Protocol Buffers
+data serialization format. It includes libprotobuf-c, a pure C library
+that implements protobuf encoding and decoding, and protoc-c, a code
+generator that converts Protocol Buffer .proto files to C descriptor
+code, based on the original protoc.
+EOF

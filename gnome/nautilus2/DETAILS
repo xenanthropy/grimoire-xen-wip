@@ -1,0 +1,20 @@
+. ${GRIMOIRE}/MESON_FUNCTIONS
+           SPELL=nautilus2
+         VERSION=43.2
+	  BRANCH=`echo $VERSION|cut -d . -f 1,2`
+          SOURCE=nautilus-$VERSION.tar.xz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/nautilus-$VERSION
+   SOURCE_URL[0]=$GNOME_URL/sources/nautilus/$BRANCH/$SOURCE
+     SOURCE_HASH=sha256:a86a9aa7a455511b029ce49a1d8b4659c3c355b5d81d7360bb4d0de637afede0
+      LICENSE[0]=GPL
+      LICENSE[1]=LGPL
+      LICENSE[2]=FDL
+        WEB_SITE=http://www.gnome.org/projects/nautilus
+         ENTERED=20020510
+        KEYWORDS="gnome2 libs"
+           SHORT="Nautilus is the official file manager for the GNOME desktop"
+cat << EOF
+Nautilus is the official file manager for the GNOME desktop. It is
+designed to be primarly a file manager, but there are support for web 
+and file viewing too.
+EOF

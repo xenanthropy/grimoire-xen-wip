@@ -1,0 +1,15 @@
+. ${GRIMOIRE}/MESON_FUNCTIONS
+           SPELL=mutter
+         VERSION=43.2
+          SOURCE="${SPELL}-${VERSION}.tar.gz"
+   SOURCE_URL[0]=https://gitlab.gnome.org/GNOME/${SPELL}/-/archive/${VERSION}/${SOURCE}
+     SOURCE_HASH=sha256:b6088222f113c161081bc8571b1fded0ece701bbdd70665e29fa9b4e6da68e44
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}"
+        WEB_SITE="https://gitlab.gnome.org/GNOME/mutter"
+      LICENSE[0]="GPL"
+         ENTERED=20091024
+        KEYWORDS=""
+           SHORT="A window manager based on Metacity with clutter support"
+cat << EOF
+A fork of Metacity with clutter support. A component of gnome shell.
+EOF

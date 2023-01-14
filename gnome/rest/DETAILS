@@ -1,0 +1,14 @@
+. ${GRIMOIRE}/MESON_FUNCTIONS
+           SPELL=rest
+         VERSION=1.0.0
+          SOURCE=lib$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/lib$SPELL-$VERSION
+   SOURCE_URL[0]=https://gitlab.gnome.org/GNOME/lib${SPELL}/-/archive/${VERSION}/${SOURCE}
+     SOURCE_HASH=sha512:e441ebab4bcce6afd96eebfb271f0b5f7e4fdbd77f6fe1105c0374dc7bd6bda6815da2c20925c7ccdd525c3b87c07542985d591c282f1946c6b8985d8070ec38
+      LICENSE[0]=GPL
+        WEB_SITE=http://developer.gnome.org/rest/
+         ENTERED=20110929
+           SHORT="RESTful web api query library"
+cat << EOF
+RESTful web api query library.
+EOF

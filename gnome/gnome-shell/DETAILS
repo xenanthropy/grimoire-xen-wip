@@ -1,0 +1,18 @@
+. ${GRIMOIRE}/MESON_FUNCTIONS
+           SPELL=gnome-shell
+         VERSION=43.2
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=https://gitlab.gnome.org/GNOME/${SPELL}/-/archive/${VERSION}/${SOURCE}
+     SOURCE_HASH=sha256:7bcb69d4037fe86f2a959e5bdd0f2669a420302a214bd92f23cf141e3b6f9f2c
+      LICENSE[0]=GPL
+        WEB_SITE= https://wiki.gnome.org/Projects/GnomeShell
+         ENTERED=20110417
+           SHORT="core user interface functions for the GNOME 3 desktop"
+cat << EOF
+GNOME Shell provides core user interface functions for the GNOME 3 desktop,
+like switching to windows and launching applications. GNOME Shell takes
+advantage of the capabilities of modern graphics hardware and introduces
+innovative user interface concepts to provide a visually attractive and
+easy to use experience
+EOF

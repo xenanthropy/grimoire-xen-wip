@@ -1,0 +1,21 @@
+. ${GRIMOIRE}/MESON_FUNCTIONS
+           SPELL=gnome-shell-extensions
+         VERSION=43.1
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=https://gitlab.gnome.org/GNOME/${SPELL}/-/archive/${VERSION}/${SOURCE}
+     SOURCE_HASH=sha256:735f2c0a3574a40c114674f6065133978cc6199e41b6f991d9a64166529ffb17
+      LICENSE[0]=LGPL
+        WEB_SITE=http://www.gnome.org
+         ENTERED=20230114
+        KEYWORDS="gnome shell extension"
+           SHORT="extensions for gnome-shell"
+cat << EOF
+GNOME Shell Extensions is a collection of extensions providing additional
+and optional functionality to GNOME Shell.
+
+Since GNOME Shell is not API stable, extensions work only against a very
+specific version of the shell, usually the same as this package (see
+"configure --version"). The extensions in this package are supported by GNOME
+and will be updated to reflect future API changes in GNOME Shell.
+EOF

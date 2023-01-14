@@ -1,0 +1,7 @@
+case $THIS_SUB_DEPENDS in
+   GLIB_DEVEL) ;;
+   PYTHON) if is_depends_enabled $SPELL python; then return 0;
+           elif is_depends_enabled $SPELL python3; then return 0;
+           fi ;;
+esac
+return 1

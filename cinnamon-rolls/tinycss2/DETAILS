@@ -1,0 +1,19 @@
+           SPELL=tinycss2
+         VERSION=1.2.1
+          SOURCE=${SPELL}-${VERSION}.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=https://pypi.python.org/packages/source/t/${SPELL}/${SPELL}-${VERSION}.tar.gz
+      SOURCE_HASH=sha256:8cff3a8f066c2ec677c06dbc7b45619804a6938478d9d73c284b29d14ecb0627
+      LICENSE[0]=BSD
+        KEYWORDS="python tinycss2"
+        WEB_SITE=https://www.courtbouillon.org/tinycss2
+         ENTERED=20230104
+           SHORT="tiny css parser"
+cat << EOF
+tinycss2 is a low-level CSS parser and generator written in
+Python: it can parse strings, return objects representing tokens
+and blocks, and generate CSS strings corresponding to these objects.
+
+Based on the CSS Syntax Level 3 specification, tinycss2 knows the grammar of
+CSS but doesn’t know specific rules, properties or values supported in various CSS modules.
+EOF

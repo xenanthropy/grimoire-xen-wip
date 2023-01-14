@@ -1,0 +1,17 @@
+. ${GRIMOIRE}/MESON_FUNCTIONS
+           SPELL=gnome-session
+         VERSION=43.0
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=https://gitlab.gnome.org/GNOME/${SPELL}/-/archive/${VERSION}/${SOURCE}
+     SOURCE_HASH=sha256:44c325d971f7ee400313e00d1949aa0934801b7d047cbec2abc289acbef9566a
+      LICENSE[0]=GPL
+      LICENSE[1]=LGPL
+      LICENSE[2]=FDL
+        WEB_SITE=http://www.gnome.org
+         ENTERED=20020505
+        KEYWORDS="gnome2 libs"
+           SHORT="The GNOME 2.0 Session manager"
+cat << EOF
+The GNOME 2.0 Session manager
+EOF

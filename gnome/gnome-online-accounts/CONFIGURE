@@ -1,0 +1,10 @@
+. ${GRIMOIRE}/MESON_CONFIGURE &&
+config_query_option BACKEND "Build backend? (recommended)" y "goabackend=true" "goabackend=false" &&
+config_query_option FEDORA "Enable Fedora Account System provider?" n "fedora=true" "fedora=false" &&
+config_query_option GOOGLE "Enable Google provider?" n "google=true" "google=false" &&
+config_query_option EMAIL "Enable IMAP/SMTP provider?" n "imap_smtp=true" "imap_smtp=false" &&
+config_query_option LASTFM "Enable Last.fm provider?" n "lastfm=true" "lastfm=false" &&
+config_query_option MEDIASERVER "Enable Media Server provider?" n "media_server=true" "media_server=false" &&
+config_query_option OWNCLOUD "Enable ownCloud provider?" n "owncloud=true" "owncloud=false" &&
+config_query_option WINDOWS "Enable Windows Live provider?" n "windows_live=true" "windows_live=false"
+

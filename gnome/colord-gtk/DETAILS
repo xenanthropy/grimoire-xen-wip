@@ -1,0 +1,16 @@
+. ${GRIMOIRE}/MESON_FUNCTIONS
+           SPELL=colord-gtk
+         VERSION=0.3.0
+          SOURCE="${SPELL}-${VERSION}.tar.xz"
+   SOURCE_URL[0]=http://www.freedesktop.org/software/colord/releases/${SOURCE}
+     SOURCE_HASH=sha256:b9466656d66d9a6ffbc2dd04fa91c8f6af516bf9efaacb69744eec0f56f3c1d0
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}"
+        WEB_SITE="http://www.freedesktop.org/software/colord/"
+      LICENSE[0]="GPL"
+         ENTERED=20121006
+        KEYWORDS=""
+           SHORT="GTK support for colord"
+cat << EOF
+colord-gtk is a support library for colord and provides additional
+functionality that requires GTK+.
+EOF

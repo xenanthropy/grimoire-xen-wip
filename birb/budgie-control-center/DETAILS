@@ -1,0 +1,18 @@
+. ${GRIMOIRE}/MESON_FUNCTIONS
+           SPELL=budgie-control-center
+         VERSION=1.1.1
+     SOURCE_HASH=sha256:0a0f27cee3e5a33f17e6b34ad698b4a54fe8ef7c1d215a0aa9a07431722ac963
+          SOURCE=${SPELL}-${VERSION}.tar.xz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=https://github.com/BuddiesOfBudgie/${SPELL}/releases/download/v${VERSION}/${SOURCE}
+        WEB_SITE=https://www.github.com/BuddiesOfBudgie/budgie-control-center
+      LICENSE[0]=GPL
+         ENTERED=20230106
+        KEYWORDS="budgie"
+           SHORT="budgie control center"
+cat << EOF
+Budgie Control Center is a fork of GNOME Settings / GNOME Control Center
+with the intent of providing a simplified list of settings
+that are applicable to the Budgie 10 series,
+along with any small quality-of-life settings.
+EOF

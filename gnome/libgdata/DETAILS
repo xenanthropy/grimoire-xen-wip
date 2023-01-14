@@ -1,0 +1,19 @@
+. ${GRIMOIRE}/MESON_FUNCTIONS
+           SPELL=libgdata
+         VERSION=0.18.1
+  SECURITY_PATCH=2
+	  BRANCH=`echo $VERSION|cut -d . -f 1,2`
+          SOURCE=$SPELL-$VERSION.tar.xz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=$GNOME_URL/sources/$SPELL/$BRANCH/$SOURCE
+     SOURCE_HASH=sha256:dd8592eeb6512ad0a8cf5c8be8c72e76f74bfe6b23e4dd93f0756ee0716804c7
+      LICENSE[0]=LGPL
+        WEB_SITE=http://live.gnome.org/libgdata
+         ENTERED=20100402
+        KEYWORDS="gnome2 libs"
+           SHORT="library for accessing online service APIs using the GData protocol"
+cat << EOF
+libgdata is a GLib-based library for accessing online service APIs using the
+GData protocol — most notably, Google's services. It provides APIs to access
+the common Google services, and has full asynchronous support.
+EOF

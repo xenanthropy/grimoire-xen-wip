@@ -1,0 +1,96 @@
+depends python3 "--disable-python2 --with-python=python3 --enable-python-library" &&
+depends pygobject3       &&
+depends dbus             &&
+depends dbus-glib        &&
+depends dbus-python      &&
+depends python-notify2   &&
+depends iso-codes        &&
+depends xkeyboard-config &&
+
+
+optional_depends gtk+2                                  \
+                 "--enable-gtk2"                        \
+                 "--disable-gtk2"                       \
+                 "Build GTK2 IM Module?"                &&
+
+optional_depends gtk+3                                  \
+                 "--enable-gtk3"                        \
+                 "--disable-gtk3"                       \
+                 "Build GTK3 IM Module?"                &&
+
+optional_depends gtk+4                                  \
+                 "--enable-gtk4"                        \
+                 "--disable-gtk4"                       \
+                 "Build GTK4 IM Module?"                &&
+
+optional_depends wayland                                \
+                 "--enable-wayland"                     \
+                 "--disable-wayland"                    \
+                 "Build wayland support?"               &&
+
+if is_depends_enabled $SPELL wayland; then
+  depends libxkbcommon
+fi &&
+
+# DISABLED PENDING SPELL
+#optional_depends libappindicator                        \
+#                 "--enable-appindicator"                \
+#                 "--disable-appindicator"               \
+#                 "Build appindicator support?"          &&
+
+# DISABLED PENDING SPELL
+#optional_depends unicode-emoji                          \
+#                 "--enable-emoji-dict"                  \
+#                 "--disable-emoji-dict"                 \
+#                 "Enable emoji dictionary?"             &&
+
+optional_depends libxkbfile                             \
+                 "--enable-xim"                         \
+                 "--disable-xim"                        \
+                 "Build xim server?"                    &&
+
+optional_depends libnotify                              \
+                 "--enable-libnotify"                   \
+                 "--disable-libnotify"                  \
+                 "Enable libnotify?"                    &&
+
+optional_depends libxfixes                              \
+                 ""                                     \
+                 ""                                     \
+                 "Enable libxfixes?"                    &&
+
+optional_depends libxtst                                \
+                 ""                                     \
+                 ""                                     \
+                 "Enable libxtst?"
+
+optional_depends gobject-introspection                  \
+                 "--enable-introspection=yes"           \
+                 "--enable-introspection=no"            \
+                 "Enable introspection?"                &&
+
+optional_depends vala                                   \
+                 "--enable-vala=yes"                    \
+                 "--enable-vala=no"                     \
+                 "Build Vala bindings?"                 &&
+
+optional_depends systemd                                \
+                 "--enable-systemd-services"            \
+                 "--disable-systemd-services"           \
+                 "Enable systemd services?"             &&
+
+optional_depends gconf2                                 \
+                 "--enable-gconf"                       \
+                 "--disable-gconf"                      \
+                 "Use GConf code?"                      &&
+
+optional_depends dconf                                  \
+                 "--enable-dconf"                       \
+                 "--disable-dconf"                      \
+                 "Enable configuration based on dconf?" &&                 
+
+optional_depends gtk-doc                                \
+                 "--enable-gtk-doc"                     \
+                 "--disable-gtk-doc"                    \
+                 "Use gtk-doc to build documentation?"  
+

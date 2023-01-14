@@ -1,0 +1,19 @@
+source "${GRIMOIRE}/CMAKE_FUNCTIONS"
+           SPELL=webkitgtk4
+         VERSION=2.38.3
+          SOURCE=webkitgtk-$VERSION.tar.xz
+   SOURCE_URL[0]=http://www.webkitgtk.org/releases/$SOURCE
+     SOURCE_HASH=sha512:1e5f0d73d6b1d64faf20ab909f1765439fab230dd360dd1906962f03a24725cf9f50a375b1987b615c64fb161ab32d29d6b1d49ea75c7b2b32f495e4ad0f38ce
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/webkitgtk-$VERSION
+        WEB_SITE=http://webkitgtk.org/
+  SECURITY_PATCH=12
+     GATHER_DOCS=off
+      LICENSE[0]=GPL
+         ENTERED=20071208
+           SHORT="open source web browser engine"
+cat << EOF
+WebKit is an open source web browser engine. WebKit is also the name of the
+Mac OS X system framework version of the engine that's used by Safari,
+Dashboard, Mail, and many other OS X applications. WebKit's HTML and JavaScript
+code began as a branch of the KHTML and KJS libraries from KDE.
+EOF

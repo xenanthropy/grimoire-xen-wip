@@ -1,0 +1,54 @@
+. "${GRIMOIRE}/MESON_DEPENDS" &&
+depends PKG-CONFIG            &&
+depends xz-utils              &&
+depends glib2                 &&
+depends libxml2               &&
+depends network-manager       &&
+
+optional_depends gtk+4                                           \
+                 'libnma_gtk4=true'                              \
+                 'libnma_gtk4=false'                             \
+                 'Build libnma-gtk4 for use with GTK4?'          &&
+
+if !(is_depends_enabled $SPELL gtk+4); then
+  depends gtk+3
+fi &&
+
+optional_depends gcr                                             \
+                 'gcr=true'                                      \
+                 'gcr=false'                                     \
+                 'Enable advanced certificate chooser?'          &&
+
+optional_depends iso-codes                                       \
+                 'iso_codes=true'                                \
+                 'iso_codes=false'                               \
+                 'check for iso-codes at build-time?'            &&
+
+# DISABLED PENDING SPELL
+#optional_depends mobile-broadband-provider-info                  \
+#                 'mobile_broadband_provider_info=true'           \
+#                 'mobile_broadband_provider_info=false'          \
+#                 'Check for mobile-broadband-provider-info?'     &&
+
+optional_depends gtk-doc                                         \
+                 'gtk_doc=true'                                  \
+                 'gtk_doc=false'                                 \
+                 'Use gtk-doc to build documentation?'           &&
+
+if is_depends_enabled $SPELL gtk-doc; then
+  depends docbook-dtd
+fi &&
+
+optional_depends vala                                            \
+                 'vapi=true'                                     \
+                 'vapi=false'                                    \
+                 'Build vala bindings? (requires introspection)' &&
+
+if is_depends_enabled $SPELL vala; then
+  depends gobject-introspection 'introspection=true'
+else
+  optional_depends gobject-introspection \
+                   'introspection=true'  \
+                   'introspection=false' \
+                   'Enable introspection?'
+fi

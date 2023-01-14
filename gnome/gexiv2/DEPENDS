@@ -1,0 +1,31 @@
+. ${GRIMOIRE}/MESON_DEPENDS &&
+depends exiv2               &&
+depends glib2               &&
+
+optional_depends python3                                         \
+                 'python3=true'                                  \
+                 'python3=false'                                 \
+                 'Enable Python3 support? (requires pygobject3)' &&
+
+if is_depends_enabled $SPELL python3; then
+  depends pygobject3
+fi &&
+
+optional_depends vala                                            \
+                 'vapi=true'                                     \
+                 'vapi=false'                                    \
+                 'Build vala bindings?'                          &&
+
+if is_depends_enabled $SPELL vala; then
+  depends gobject-introspection 'introspection=true'
+else
+  optional_depends gobject-introspection    \
+                   'introspection=true'  \
+                   'introspection=false' \
+                   'Enable introspection?'
+fi &&
+
+optional_depends gtk-doc                                         \
+                 'gtk_doc=true'                                  \
+                 'gtk_doc=false'                                 \
+                 'Build documentation?'

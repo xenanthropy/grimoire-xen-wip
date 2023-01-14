@@ -1,0 +1,6 @@
+depends itstool &&
+
+optional_depends libxslt                \
+                 '--enable-doc=yes'     \
+                 '--enable-doc=no'      \
+                 'Build documentation?'

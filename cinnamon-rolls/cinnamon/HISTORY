@@ -1,0 +1,4 @@
+2023-01-04 Conner Clere <connerclere@gmail.com>
+	* CONFIGURE, DEPENDS, DETAILS, PRE_BUILD: version 5.6.5, new spell
+	* POST_INSTALL, POST_REMOVE: rebuild schemas upon install/remove
+

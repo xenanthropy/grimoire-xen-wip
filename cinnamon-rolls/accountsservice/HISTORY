@@ -1,0 +1,15 @@
+2015-05-06 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: version 0.6.40
+	* DEPENDS: add gtk-doc
+
+2013-05-08 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 0.6.31
+
+2012-10-09 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 0.6.25
+
+2011-05-23 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 0.6.12
+
+2011-04-26 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS, DEPENDS, PRE_BUILD: spell created, version 0.6.9

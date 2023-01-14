@@ -1,0 +1,21 @@
+. "$GRIMOIRE"/MESON_FUNCTIONS
+           SPELL=gcr4
+        SPELLALT=gcr
+         VERSION=4.0.0
+          BRANCH=$(echo $VERSION|cut -d . -f 1,2)
+          SOURCE=$SPELLALT-$VERSION.tar.xz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELLALT-$VERSION
+   SOURCE_URL[0]=$GNOME_URL/sources/$SPELLALT/$BRANCH/$SOURCE
+     SOURCE_HASH=sha256:c45855924f0ee7bab43e2dd38bfafd2ac815c6e9864341c0161e171173dcec7c
+      LICENSE[0]=GPL
+        WEB_SITE=http://developer.gnome.org/gcr/
+         ENTERED=20230108
+           SHORT="library for high level crypto parsing"
+cat << EOF
+GCR is a library for displaying certificates, and crypto UI, accessing
+key stores. It also provides the viewer for crypto files on the GNOME
+desktop.
+
+GCK is a library for accessing PKCS#11 modules like smart cards, in a
+(G)object oriented way.
+EOF

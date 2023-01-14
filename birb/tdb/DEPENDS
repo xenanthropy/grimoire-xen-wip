@@ -1,0 +1,13 @@
+depends PYTHON &&
+depends  -sub 'SSL'  ${HTTP_DL_HANDLER} &&
+
+optional_depends GETTEXT \
+                 "" \
+                 "--without-gettext" \
+                 "for Native Language Support" &&
+
+optional_depends docbook-xsl "" "" "for manual pages" &&
+
+if is_depends_enabled $SPELL docbook-xsl; then
+  depends libxslt
+fi

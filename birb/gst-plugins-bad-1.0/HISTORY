@@ -1,0 +1,127 @@
+2022-11-30 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: version 1.21.2
+
+2022-03-19 Ismael Luceno <ismael@sourcemage.org>
+	* DEPENDS: switched to MESON_DEPENDS
+
+2021-10-02 Vlad Glagolev <stealth@sourcemage.org>
+	* DEPENDS: added missing rtmpdump dependency
+
+2021-01-14 Ismael Luceno <ismael@sourcemage.org>
+	* DETAILS: updated spell to 1.18.3
+
+2020-09-25 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: version 1.18.0
+
+2019-12-03 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: version 1.16.2
+
+2019-09-24 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: version 1.16.1
+
+2019-04-19 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: version 1.16.0
+
+2019-03-23 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: version 1.15.2
+
+2018-10-03 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: version 1.14.4
+
+2018-09-17 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: version 1.14.3
+
+2018-07-20 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: version 1.14.2
+
+2018-05-18 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: version 1.14.1, completed meson transition
+	* BUILD, PRE_BUILD: deleted
+	* PREPARE: persistent_removed the experimental plugins option
+
+2018-03-20 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: version 1.14.0
+	* DEPENDS: fix typos
+
+2018-02-18 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: version 1.13.1
+
+2017-12-08 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: version 1.12.4
+
+2017-09-18 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: version 1.12.3
+
+2017-07-14 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: version 1.12.2
+
+2017-06-20 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: version 1.12.1
+
+2017-05-04 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: version 1.12.0
+
+2017-04-23 Thomas Orgis <sobukus@sourcemage.org>
+	* PRE_BUILD: added to fix build (check on update!)
+	* DEPENDS, BUILD: handle gobject-introspection, somewhat;
+	  explicit disablement needed
+
+2017-02-24 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: version 1.11.2
+
+2017-02-23 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: switched to gpg checking
+
+2017-01-12 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: version 1.11.1
+
+2016-11-30 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: version 1.10.2
+
+2016-11-02 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: version 1.10.0
+
+2016-09-01 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: updated spell to 1.8.3
+
+2016-07-30 Vlad Glagolev <stealth@sourcemage.org>
+	* DEPENDS: added missing dependency -- fluidsynth
+
+2016-07-23 Vlad Glagolev <stealth@sourcemage.org>
+	* DEPENDS: added missing dependency -- libvdpau
+
+2016-07-08 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: version 1.8.2
+
+2016-03-25 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: updated spell to 1.8.0
+
+2016-01-22 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: updated spell to 1.6.3
+
+2015-12-15 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: updated spell to 1.6.2
+
+2015-09-30 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: version 1.6.0
+
+2014-12-30 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: version 1.4.5
+
+2014-10-01 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: version 1.4.3
+
+2013-12-28 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 1.2.2
+
+2013-04-27 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 1.0.7
+
+2013-03-09 Sukneet Basuta <sukneet@sourcemage.org>
+	* DETAILS: updated spell to 1.0.5
+
+2012-10-27 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 1.0.2
+
+2012-10-05 Ladislav Hagara <hgr@vabo.cz>
+	* *: spell created, based on gst-plugins-bad, version 1.0.0

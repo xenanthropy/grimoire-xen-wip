@@ -1,0 +1,15 @@
+. ${GRIMOIRE}/MESON_FUNCTIONS
+           SPELL=gnome-backgrounds
+         VERSION=43
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=https://gitlab.gnome.org/GNOME/${SPELL}/-/archive/${VERSION}/${SOURCE}
+     SOURCE_HASH=sha256:8a8161f8149b7fc21e402ad4ca242f9daed13eef699061b6489dabf5adac8a3b
+      LICENSE[0]=LGPL
+        WEB_SITE=http://www.gnome.org
+         ENTERED=20050208
+        KEYWORDS="gnome2 libs"
+           SHORT="Set of backgrounds for Gnome 2.x"
+cat << EOF
+This module contains a set of backgrounds packaged with the GNOME desktop.
+EOF

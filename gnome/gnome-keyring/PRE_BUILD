@@ -1,0 +1,6 @@
+default_pre_build &&
+cd "${SOURCE_DIRECTORY}" &&
+
+# Fixes a deprecated entry in the schema template
+sed -i 's:"/desktop:"/org:' schema/*.xml &&
+autoreconf -f -i

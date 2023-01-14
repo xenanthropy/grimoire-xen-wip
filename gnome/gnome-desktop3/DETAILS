@@ -1,0 +1,22 @@
+. ${GRIMOIRE}/MESON_FUNCTIONS
+           SPELL=gnome-desktop3
+         VERSION=43
+          SOURCE=gnome-desktop-$VERSION.tar.xz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/gnome-desktop-$VERSION
+   SOURCE_URL[0]=https://download.gnome.org/sources/gnome-desktop/${VERSION}/${SOURCE}
+      SOURCE_HASH=sha256:3d6e153317486157596aa3802f87676414c570738f450a94a041fe8835420a69
+      LICENSE[0]=GPL
+        WEB_SITE=https://gitlab.gnome.org/GNOME/gnome-desktop
+         ENTERED=20110425
+           SHORT="Common files and APIs for the GNOME 3.0 desktop"
+cat << EOF
+The package contains the libgnome-desktop library
+which contains APIs that really belong in libgnome[ui] but
+have not seen enough testing or development to be considered
+stable. Use at your own risk.
+
+Also contained here are documents installed as part
+of the core GNOME distribution, e.g. the GPL, GNOME's
+.desktop files, the gnome-about program, some manpages and
+GNOME's core graphics files and icons. 
+EOF

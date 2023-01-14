@@ -1,0 +1,15 @@
+. ${GRIMOIRE}/MESON_DEPENDS   &&
+depends glib2                 &&
+depends gobject-introspection &&
+depends libffi                &&
+depends mozjs102              &&
+
+optional_depends cairo                     \
+                 'cairo=enabled'           \
+                 'cairo=disabled'          \
+                 'Build cairo module?'     &&
+
+optional_depends readline                  \
+                 'readline=enabled'        \
+                 'readline=disabled'       \
+                 'Use readline for input?'

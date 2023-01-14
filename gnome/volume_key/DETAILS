@@ -1,0 +1,14 @@
+           SPELL=volume_key
+         VERSION=0.3.12
+     SOURCE_HASH=sha512:d056154c9b9d23e4eb661946dd59ed97e116903a3afcff9d9e29258408082f33dcbb69958724143f6bf191a3da488a03b6c02af287790990ed6459e29d66553c
+          SOURCE="$SPELL-$VERSION.tar.xz"
+SOURCE_DIRECTORY="$BUILD_DIRECTORY/$SPELL-$VERSION"
+        WEB_SITE=https://pagure.io/volume_key
+   SOURCE_URL[0]=https://releases.pagure.org/volume_key/$SOURCE
+      LICENSE[0]=GPL
+         ENTERED=20170725
+           SHORT="library for manipulating storage volume encryption keys"
+cat << EOF
+The volume_key package provides a library for manipulating storage volume encryption keys and 
+storing them separately from volumes to handle forgotten passphrases.
+EOF

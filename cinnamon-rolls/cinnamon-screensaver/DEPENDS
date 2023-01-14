@@ -1,0 +1,27 @@
+source $GRIMOIRE/MESON_DEPENDS &&
+depends PKG-CONFIG             &&
+depends glib2                  &&
+depends python3                &&
+depends psutil                 &&
+depends pygobject3             &&
+depends py-setproctitle        &&
+depends desktop-file-utils     &&
+depends cinnamon-desktop       &&
+depends accountsservice        &&
+depends dbus                   &&
+depends LOGIN-DAEMON           &&
+depends gettext                &&
+depends linux-pam              &&
+depends xorgproto              &&
+depends gtk+3                  &&
+depends libx11                 &&
+depends libxext                &&
+depends libxrandr              &&
+depends shared-mime-info       &&
+depends xdotool                &&
+depends adwaita-icon-theme     &&
+
+optional_depends libxinerama            \
+                 'xinerama=true'        \
+                 'xinerama=false'       \
+                 'Build documentation?'

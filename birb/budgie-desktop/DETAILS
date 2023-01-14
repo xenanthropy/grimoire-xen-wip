@@ -1,0 +1,16 @@
+. ${GRIMOIRE}/MESON_FUNCTIONS
+           SPELL=budgie-desktop
+         VERSION=10.6.4
+     SOURCE_HASH=sha256:7775699ea64d7317e4004b751ccd5ab1e38df172ce17abc241b8a22bb31c1cdb
+          SOURCE=${SPELL}-v${VERSION}.tar.xz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=https://github.com/BuddiesOfBudgie/${SPELL}/releases/download/v${VERSION}/${SOURCE}
+        WEB_SITE=https://www.github.com/BuddiesOfBudgie/budgie-desktop
+      LICENSE[0]=GPL
+         ENTERED=20230107
+        KEYWORDS="budgie"
+           SHORT="budgie desktop"
+cat << EOF
+The Budgie Desktop is a feature-rich,
+modern desktop designed to keep out the way of the user.
+EOF

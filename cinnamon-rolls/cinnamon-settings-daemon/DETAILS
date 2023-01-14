@@ -1,0 +1,18 @@
+source $GRIMOIRE/MESON_FUNCTIONS
+           SPELL=cinnamon-settings-daemon
+         VERSION=5.6.0
+     MINTVERSION=master.mint21
+     SOURCE_HASH=sha256:7b9e91c3e940c74e5b9c96e5e3df14978af2224dd4fa4770cedc296df3c75cbd
+          SOURCE=${SPELL}-${MINTVERSION}.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$MINTVERSION
+   SOURCE_URL[0]=https://github.com/linuxmint/${SPELL}/archive/refs/tags/${MINTVERSION}.tar.gz
+       WEB_SITE=https://www.github.com/linuxmint/cinnamon-settings-daemon/
+      LICENSE[0]=GPL
+         ENTERED=20230101
+        KEYWORDS="cinnamon"
+           SHORT="settings daemon for cinnamon desktop"
+cat << EOF
+cinnamon-settings-daemon is a collection of plugins.
+These plugins are started by cinnamon-session when you log in.
+The plugins run in the background, each with their own process.
+EOF

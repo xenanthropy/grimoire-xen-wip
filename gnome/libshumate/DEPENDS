@@ -1,0 +1,37 @@
+. ${GRIMOIRE}/MESON_DEPENDS &&
+depends glib2               &&
+depends cairo               &&
+depends sqlite              &&
+depends gtk+4               &&
+
+if [[ $RENDERER == "vector_renderer=true" ]]; then
+  depends protobuf-c
+fi &&
+
+optional_depends libsoup                                         \
+                 'libsoup3=true'                                 \
+                 'libsoup3=false'                                \
+                 'Use libsoup3? (If no, libsoup-2.4 required)'   &&
+
+if !(is_depends_enabled $SPELL libsoup); then
+  depends libsoup-2.4
+fi &&
+
+optional_depends vala                                            \
+                 'vapi=true'                                     \
+                 'vapi=false'                                    \
+                 'Build vala bindings? (Requires introspection)' &&
+
+if is_depends_enabled $SPELL vala; then
+  depends gobject-introspection 'gir=true'
+else
+  optional_depends gobject-introspection   \
+                   'gir=true'              \
+                   'gir=false'             \
+                   'Enable introspection?'
+fi &&
+
+optional_depends gtk-doc                                         \
+                 'gtk_doc=true'                                  \
+                 'gtk_doc=false'                                 \
+                 'Build documentation?'

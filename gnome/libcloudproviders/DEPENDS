@@ -1,0 +1,21 @@
+. ${GRIMOIRE}/MESON_DEPENDS &&
+depends glib2               &&
+
+optional_depends gtk-doc                                         \
+                 'enable-gtk-doc=true'                           \
+		 'enable-gtk-doc=false'                          \
+		 'Build documentation?'                          &&
+
+optional_depends vala                                            \
+                 'vapigen=true'                                  \
+		 'vapigen=false'                                 \
+		 'Build vala bindings? (requires introspection)' &&
+
+if is_depends_enabled $SPELL vala; then
+  depends gobject-introspection 'introspection=true'
+else
+  optional_depends gobject-introspection   \
+                   'introspection=true'    \
+		   'introspection=false'   \
+		   'Enable introspection?'
+fi

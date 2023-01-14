@@ -1,0 +1,17 @@
+source $GRIMOIRE/MESON_FUNCTIONS
+           SPELL=muffin
+         VERSION=5.6.2
+     MINTVERSION=master.mint21
+     SOURCE_HASH=sha256:ab8ffb19935ea32eefdbc3f62730abf099b8c29f52717582d6d43015693723cd
+          SOURCE=${SPELL}-${MINTVERSION}.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$MINTVERSION
+   SOURCE_URL[0]=https://github.com/linuxmint/${SPELL}/archive/refs/tags/${MINTVERSION}.tar.gz
+       WEB_SITE=https://www.github.com/linuxmint/muffin/
+      LICENSE[0]=GPL
+         ENTERED=20230101
+        KEYWORDS="cinnamon"
+           SHORT="cinnamon window manager"
+cat << EOF
+The window management library for the Cinnamon desktop (libmuffin)
+and its sample WM binary (muffin)
+EOF

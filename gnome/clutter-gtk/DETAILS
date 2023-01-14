@@ -1,0 +1,17 @@
+. ${GRIMOIRE}/MESON_FUNCTIONS
+           SPELL=clutter-gtk
+         VERSION=1.8.4
+          SOURCE="${SPELL}-${VERSION}.tar.xz"
+   SOURCE_URL[0]=$GNOME_URL/sources/$SPELL/${VERSION:0:3}/$SOURCE
+     SOURCE_HASH=sha256:521493ec038973c77edcb8bc5eac23eed41645117894aaee7300b2487cb42b06
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}"
+        WEB_SITE="http://www.clutter-project.org"
+      LICENSE[0]=LGPL
+         ENTERED=20090923
+           SHORT="GTK+ Integration library for Clutter"
+cat << EOF
+Clutter-GTK is a library providing facilities to integrate Clutter into GTK+
+applications. It provides a GTK+ widget, GtkClutterEmbed, for embedding the
+default ClutterStage into any GtkContainer.
+EOF
+

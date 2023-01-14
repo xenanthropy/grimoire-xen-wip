@@ -1,0 +1,21 @@
+           SPELL=libgee
+         VERSION=0.20.6
+          BRANCH=${VERSION:0:4}
+          SOURCE=$SPELL-$VERSION.tar.xz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=$GNOME_URL/sources/$SPELL/$BRANCH/$SOURCE
+      SOURCE_HASH=sha512:05176b221274b2a0512b018b93ae730ca750482bbc7a4951376eb868c0a388950371e80a438b5af792ebe4a64b6a38e0c94ca52ebd0fc4539f0fe233e0be5903
+        WEB_SITE="http://live.gnome.org/Libgee"
+      LICENSE[0]="GPL"
+         ENTERED=20091025
+        KEYWORDS=""
+           SHORT="A set of GObject-based interfaces and classes"
+cat << EOF
+Libgee is a collection library providing GObject-based interfaces and classes
+for commonly used data structures.
+
+Libgee provides the following interfaces:
+
+Iterable, Collection, List, Set, MultiSet, Queue, Deque, Iterator, Map,
+MultiMap
+EOF

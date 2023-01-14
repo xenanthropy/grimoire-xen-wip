@@ -1,0 +1,9 @@
+. ${GRIMOIRE}/MESON_DEPENDS &&
+depends glib2               &&
+depends gtk+3               &&
+depends clutter             &&
+
+optional_depends gtk-doc                \
+                 'enable_docs=true'     \
+                 'enable_docs=false'    \
+                 'Build documentation?'

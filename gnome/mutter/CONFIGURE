@@ -1,0 +1,2 @@
+. ${GRIMOIRE}/MESON_CONFIGURE &&
+config_query_option BACKEND "Enable backend support? (recommended)" y "native_backend=true" "native_backend=false"

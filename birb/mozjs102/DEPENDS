@@ -1,0 +1,15 @@
+#depends autoconf-2.13                 &&
+depends autoconf                      &&
+depends icu      '--with-system-icu'  &&
+depends nspr     '--with-system-nspr' &&
+depends perl                          &&
+depends python3                       &&
+depends readline '--enable-readline'  &&
+depends rust                          &&
+depends zlib     '--with-system-zlib' &&
+depends libffi                        &&
+
+optional_depends ccache          \
+                 '--with-ccache' \
+		             ''              \
+		             'Use ccache?'

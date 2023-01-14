@@ -1,0 +1,28 @@
+. ${GRIMOIRE}/MESON_DEPENDS &&
+depends glib2               &&
+depends libxml2             &&
+
+optional_depends libarchive                   \
+                 'enable-libarchive=yes'      \
+                 'enable-libarchive=no'       \
+                 'Enable libarchive support?' &&
+
+optional_depends libgcrypt                    \
+                 'enable-libgcrypt=yes'       \
+                 'enable-libgcrypt=no'        \
+                 'Enable libgcrypt support?'  &&
+
+optional_depends uchardet                     \
+                 'enable-uchardet=yes'        \
+                 'enable-uchardet=no'         \
+                 'Enable uchardet support?'   &&
+
+optional_depends gtk-doc                      \
+                 'enable-gtk-doc=true'        \
+                 'enable-gtk-doc=false'       \
+                 'Build documentation?'       &&
+
+optional_depends gobject-introspection        \
+                 'introspection=true'         \
+                 'introspection=false'        \
+                 'Enable introspection?'

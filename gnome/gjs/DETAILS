@@ -1,0 +1,15 @@
+. ${GRIMOIRE}/MESON_FUNCTIONS
+           SPELL=gjs
+         VERSION=1.75.1
+          SOURCE="${SPELL}-${VERSION}.tar.gz"
+   SOURCE_URL[0]=https://gitlab.gnome.org/GNOME/${SPELL}/-/archive/${VERSION}/${SOURCE}
+     SOURCE_HASH=sha256:89e4b42117daf6ab3858648d6363e9fafd22fe7067eef7a24ba5d222a3390a10
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}"
+        WEB_SITE="http://live.gnome.org/Gjs"
+      LICENSE[0]=GPL
+         ENTERED=20091226
+           SHORT="Gjs: Javascript Bindings for GNOME"
+cat << EOF
+Gjs is a Javascript binding for GNOME. It's mainly based on Spidermonkey
+javascript engine and the GObject introspection framework.
+EOF

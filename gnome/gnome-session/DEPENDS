@@ -1,0 +1,40 @@
+. ${GRIMOIRE}/MESON_DEPENDS &&
+depends PKG-CONFIG          &&
+depends glib2               &&
+depends gtk+3               &&
+depends xtrans              &&
+depends libice              &&
+depends libsm               &&
+depends libx11              &&
+depends gnome-desktop3      &&
+depends json-glib           &&
+depends xdg-user-dirs       &&
+depends xdg-user-dirs-gtk   &&
+
+optional_depends systemd \
+                 'systemd=true systemd_session=enable systemd_journal=true'    \
+                 'systemd=false systemd_session=disable systemd_journal=false' \
+                 'Enable systemd support?'                                     &&
+
+optional_depends CONSOLE-MANAGER        \
+                 'consolekit=true'      \
+                 'consolekit=false'     \
+                 'Use consolekit?'      &&
+
+if is_depends_enabled $SPELL CONSOLE-MANAGER; then
+  depends dbus-glib
+fi &&
+
+optional_depends docbook-dtd            \
+                 'docbook=true'         \
+                 'docbook=false'        \
+                 'Build documentation?' &&
+
+optional_depends man                    \
+                 'man=true'             \
+                 'man=false'            \
+                 'Generate manpages?'   &&
+
+if is_depends_enabled $SPELL man; then
+  depends xmlto
+fi

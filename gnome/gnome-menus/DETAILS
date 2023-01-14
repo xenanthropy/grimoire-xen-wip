@@ -1,0 +1,18 @@
+           SPELL=gnome-menus
+         VERSION=3.36.0
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=https://gitlab.gnome.org/GNOME/${SPELL}/-/archive/${VERSION}/${SOURCE}
+     SOURCE_HASH=sha256:c5b25bc2fcf2cb805f389c0c9650fd270c1bd881e080dfecfa8a4bb14bc7ec38
+      LICENSE[0]=LGPL
+        WEB_SITE=https://gitlab.gnome.org/GNOME/gnome-menus/
+         ENTERED=20050208
+        KEYWORDS="gnome2 libs"
+           SHORT="Gnome implementation if freedesktop.org spec"
+cat << EOF
+The package contains an implementation of the draft "Desktop
+Menu Specification" from freedesktop.org:
+  http://www.freedesktop.org/Standards/menu-spec
+Also contained here are the GNOME menu layout configuration
+files, .directory files and assorted menu related utility programs.
+EOF

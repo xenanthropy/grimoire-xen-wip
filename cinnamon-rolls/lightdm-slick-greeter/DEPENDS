@@ -1,0 +1,10 @@
+depends PKG-CONFIG  &&
+depends gtk+3       &&
+depends lightdm     &&
+depends freetype2   &&
+depends cairo       &&
+depends libcanberra &&
+depends pixman      &&
+depends gdk-pixbuf2 &&
+depends libx11      &&
+depends libxext

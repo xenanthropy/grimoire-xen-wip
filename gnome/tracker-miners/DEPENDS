@@ -1,0 +1,120 @@
+. ${GRIMOIRE}/MESON_DEPENDS &&
+depends PKG-CONFIG          &&
+depends tracker             &&
+depends dbus                &&
+depends glib2               &&
+depends util-linux          &&
+
+
+if [[ $CHAR == 'enca' ]]; then
+  depends enca
+elif [[ $CHAR == 'icu' ]]; then
+  depends icu
+fi &&
+
+if [[ $BATTERY == 'hal' ]]; then
+  depends hal
+elif [[ $BATTERY == 'upower' ]]; then
+  depends upower
+fi &&
+
+if [[ $EXTRACT == "gstreamer" ]]; then
+  depends gstreamer-1.0
+else
+  depends LIBAVCODEC
+fi &&
+
+if [[ $BACKEND == 'gupnp' ]]; then
+  depends gupnp
+fi &&
+  
+optional_depends gexiv2                                                         \
+                 'raw=enabled'                                                  \
+                 'raw=disabled'                                                 \
+                 'Support extracting metadata from RAW photos?'                 &&
+
+optional_depends exempi                                                         \
+                 'xmp=enabled'                                                  \
+                 'xmp=disabled'                                                 \
+                 'Support XMP metadata?'                                        &&
+
+optional_depends libcue                                                         \
+                 'cue=enabled'                                                  \
+                 'cue=disabled'                                                 \
+                 'Support cue sheet parsing?'                                   &&
+
+optional_depends libexif                                                        \
+                 'exif=enabled'                                                 \
+                 'exif=disabled'                                                \
+                 'Support EXIF metadata?'                                       &&
+
+optional_depends libgsf                                                         \
+                 'gsf=enabled'                                                  \
+                 'gsf=disabled'                                                 \
+                 'Support extracting metadata from MS & Open Office documents?' &&
+
+optional_depends libgxps                                                        \
+                 'xps=enabled'                                                  \
+                 'xps=disabled'                                                 \
+                 'Support extracting metadata from XPS documents?'              &&
+
+optional_depends libiptcdata                                                    \
+                 'iptc=enabled'                                                 \
+                 'iptc=disabled'                                                \
+                 'Support IPTC photo metadata?'                                 &&
+
+optional_depends JPEG                                                           \
+                 'jpeg=enabled'                                                 \
+                 'jpeg=disabled'                                                \
+                 'Support extracting metadata from JPEG images?'                &&
+
+# DISABLED PENDING SPELL
+#optional_depends libosinfo                                                      \
+#                 'iso=enabled'                                                  \
+#                 'iso=disabled'                                                 \
+#                 'Support ISO image parsing?'                                   &&
+
+optional_depends libpng                                                         \
+                 'png=enabled'                                                  \
+                 'png=disabled'                                                 \
+                 'Support extracting metadata from PNG images?'                 &&
+
+optional_depends tiff                                                           \
+                 'tiff=enabled'                                                 \
+                 'tiff=disabled'                                                \
+                 'Support extracting metadata from TIFF images?'                &&
+
+optional_depends libxml2                                                        \
+                 'xml=enabled'                                                  \
+                 'xml=disabled'                                                 \
+                 'Support extracting metadata  from XML and HTML documents?'    &&
+
+optional_depends poppler                                                        \
+                 'pdf=enabled'                                                  \
+                 'pdf=disabled'                                                 \
+                 'Support extracting metadata from PDF documents?'              &&
+
+optional_depends totem-pl-parser                                                \
+                 'playlist=enabled'                                             \
+                 'playlist=disabled'                                            \
+                 'Support extracting metadata from playlists?'                  &&
+# DISABLED PENDING SPELL
+#optional_depends libgrss                                                        \
+#                 'miner_rss=true'                                               \
+#                 'miner_rss=false'                                              \
+#                 'Enable the Tracker RSS miner?'                                &&
+
+optional_depends asciidoc                                                       \
+                 'man=true'                                                     \
+                 'man=false'                                                    \
+                 'Generate man pages?'                                          &&
+
+optional_depends libseccomp                                                     \
+                 'seccomp=true'                                                 \
+                 'seccomp=false'                                                \
+                 'Enable seccomp support in Tracker metadata extractor?'        &&
+
+optional_depends systemd                                                        \
+                 'systemd_user_services=true'                                   \
+                 'systemd_user_services=false'                                  \
+                 'Install systemd .service files?'

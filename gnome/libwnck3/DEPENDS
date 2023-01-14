@@ -1,0 +1,22 @@
+. ${GRIMOIRE}/MESON_DEPENDS &&
+depends cairo               &&
+depends glib2               &&
+depends gtk+3               &&
+depends libx11              &&
+depends libxres             &&
+
+
+optional_depends startup-notification                \
+                 'startup_notification=enabled'      \
+                 'startup_notification=disabled'     \
+                 'Use startup notification?'         &&
+
+optional_depends  gtk-doc                            \
+                  'gtk_doc=true'                     \
+                  'gtk_doc=false'                    \
+                  'Build documentation with gtk-doc' &&
+
+optional_depends gobject-introspection               \
+                 'introspection=enabled'             \
+                 'introspection=disabled'            \
+                 'Enable introspection?'

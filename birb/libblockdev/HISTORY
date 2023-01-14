@@ -1,0 +1,68 @@
+2022-07-28 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: version 2.27
+
+2022-07-27 Vlad Glagolev <stealth@sourcemage.org>
+	* DEPENDS: switch to PKG-CONFIG provider (automated)
+
+2021-12-03 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: version 2.26
+	* DEPENDS: add libyaml, force lvm
+
+2021-03-16 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: version 2.25
+	* DEPENDS: tweak flags
+
+2019-10-14 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: version 2.23
+	* DEPENDS: lvm truly optional
+
+2019-08-20 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: version 2.22
+
+2019-04-22 Treeve Jelbert <treeve@sourcemage.org>
+	* DEPENDS: use DEVICE-MANAGER
+
+2019-03-05 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: version 2.21
+
+2018-11-22 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: version 2.20
+
+2018-09-18 Treeve Jelbert <treeve@sourcemage.org>
+	* PRE_BUILD: deleted
+
+2018-08-18 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: version 2.19
+
+2018-07-01 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: version 2.18
+
+2018-05-17 Treeve Jelbert <treeve@sourcemage.org>
+	* DEPENDS: rearrange, volume_key optional for esscrow support
+	  lvm is required
+
+2018-04-28 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: version 2.17
+	* DEPENDS: optional python2, ndctl
+
+2018-03-14 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: version 2.16
+
+2017-12-15 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: version 2.15
+
+2017-11-12 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: version 2.14
+
+2017-10-04 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: version 2.13-1
+
+2017-09-24 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: version 2.12-1
+
+2017-08-28 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: version 2.11-1
+
+2017-07-24 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: version 2.10-1
+	  spell created

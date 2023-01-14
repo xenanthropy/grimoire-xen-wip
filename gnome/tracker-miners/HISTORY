@@ -1,0 +1,167 @@
+2014-05-30 Treeve Jelbert <treeve@sourcemage.org>
+	* DEPENDS: giflib => GIFLIB
+
+2013-02-26 Sukneet Basuta <sukneet@sourcemage.org>
+	* DETAILS: updated spell to 0.14.5
+	* DEPENDS: added optional_depends taglib, libgxps, libcue, giflib, gdk-pixbuf2
+	  thunderbird, firefox, rest, network-manager
+	  removed optional_depends id3lib, libnotify
+	  added depends libgee if search-bar is enabled
+	  disabled optional_depends evolution, currently broken with evolution 3.6
+	  **check if its fixed on next update**
+	* BUILD: updated configure flags
+
+2012-10-28 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 0.14.3
+
+2011-12-04 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 0.12.8, tar.bz2 -> tar.xz
+	* PRE_BUILD: added due to bz2 -> xz
+
+2011-11-15 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 0.12.7, new WEB_SITE
+	* BUILD, CONFIGURE: devicekit-power and hal removed
+	* DEPENDS: upower added, devicekit-power and hal removed
+
+2011-10-06 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 0.12.3
+
+2011-07-18 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 0.10.20
+
+2011-06-19 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 0.10.18
+
+2011-06-06 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 0.10.16
+
+2011-04-29 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 0.10.11
+
+2011-04-22 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 0.10.10
+
+2011-04-11 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 0.10.8
+
+2010-11-03 Ladislav Hagara <hgr@vabo.cz>
+	* DEPENDS: jpeg -> JPEG
+
+2010-09-22 Vasil Yonkov <spirtbrat@sourcemage.org>
+	* DETAILS: updated TRACKER_DEVEL=y to 0.9.21
+
+2010-09-03 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 0.8.17
+
+2010-08-19 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 0.8.16
+	* DEPENDS: added optional_depends evolution
+
+2010-06-17 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 0.8.12
+
+2010-06-11 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 0.8.11
+
+2010-06-03 Vasil Yonkov <spirtbrat@sourcemage.org>
+	* DETAILS: updated TRACKER_DEVEL=n to 0.8.10
+	  updated TRACKER_DEVEL=y to 0.9.6
+
+2010-05-27 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 0.8.9
+
+2010-05-20 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 0.8.7
+
+2010-05-14 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 0.8.6
+
+2010-05-07 Ismael Luceno <ismael@sourcemage.rog>
+	* DETAILS: Fixed long description
+
+2010-05-07 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 0.8.5
+
+2010-05-03 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 0.8.4
+
+2010-04-22 Vasil Yonkov <spirtbrat@sourcemage.org>
+	* DETAILS: updated TRACKER_DEVEL=n to 0.8.3
+	  updated TRACKER_DEVEL=y to 0.9.2
+
+2010-04-15 Vasil Yonkov <spirtbrat@sourcemage.org>
+	* BUILD, CONFIGURE: removed TRACKER_MONITOR, TRACKER_GUI,
+	  added TRACKER_AC, TRACKER_SEARCH_TOOL, TRACKER_PREFERENCES,
+	  TRACKER_STATUS, TRACKER_EXPLORER, TRACKER_SEARCH_BAR
+	* DEPENDS: removed libgee, bzip2, gmime, removed optional gnome-vfs2,
+	  xdg-utils, gnome-desktop, added optional id3lib, libxml2, libnotify,
+	  libgnome-keyring, gtk-doc, graphviz, enca, libvorbis, flac,
+	  totem-pl-parser, nautilus2, jpeg, tiff, libiptcdata, devicekit-power,
+	  hal, gtk+2, libgee, gnome-panel, exempi
+	* DETAILS, PREPARE: removed SCM version, added developement version
+	  updated developement to 0.9.1
+	  updated stable to 0.8.2
+	* PRE_BUILD: removed
+
+2010-03-30 Vasil Yonkov <spirtbrat@sourcemage.org>
+	* DETAILS: updated spell to 0.7.28
+
+2009-10-25 Bearcat M. Sandor <sourcemage@feline-soul.com>
+	* DETAILS: Fixed SOURCE_URL[0]
+	  updated spell to 0.7.4
+
+2009-01-24 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* PRE_BUILD, tracker-gmime-2.4.patch: added patch to make it compile
+	  with current gmime version
+	* inotify-fix.diff: removed
+
+2008-12-27 George Sherwood <gsherwood@sourcemage.org>
+	* DETAILS: updated to version 0.6.6
+	  Fixed long description wrap
+
+2008-03-02 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 0.6.5
+
+2007-12-29 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 0.6.4
+	* PRE_BUILD: commented out the inotify patch until can be fixed.
+
+2007-09-27 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 0.6.3
+
+2007-09-16 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* DETAILS: updated to 0.6.2, updated WEBSITE
+	* PRE_BUILD: removed dbus fix
+	* DEPENDS: added optional_depends on xdg-utils for xdg-open support
+
+2007-06-29 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: added svn option
+	* PREPARE: created, added svn option
+	* PRE_BUILD: added
+
+2007-03-11 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* CONFIGURE: added query for GUI
+	* DEPENDS: move them around a bit, some are optional etc...
+
+2007-03-03 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* DEPENDS: removed gnome-utils2, added gmime
+	* inotify-fix.diff: added more fixes so the inotify support not only
+	  compiles, but also starts
+
+2007-02-24 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 0.5.4
+	* DEPENDS: added new depends
+	  removed mysql
+	* PRE_BUILD: apply patch to fix the inotify build
+	* CONFIGURE: added
+	* BUILD: set OPTS by configure queries
+
+2006-07-27 Flavien Bridault <vlaaad@sourcemage.org>
+	* DEPENDS: now depends on dbus-glib instead of dbus
+	* DETAILS: PATCHLEVEL++
+	* PRE_BUILD: added, fix for dbus 0.9X
+
+2006-05-24 Robin Cook <rcook@wyrms.net>
+	* Initial Spell
+	* BUILD: added to do make_single
+

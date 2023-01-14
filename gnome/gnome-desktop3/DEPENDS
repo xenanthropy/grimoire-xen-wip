@@ -1,0 +1,45 @@
+. ${GRIMOIRE}/MESON_DEPENDS       &&
+depends libx11                    &&
+depends libxrandr                 &&
+depends glib2                     &&
+depends gconf2                    &&
+depends iso-codes                 &&
+depends itstool                   &&
+depends libxml2                   &&
+depends fontconfig                &&
+depends gdk-pixbuf2               &&
+depends gsettings-desktop-schemas &&
+depends xkeyboard-config          &&
+depends gobject-introspection     &&
+depends libseccomp                &&
+
+sub_depends libxml2 PYTHON        &&
+
+optional_depends  gtk+4                          \
+                  'build_gtk4=true'              \
+                  'build_gtk4=false'             \
+                  'Enable GTK4 libraries?'       &&
+
+if !(is_depends_enabled $SPELL gtk+4); then
+  depends gtk+3 'legacy_library=true'
+else
+  optional_depends gtk+3                         \
+                   'legacy_library=true'         \
+                   'legacy_library=false'        \
+                   'Build libgnome-desktop-3.0?'
+fi &&
+
+optional_depends gtk-doc                         \
+                 "gtk_doc=true"                  \
+                 "gtk_doc=false"                 \
+                 "Build documentation?"          &&
+
+optional_depends systemd                         \
+                 'systemd=enabled'               \
+                 'systemd=disabled'              \
+                 'Systemd integration support?'  &&
+
+if !(is_depends_enabled $SPELL systemd); then
+  depends udev 'udev=enabled' &&
+  depends eudev
+fi

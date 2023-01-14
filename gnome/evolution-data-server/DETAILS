@@ -1,0 +1,18 @@
+. ${GRIMOIRE}/CMAKE_FUNCTIONS
+           SPELL=evolution-data-server
+         VERSION=3.47.1
+          BRANCH=`echo $VERSION | cut -d . -f 1,2`
+          SOURCE=$SPELL-$VERSION.tar.xz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=$GNOME_URL/sources/$SPELL/$BRANCH/$SOURCE
+     SOURCE_HASH=sha256:2c685f3a6ec4712ead8fc6c3a0f9cf54e3edbb20c1ee5833af7946301061cc31
+      LICENSE[0]=GPL
+      LICENSE[1]=FDL
+        WEB_SITE=http://projects.gnome.org/evolution/
+         ENTERED=20040312
+        KEYWORDS="evolution gnome2 libs"
+           SHORT="Evolution Data Severs"
+cat << EOF
+Evolution Data Servers
+Currently Address Book and Calendar
+EOF

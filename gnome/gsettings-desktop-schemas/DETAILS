@@ -1,0 +1,16 @@
+source $GRIMOIRE/MESON_FUNCTIONS
+           SPELL=gsettings-desktop-schemas
+         VERSION=43.0
+          BRANCH=$(echo $VERSION|cut -d . -f 1)
+          SOURCE=$SPELL-$VERSION.tar.xz
+   SOURCE_URL[0]=$GNOME_URL/sources/$SPELL/$BRANCH/$SOURCE
+     SOURCE_HASH=sha512:a3acd953ec206375e99e0988438e46b42668094d1b5425ccf21a7fe451887b705e2a5efe6870ee6bfc6722f54e5aa6a422de2af2099f29a5230f415744df2cf8
+SOURCE_DIRECTORY="$BUILD_DIRECTORY/$SPELL-$VERSION"
+        WEB_SITE=http://www.gnome.org/
+      LICENSE[0]=LGPL
+         ENTERED=20101022
+           SHORT="gsettings schemas for gnome"
+cat << EOF
+collection of GSettings schemas for settings shared by various 
+components of a desktop.
+EOF

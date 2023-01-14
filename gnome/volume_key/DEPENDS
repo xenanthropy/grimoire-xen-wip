@@ -1,0 +1,13 @@
+depends PKG-CONFIG      &&
+depends cryptsetup-luks &&
+depends glib2           &&
+depends gpgme           &&
+depends json-c          &&
+depends nss             &&
+depends util-linux      &&
+depends python3 '--with-python3 --without-python' &&
+
+optional_depends GETTEXT         \
+                 '--enable-nls'  \
+                 '--disable-nls' \
+                 'NLS support'
