@@ -5,7 +5,7 @@ depends accountsservice           &&
 depends colord                    &&
 depends gdk-pixbuf2               &&
 depends gobject-introspection     &&
-depends glib2                     &&
+depends -sub STABLE glib2         &&
 depends gnome-desktop3            &&
 depends gnome-settings-daemon     &&
 depends gnome-online-accounts     && #PROBABLY NEEDS UPDATED

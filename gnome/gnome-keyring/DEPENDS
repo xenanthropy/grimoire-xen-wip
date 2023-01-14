@@ -1,11 +1,11 @@
-depends glib2     &&
-depends gtk+3     &&
-depends gconf2    &&
-depends libgcrypt &&
-depends libtasn1  &&
-depends dbus      &&
-depends p11-kit   &&
-depends gcr       &&
+depends -sub STABLE glib2 &&
+depends gtk+3             &&
+depends gconf2            &&
+depends libgcrypt         &&
+depends libtasn1          &&
+depends dbus              &&
+depends p11-kit           &&
+depends gcr               &&
 
 optional_depends linux-pam                                  \
                  '--enable-pam'                             \

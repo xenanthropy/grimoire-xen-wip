@@ -6,7 +6,7 @@ depends accountsservice           &&
 depends colord                    &&
 depends colord-gtk                && #NEEDS SUB on GTK4
 depends gdk-pixbuf2               &&
-depends glib2                     &&
+depends -sub STABLE glib2         &&
 depends gnome-desktop3            && #NEEDS SUB on GTK4
 depends gnome-settings-daemon     &&
 depends gnome-online-accounts     &&

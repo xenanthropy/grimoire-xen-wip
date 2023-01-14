@@ -25,7 +25,7 @@ depends libx11                                 &&
 depends policykit                              &&
 depends gtk+3                                  &&
 depends gsettings-desktop-schemas              &&
-depends glib2                                  &&
+depends -sub STABLE glib2                      &&
 
 # DISABLED PENDING SPELL ADD
 #optional_depends libsmartcard                    \

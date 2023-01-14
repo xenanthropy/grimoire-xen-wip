@@ -1,7 +1,7 @@
 . ${GRIMOIRE}/MESON_DEPENDS       &&
 depends libx11                    &&
 depends libxrandr                 &&
-depends glib2                     &&
+depends -sub STABLE glib          &&
 depends gconf2                    &&
 depends iso-codes                 &&
 depends itstool                   &&

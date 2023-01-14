@@ -1,4 +1,0 @@
-case $THIS_SUB_DEPENDS in
-   PYTHON) depends PYTHON ;;
-   *)        echo "unknown sub-depends!"; return 1         ;;
-esac

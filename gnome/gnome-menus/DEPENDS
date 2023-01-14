@@ -1,4 +1,4 @@
-depends glib2  &&
+depends -sub STABLE glib2  &&
 
 optional_depends PYTHON                       \
                  "--enable-python"            \

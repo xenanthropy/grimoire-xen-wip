@@ -1,6 +1,6 @@
 . ${GRIMOIRE}/MESON_DEPENDS &&
 depends PKG-CONFIG          &&
-depends glib2               &&
+depends -sub STABLE glib2   &&
 depends dbus                &&
 depends rest                && 
 

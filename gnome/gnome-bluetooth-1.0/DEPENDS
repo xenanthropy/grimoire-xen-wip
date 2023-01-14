@@ -1,5 +1,5 @@
 . ${GRIMOIRE}/MESON_DEPENDS  &&
-depends glib2                &&
+depends -sub STABLE glib2    &&
 depends gtk+4                &&
 depends bluez5               &&
 depends libadwaita           &&

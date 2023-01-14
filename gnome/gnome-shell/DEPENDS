@@ -5,7 +5,7 @@ depends python3                   &&
 depends at-spi2-core              &&
 depends evolution-data-server     &&
 depends gcr                       &&
-depends glib2                     &&
+depends -sub STABLE glib2         &&
 depends gdk-pixbuf2               &&
 depends gobject-introspection     &&
 depends gjs                       &&

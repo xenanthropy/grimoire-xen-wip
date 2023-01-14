@@ -2,7 +2,7 @@ source $GRIMOIRE/MESON_DEPENDS &&
 depends PKG-CONFIG             &&
 depends OPENGL                 &&
 depends python3                &&
-depends glib2                  &&
+depends -sub STABLE glib2      &&
 depends cinnamon-desktop       &&
 depends libcanberra            &&
 depends LOGIN-DAEMON           &&
