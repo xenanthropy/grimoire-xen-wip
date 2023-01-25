@@ -2,7 +2,7 @@ source $GRIMOIRE/MESON_FUNCTIONS
            SPELL=cjs
          VERSION=5.7
      MINTVERSION=gjs1.74.1-mozjs102.mint21
-     SOURCE_HASH=sha256:
+     SOURCE_HASH=sha256:a6bff4d241aef4a008973f028cbee8b62743045231758c8c28f44eb0158e12ab
           SOURCE=${SPELL}-${MINTVERSION}.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$MINTVERSION
    SOURCE_URL[0]=https://github.com/linuxmint/${SPELL}/archive/${MINTVERSION}.tar.gz

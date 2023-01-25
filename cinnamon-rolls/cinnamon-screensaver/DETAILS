@@ -1,7 +1,7 @@
 source $GRIMOIRE/MESON_FUNCTIONS
            SPELL=cinnamon-screensaver
          VERSION=5.6.3
-     SOURCE_HASH=sha256:
+     SOURCE_HASH=sha256:e135f808f0d9b9269145f7d135032fab9dc397cd70295a251f473b9a9b3f3263
           SOURCE=${SPELL}-${VERSION}.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=https://github.com/linuxmint/${SPELL}/archive/${VERSION}.tar.gz

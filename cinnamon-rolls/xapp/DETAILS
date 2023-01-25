@@ -1,7 +1,7 @@
 source $GRIMOIRE/MESON_FUNCTIONS
            SPELL=xapp
          VERSION=2.4.2
-     SOURCE_HASH=sha256:
+     SOURCE_HASH=sha256:b01c5037f0da773bc822f32c98c7281fd1cf5b9bc9c0e7cbf8eb2c38d0661b4d
           SOURCE=${SPELL}-${VERSION}.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=https://github.com/linuxmint/${SPELL}/archive/${VERSION}.tar.gz

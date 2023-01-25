@@ -4,7 +4,7 @@ source $GRIMOIRE/MESON_FUNCTIONS
      SOURCE_HASH=sha256:3fce7ee8b0812065b00a4d3b47763d26caa6912085c17e650fad838c9cd0d82c
           SOURCE=${SPELL}-${VERSION}.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-   SOURCE_URL[0]=https://github.com/linuxmint/${SPELL}/archive/${MINTVERSION}.tar.gz
+   SOURCE_URL[0]=https://github.com/linuxmint/${SPELL}/archive/${VERSION}.tar.gz
        WEB_SITE=https://www.github.com/linuxmint/cinnamon-menus/
       LICENSE[0]=GPL
          ENTERED=20230101
