@@ -1,7 +1,7 @@
 source $GRIMOIRE/MESON_FUNCTIONS
            SPELL=cinnamon-control-center
          VERSION=5.6.1
-     SOURCE_HASH=sha256:
+     SOURCE_HASH=sha256:99fc64e8bd67118ebe09eca0b39b1ac159ad667bedd12717c8d9f6160b08b0d8
           SOURCE=${SPELL}-${VERSION}.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=https://github.com/linuxmint/${SPELL}/archive/${VERSION}.tar.gz
