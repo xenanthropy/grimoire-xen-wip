@@ -45,7 +45,7 @@ optional_depends startup-notification                   \
                  'startup_notification=false'           \
                  'Enable startup notification support?' &&
 
-optional_depends udev                                   \
+optional_depends DEVICE-MANAGER                         \
                  'udev=true'                            \
                  'udev=false'                           \
                  'Enable Udev support?'                 &&
