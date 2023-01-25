@@ -1,11 +1,10 @@
 source $GRIMOIRE/MESON_FUNCTIONS
            SPELL=cinnamon-session
          VERSION=5.6.0
-     MINTVERSION=master.mint21
      SOURCE_HASH=sha256:2a976573667ae36f272f311ebc1f2ca508707d98a88325ff7e72d280aaec0051
-          SOURCE=${SPELL}-${MINTVERSION}.tar.gz
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$MINTVERSION
-   SOURCE_URL[0]=https://github.com/linuxmint/${SPELL}/archive/refs/tags/${MINTVERSION}.tar.gz
+          SOURCE=${SPELL}-${VERSION}.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=https://github.com/linuxmint/${SPELL}/archive/${VERSION}.tar.gz
        WEB_SITE=https://www.github.com/linuxmint/cinnamon-session/
       LICENSE[0]=GPL
          ENTERED=20230101

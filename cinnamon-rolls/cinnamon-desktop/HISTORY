@@ -1,4 +1,5 @@
-2023-01-14 Conner Clere <xenanthropy@sourcemage.org>
+2023-01-24 Conner Clere <xenanthropy@sourcemage.org>
+  * DETAILS: version 5.6.1
 	* POST_INSTALL, POST_REMOVE: added, recompile schemas upon install/remove
 
 2022-11-27 Conner Clere <connerclere@gmail.com>

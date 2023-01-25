@@ -1,0 +1,6 @@
+2023-01-24 Conner Clere <xenanthropy@sourcemage.org>
+  * DETAILS: version 2.4.2, fix source URL
+
+2022-11-25 Conner Clere <connerclere@gmail.com>
+	* CONFIGURE, DEPENDS, DETAILS: version 2.4.1, new spell
+

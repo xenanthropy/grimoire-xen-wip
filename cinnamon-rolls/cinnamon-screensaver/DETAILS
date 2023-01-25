@@ -1,11 +1,10 @@
 source $GRIMOIRE/MESON_FUNCTIONS
            SPELL=cinnamon-screensaver
-         VERSION=5.6.2
-     MINTVERSION=master.mint21
-     SOURCE_HASH=sha256:d4041aa47cb3674dd4a9f0e41da2c4c944208bd76199de9eeb404a4f3cfb8031
-          SOURCE=${SPELL}-${MINTVERSION}.tar.gz
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$MINTVERSION
-   SOURCE_URL[0]=https://github.com/linuxmint/${SPELL}/archive/refs/tags/${MINTVERSION}.tar.gz
+         VERSION=5.6.3
+     SOURCE_HASH=sha256:
+          SOURCE=${SPELL}-${VERSION}.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=https://github.com/linuxmint/${SPELL}/archive/${VERSION}.tar.gz
        WEB_SITE=https://www.github.com/linuxmint/cinnamon-screensaver/
       LICENSE[0]=GPL
          ENTERED=20230101

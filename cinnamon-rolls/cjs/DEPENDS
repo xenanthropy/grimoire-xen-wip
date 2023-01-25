@@ -2,9 +2,8 @@ source $GRIMOIRE/MESON_DEPENDS &&
 depends PKG-CONFIG             &&
 depends glib2                  &&
 depends gobject-introspection  &&
-depends mozjs                  &&
+depends mozjs102               &&
 depends libffi                 &&
-#depends sysprof                &&
 depends dbus                   &&
 depends xhost                  &&
 depends xserver                &&
