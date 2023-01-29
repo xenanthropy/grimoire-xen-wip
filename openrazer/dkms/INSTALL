@@ -1,0 +1,4 @@
+DESTDIR="${INSTALL_ROOT}" make install &&
+if [[ ${SYSD} == 'y' ]]; then
+  install -D -m 0644 dkms.service "${INSTALL_ROOT}"/usr/lib/systemd/system/dkms.service
+fi

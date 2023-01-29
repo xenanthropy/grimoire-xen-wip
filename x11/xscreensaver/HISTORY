@@ -1,0 +1,267 @@
+2022-05-01  Florian Franzmann <bwlf@bandrate.org>
+	* DETAILS: version 6.04
+  * DEPENDS: systemd dependency
+
+2022-03-06  Florian Franzmann <bwlf@bandrate.org>
+	* DETAILS, CONFIGURE, DEPENDS: version 6.03
+
+2020-10-13  Florian Franzmann <bwlf@bandrate.org>
+	* DETAILS: version 6.02
+
+2021-06-05  Florian Franzmann  <bwlf@bandrate.org>
+	* BUILD, DEPENDS, DETAILS: version 6.00, SECURITY_PATCH++,
+	  fixes https://seclists.org/oss-sec/2021/q2/181
+
+2020-12-08 Florian Franzmann <bwlf@bandrate.org>
+	* DETAILS: version 5.45
+
+2020-03-21 Florian Franzmann <bwlf@bandrate.org>
+	* DETAILS: version 5.44
+
+2019-07-03 Florian Franzmann <bwlf@bandrate.org>
+	* DETAILS: version 5.43
+	* DEPENDS: add optional dependency on systemd
+	* BUILD, CONFIGURE: add setcaps configuration option
+
+2018-12-29 Florian Franzmann <bwlf@bandrate.org>
+	* DETAILS: version 5.42
+	* BUILD: set C standard to C99 to avoid compile error
+
+2018-08-16 Florian Franzmann <bwlf@bandrate.org>
+	* DETAILS: version 5.40
+
+2018-06-24 Florian Franzmann <bwlf@bandrate.org>
+	* DETAILS: version 5.39
+	* DEPENDS: remove optional dependency on libxpm, add optional dependency on
+	  libpng
+
+2018-02-25 Florian Franzmann <bwlf@bandrate.org>
+	* DETAILS: version 5.38
+
+2017-07-05 Thomas Orgis <sobukus@sourcemage.org>
+	* DETAILS: version 5.36
+
+2016-06-05 Thomas Orgis <sobukus@sourcemage.org>
+	* DETAILS: version 5.35
+
+2014-12-10 Thomas Orgis <sobukus@sourcemage.org>
+	* DETAILS: version 5.32
+
+2013-09-06 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 5.22
+	* DEPENDS: Replaced xorg-libs with libice, libx11, libxxf86misc, libxxf86vm,
+	  libxi, libxmu, libxrender, and libxt
+
+2012-12-08 Florian Franzmann <bwlf@bandrate.org>
+	* DETAILS: version 5.20
+
+2012-09-08 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 5.19
+
+2011-11-13 Pol Vinogradov <vin.public@gmail.com>
+	* DETAILS: updated to 5.15
+
+2011-03-11 Eric Sandall <sandalle@sourcemage.org>
+	* DEPENDS: Linux-PAM support requires unix_chkpwd SUID
+	  Otherwise you cannot unlock your screen. See
+	  https://bugs.launchpad.net/ubuntu/+bug/299717
+
+2010-11-03 Ladislav Hagara <hgr@vabo.cz>
+	* DEPENDS: jpeg -> JPEG
+
+2010-09-22 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 5.12
+
+2010-04-14 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 5.11
+
+2009-09-10 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 5.10
+
+2009-07-25 Arjan Bouter <abouter@sourcemage.org>
+	* BUILD: added logic to optionally select a help browser
+	* CONFIGURE: moved libglade2, libxml2 and gtk+2 to DEPENDS,
+	  compressed to 1 optional_depends on libglade2.
+	  Added questions about accepting rootpw and screen locking
+	* DEPENDS: added optional deps on gdm2, libgnome ,libxpm, libxext,
+	  a web-browser, libxrandr, libxinerama. switched from gdk-pixbuf to
+	  gtk+2. Also, it optionally depends on libgle, not gle (different lib).
+
+2009-05-21 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 5.08
+
+2008-08-12 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 5.07
+
+2008-07-23 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
+	* DETAILS: updated spell to 5.06
+
+2008-05-18 Florian Franzmann <bwlf@bandrate.org>
+	* BUILD: added support for the randr extension
+	* DEPENDS: added a few suggest_depends
+
+2008-03-24 David Kowis <dkowis@shlrm.org>
+	* PRE_BUILD, demo-Gtk.patch: Removed
+	* DETAILS: version to 5.05, fixing bug that previous patch supposedly
+	  fixed
+
+2008-03-22 Eric Sandall <sandalle@sourcemage.org>
+	* PRE_BUILD: Apply demo-Gtk.patch
+	* demo-Gtk.patch: Patch written by Javier to fix compilation with
+	  latest gtk+2. Fixes Bug #14387
+
+2008-03-18 Eric Sandall <sandalle@sourcemage.org>
+	* DEPENDS: Switch X11-LIBS to the one and only xorg-libs
+
+2007-07-23 David Brown <dmlb2000@gmail.com>
+	* DETAILS: 5.03
+
+2007-03-13 Florian Franzmann <bwlf@bandrate.org>
+	* DETAILS: 5.01
+
+2006-08-29 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
+	* DETAILS: 5.00
+
+2006-06-28 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Removed BUILD_API=2, set grimoire-wide
+
+2006-03-12 Karsten Behrmann <BearPerson@sourcemage.org>
+	* DETAILS: (automated) Add KEYWORDS
+
+2005-12-25 Robin Cook <rcook@wyrms.net>
+	* CONFLICTS: removed as doesn't conflict with mesalib
+	* DEPENDS: added optional depends on gle
+
+2005-12-09 Robin Cook <rcook@wyrms.net>
+	* DEPENDS: added games grimoire on the fortune optional depends
+
+2005-11-01 George Sherwood <george@beernabeer.com>
+	* DETAILS: Updated to 4.23, SOURCE_HASH
+	* DEPENDS: Fixed variable name. Bug 10036.
+	  Added configure options.
+	* CONFIGURE: Changed to config_query from config_query_option
+	* BUILD: Removed $XSCSV from $OPTS. Added check for configure 
+	  options.
+
+2005-04-30 George Sherwood <george@beernabeer.com>
+	* DETAILS: Updated to 4.21
+
+2005-03-21 Eric Sandall <sandalle@sourcemage.org>
+	* DEPENDS: Optionally depends on gdk-pixbuf
+
+2005-02-28 Eric Sandall <sandalle@sourcemage.org>
+	* CONFLICTS: Conflict with mesalib as well
+
+2005-01-23 Arjan Bouter <abouter@sourcemage.org>
+	* lowercase linux-pam
+
+2004-12-16 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 4.19 (Thanks Robert :))
+	  Shortened SHORT
+	  Changed LICENSE to LICENSE[0]
+	  Added BUILD_API=2
+	* CONFIGURE: Converted to config_query
+	  Cleaned up message and colorized
+	* DEPENDS: Use response from CONFIGURE
+	  Formatted to Guru Handbook
+	* BUILD: Converted to build_api 2
+	  Apply options from CONFIGURE
+
+2004-03-08 Robert Helgesson <rycee@home.se>
+	* DETAILS: Updated to version 4.15.
+	* HISTORY: Fixed to fit 80 column width.
+	* DEPENDS: Removed optional dependency on gle. There is no spell for
+	  this library.
+	* CONFIGURE: Simplified considerably. Motif and gtk+ are no longer
+	  valid choices since Motif support is no longer developed and
+	  gtk+2 is preferred over gtk+ anyway. Fixes bug #5820.
+	* BUILD: Use default_build. Removed sedits.
+	* TRIGGERS: Removed trigger on zlib.
+
+2004-02-16 hgg <hgreig@bigpond.net.au>
+	* DEPENDS,CONFIGURE: fix so depends are processed on first cast and
+	  add libglade2 to gtk2 toolkit build
+
+2004-01-26 Justin Rocha <jrocha@sourcemage.org>
+	* DETAILS: Version bump to 4.14, and the spell works!
+
+2004-01-04 Justin Rocha <jrocha@sourcemage.org>
+	* DETAILS: Version bump to 4.13
+	* CONFIGURE: Added line to disable gtk-pixbuf if not configuring for
+	  Gnome. Added line to enable MOTIF dependency if not
+	  configuring for gnome.
+	* DEPENDS: Added lines for MOTIF dependency
+
+2003-10-27 Eric Sandall <sandalle@sourcemage.org>
+	* DEPENDS: Changed 'glut' to 'GLUT'
+
+2003-10-10 hgg <hgreig@bigpond.net.au>
+	* DEPENDS: Change x11-libs to X11-LIBS
+
+2003-10-03 hgg <hgreig@bigpond.net.au>
+	* DEPENDS: Change requires x11-libs to depends x11-libs
+
+2003-09-17 hgg <hgreig@bigpond.net.au>
+	* DEPENDS: Change depends xfree86 to requires x11-libs
+
+2003-08-28 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* DEPENDS: added dependency on xfree86, needed if compiled without
+	  gnome1 or gnome2 support
+
+2003-08-10 hgg <hgreig@bigpond.net.au>
+	* TRIGGERS: Revert on_dispel Linux-PAM cast_self (doesn't work the way
+	  it is documented)
+
+2003-07-26 hgg <hgreig@bigpond.net.au>
+	* TRIGGERS: Update TRIGGERS for Linux-PAM
+
+2003-07-22 hgg <hgreig@bigpond.net.au>
+	* CONFIGURE: Add CONFIGURE to ask for gnome1 or gnome2 suppport
+
+2003-04-17 Eric Sandall <sandalle@sourcemage.org>
+	* BUILD: Added Xinerama, xf86vmode, xf86gamma, proc interrupts, xshm,
+	  xdbe, readdisplay, and DPMS extensions to BUILD
+	* DEPENDS: Actually fixed Bug #2657 (PAM support). Added quite a few
+	  more optional_depends
+
+2003-03-27 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* DETAILS: updated to 4.09 (fixes bug #2854)
+
+2003-02-20 Joel Mayes <bluebird@optushome.com.au>
+	* DETAILS: version bumped to 4.07
+
+2002-11-18 Joel Mayes <bluebird@optushome.com.au>
+	* CONFLICTS: Added CONFLICTS file added conflicts with MesaLib
+	  (bug #1884)
+	* HISTORY: Reformated HISTORY file
+
+2002-11-18 Joel Mayes <bluebird@optushome.com.au>
+	* DETAILS: version bumped to 4.06
+
+2002-10-22 Joel Mayes <bluebird@optushome.com.au>
+	* TRIGGERS: Added TRIGGERS file
+
+2002-08-10 Joel Mayes <bluebird@optushome.com.au>
+	* DETAILS: updated MD5[0] field to reflect the .tar not
+	  .tar.(bz2|gz|Z)
+
+2002-07-19 Joel Mayes <bluebird@optushome.com.au>
+	* DEPENDS: Removed unneeded depends on gnome-core
+
+2002-06-24 Joel Mayes <bluebird@optushome.com.au>
+	* DETAILS: Added LICENSE field to DETAILS
+
+2002-06-21 Joel Mayes <bluebird@optushome.com.au>
+	* DETAILS: Added MD5 field to DETAILS
+
+2002-06-20 Joel Mayes <bluebird@optushome.com.au>
+	* DETAILS: Version bump to 4.05
+
+2002-06-07 Eric Schabell <eric@schabell.com>
+	* BUILD: Fixed bug #195, BUILD line 6 modified, thanks to duffelbunk).
+
+2002-05-27 Adam Clark <adamsgl@dhbit.ca>
+	* moved spell to X11 section
+	* DETAILS: updated to 4.03 + applied compile fix
+	* HISTORY: added this HISTORY file
+

@@ -1,0 +1,13 @@
+           SPELL=dkms
+         VERSION=3.0.10
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=https://github.com/dell/${SPELL}/archive/v${VERSION}.tar.gz
+     SOURCE_HASH=sha256:1eba13bf3a2c140c21e9ba31c1db9e9b8eac55658291340b0e50b965565f9ef7
+      LICENSE[0]=GPL
+        WEB_SITE=https://github.com/dell/dkms
+         ENTERED=20230122
+        KEYWORDS="linux kernel module"
+           SHORT="dynamic kernel module support"
+cat << EOF
+EOF

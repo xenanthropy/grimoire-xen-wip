@@ -1,0 +1,19 @@
+           SPELL=xscreensaver
+         VERSION=6.04
+  SECURITY_PATCH=1
+          SOURCE=$SPELL-$VERSION.tar.gz
+#      SOURCE_GPG="gurus.gpg:${SOURCE}.sig:WORKS_FOR_ME"
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=http://www.jwz.org/$SPELL/$SOURCE
+        WEB_SITE=http://www.jwz.org/xscreensaver/
+     SOURCE_HASH=sha512:7e8f01853b3d9252ce0120894db7dd4fa3cd19114602a09aa770ec750e2f3742585ca4daf19b009e97386f8c0e3cc89330fe760148c6388f41de8cc1f48f8071
+         ENTERED=20010922
+      LICENSE[0]=BSD
+        KEYWORDS="x11"
+           SHORT="Modular screen saver and locker for the X Windows"
+cat << EOF
+XScreenSaver is a modular screen saver and locker for the X Window
+System. It is highly customizable and allows the use of any program that
+can draw on the root window as a display mode. More than 120 display
+modes are included in this package.
+EOF

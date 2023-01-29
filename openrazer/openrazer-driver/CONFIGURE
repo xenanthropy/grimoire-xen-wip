@@ -1,0 +1,1 @@
+config_query DKMS "Build driver with dkms?" y

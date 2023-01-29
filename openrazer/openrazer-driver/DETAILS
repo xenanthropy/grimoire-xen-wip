@@ -1,0 +1,13 @@
+           SPELL=openrazer-driver
+         VERSION=3.5.1
+          SOURCE=openrazer-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/openrazer-$VERSION
+   SOURCE_URL[0]=https://github.com/openrazer/openrazer/archive/v${VERSION}.tar.gz
+     SOURCE_HASH=sha256:a3aa4d4823d8fb794a8c4a7297c1ce20a71c9bcb3f8adad7fb98676d84412392
+      LICENSE[0]=GPL
+        WEB_SITE=https://github.com/openrazer/openrazer
+         ENTERED=20230122
+        KEYWORDS="razer driver module dkms"
+           SHORT="linux kernel module for openrazer"
+cat << EOF
+EOF

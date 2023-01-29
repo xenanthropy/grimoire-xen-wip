@@ -1,0 +1,5 @@
+depends DEVICE-MANAGER &&
+depends kmod           &&
+if [[ ${DKMS} == 'y' ]]; then
+  depends dkms
+fi

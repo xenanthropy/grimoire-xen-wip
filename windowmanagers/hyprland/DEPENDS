@@ -1,0 +1,26 @@
+. "${GRIMOIRE}/MESON_DEPENDS" &&
+depends PKG-CONFIG            &&
+depends jq                    &&
+depends git                   &&
+depends wayland               &&
+depends wayland-protocols     &&
+depends wlroots               &&
+depends libglvnd              &&
+depends libxkbcommon          &&
+depends libinput              &&
+depends cairo                 &&
+depends pixman                &&
+
+optional_depends xwayland                          \
+                 'xwayland=enabled'                \
+		 'xwayland=disabled'               \
+		 'Enable x11 application support?' &&
+
+if is_depends_enabled $SPELL xwayland; then
+  depends libxcb
+fi &&
+
+optional_depends systemd                           \
+                 'systemd=enabled'                 \
+		 'systemd=disabled'                \
+		 'Enable systemd support?'

@@ -1,0 +1,5 @@
+if [[ ${DKMS} == 'n' ]]; then
+  DESTDIR="${INSTALL_ROOT}" make driver_install udev_install
+else
+  DESTDIR="${INSTALL_ROOT}" make setup_dkms udev_install
+fi

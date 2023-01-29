@@ -1,0 +1,29 @@
+. "$GRIMOIRE/FUNCTIONS"
+           SPELL=fluxbox
+if [[ $FLUXBOX_BRANCH == scm ]]; then
+         VERSION=$(get_scm_version)
+          SOURCE=$SPELL-git.tar.bz2
+   SOURCE_URL[0]=git://git.fluxbox.org/fluxbox.git:fluxbox
+SOURCE_DIRECTORY="$BUILD_DIRECTORY/$SPELL-git"
+   SOURCE_IGNORE=volatile
+  FORCE_DOWNLOAD=on
+else
+         VERSION=1.3.7
+      PATCHLEVEL=1
+          SOURCE=$SPELL-$VERSION.tar.bz2
+   SOURCE_URL[0]=http://downloads.sourceforge.net/sourceforge/$SPELL/$SOURCE
+      SOURCE_GPG=gurus.gpg:$SOURCE.sig
+SOURCE_DIRECTORY="$BUILD_DIRECTORY/$SPELL-$VERSION"
+fi
+        WEB_SITE=http://www.fluxbox.org/
+         ENTERED=20011210
+      LICENSE[0]=MIT
+     GATHER_DOCS=off
+        KEYWORDS="windowmanagers"
+           SHORT="lightweight window manager"
+cat << EOF
+Fluxbox is a fast an configurable window manager for X. It's based on the
+Blackbox 0.61.1 code. Fluxbox looks like blackbox and handles styles, colors,
+window placement and similar things exactly like blackbox (100% theme/style
+compability). It has a nice range of added/improved features though!
+EOF

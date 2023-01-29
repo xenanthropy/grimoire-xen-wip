@@ -1,0 +1,5 @@
+depends kmod &&
+
+if [[ ${SYSD} == 'y' ]]; then
+  depends systemd;
+fi
