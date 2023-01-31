@@ -1,4 +1,9 @@
 default_pre_build &&
+cd "${SOURCE_DIRECTORY}" &&
+apply_patch_dir patches &&
 cd "${SOURCE_DIRECTORY}/subprojects" &&
-git clone https://gitlab.freedesktop.org/wlroots/wlroots.git ./wlroots &&
-git clone https://github.com/hyprwm/hyprland-protocols.git ./hyprland-protocols
+git clone https://github.com/hyprwm/hyprland-protocols.git ./hyprland-protocols &&
+
+if !(is_depends_enabled $SPELL wlroots); then
+  git clone https://gitlab.freedesktop.org/wlroots/wlroots.git ./wlroots
+fi
