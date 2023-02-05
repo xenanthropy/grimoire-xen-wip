@@ -1,0 +1,7 @@
+. "${GRIMOIRE}/MESON_DEPENDS" &&
+depends glib2                 &&
+depends gtk+3                 &&
+depends gnome-desktop3        &&
+depends lcms2                 &&
+depends colord                &&
+depends libcanberra

@@ -1,0 +1,24 @@
+2023-01-19 Conner Clere <xenanthropy@sourcemage.org>
+	* DETAILS: version 3.36.0, convert to meson build
+	* DEPENDS: remove blah blah, add meson depends
+	* BUILD: disable tests
+	* CONFIGURE: added, for meson configure
+
+2015-04-25 Florian Franzmann <bwlf@bandrate.org>
+	* DEPENDS: fix typos in optional dependencies
+
+2012-10-06 Sukneet Basuta <sukneet@sourcemage.org>
+	* DETAILS: updated spell to 3.6.0
+	* DEPENDS: added depends glib2, gtk+3, gnome-desktop3,
+	  colord-gtk, libcanberra
+	  added optional_depends clutter-gtk, mash, exiv2, libexif,
+	  vte3
+
+2012-04-01 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 3.4.0
+
+2012-01-26 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 3.2.2
+
+2011-10-06 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS, DEPENDS, BUILD: spell created, version 3.2.0

@@ -1,0 +1,16 @@
+. "${GRIMOIRE}/MESON_FUNCTIONS"
+	   SPELL=gnome-color-manager
+         VERSION=3.36.0
+	  BRANCH=`echo $VERSION|cut -d . -f 1,2`
+          SOURCE=$SPELL-$VERSION.tar.xz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=$GNOME_URL/sources/$SPELL/$BRANCH/$SOURCE
+     SOURCE_HASH=sha256:9ddb9e6b6472e119801381f90905332ec1d4258981721bba831ca246ceb3ad3b
+      LICENSE[0]=GPL
+        WEB_SITE=http://projects.gnome.org/gnome-color-manager/
+         ENTERED=20111006
+           SHORT="Color profile manager for the GNOME desktop"
+cat << EOF
+GNOME Color Manager is a session framework that makes it easy to manage, install
+and generate color profiles in the GNOME desktop.
+EOF
