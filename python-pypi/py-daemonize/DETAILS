@@ -1,0 +1,13 @@
+           SPELL=py-daemonize
+         VERSION=2.5.0
+          SOURCE=daemonize-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/daemonize-$VERSION
+   SOURCE_URL[0]=https://github.com/thesharp/daemonize/archive/v${VERSION}.tar.gz
+     SOURCE_HASH=sha256:72ed6f7de45a50feea51017df8cf0829a903ca8b8d0b2453261dfbb1cdeb9481
+      LICENSE[0]=MIT
+        WEB_SITE=https://github.com/thesharp/daemonize/
+         ENTERED=20230204
+        KEYWORDS="python daemon library"
+           SHORT="library for writing system daemons in python"
+cat << EOF
+EOF
