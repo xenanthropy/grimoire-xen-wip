@@ -1,0 +1,21 @@
+. ${GRIMOIRE}/MESON_FUNCTIONS
+           SPELL=gnome-software
+         VERSION=43.3
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=https://gitlab.gnome.org/GNOME/${SPELL}/-/archive/${VERSION}/${SOURCE}
+     SOURCE_HASH=sha512:9c4abb0b745eac4df9c840758df0c5a159a913b34e67f1a11e1d0feb0f3e2f2ea407f591e490d8ef958add5bf1ab60677b01deca78b12a53e32dcebe0a8f4b9e
+      LICENSE[0]=LGPL
+        WEB_SITE=http://www.gnome.org
+         ENTERED=20230114
+        KEYWORDS="gnome software flatpak repository package"
+           SHORT="gnome software application installer"
+cat << EOF
+Software allows users to easily find,
+discover and install apps. It also keeps their OS, apps and devices up to date
+without them having to think about it, and gives them confidence that their
+system is up to date. It supports popular distributions, subject to those
+distributions maintaining their own distro-specific integration code.
+
+(only installs flatpaks - does not manage system spells)
+EOF
