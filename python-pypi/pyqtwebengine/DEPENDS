@@ -1,0 +1,7 @@
+depends python3     &&
+depends pyqt5       &&
+depends pyqt5-sip   &&
+depends sip         &&
+depends python-ply  &&
+depends qtbase      &&
+depends qtwebengine

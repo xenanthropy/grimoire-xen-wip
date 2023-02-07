@@ -1,0 +1,6 @@
+depends PKG-CONFIG       &&
+depends libpng           &&
+depends libx11           &&
+depends libxi            &&
+depends libxtst          &&
+depends xorgproto

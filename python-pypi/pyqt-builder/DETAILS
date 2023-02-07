@@ -1,0 +1,21 @@
+           SPELL=pyqt-builder
+		  XSPELL=PyQt-builder
+         VERSION=1.14.1
+          SOURCE=$XSPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$XSPELL-$VERSION
+   SOURCE_URL[0]=https://pypi.python.org/packages/source/P/${XSPELL}/$SOURCE
+     SOURCE_HASH=sha256:83bc3e300aff8b41405804b6a9c2913389ab59c48ad9f0cb8584a6ef73bca502
+      LICENSE[0]=GPL
+        WEB_SITE=https://pypi.org/project/pyqt-builder/
+         ENTERED=20230206
+        KEYWORDS="python qt5 pyqt5"
+           SHORT="PEP 517 compliant PyQt build system"
+cat << EOF
+PyQt-builder is the PEP 517 compliant build system for PyQt and projects
+that extend PyQt. It extends the SIP build system and uses Qt’s qmake to perform
+the actual compilation and installation of extension modules.
+
+Projects that use PyQt-builder provide an appropriate pyproject.toml file and an
+optional project.py script. Any PEP 517 compliant frontend, for example sip-install
+or pip can then be used to build and install the project.
+EOF

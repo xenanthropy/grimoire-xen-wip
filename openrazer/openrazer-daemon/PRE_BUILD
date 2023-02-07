@@ -1,0 +1,4 @@
+default_pre_build &&
+cd "${SOURCE_DIRECTORY}" &&
+sed -i '20s,KERNELDIR?=,KERNELDIR?=/usr,' Makefile &&
+sed -i '22s,MODULEDIR?=,MODULEDIR?=/usr,' Makefile

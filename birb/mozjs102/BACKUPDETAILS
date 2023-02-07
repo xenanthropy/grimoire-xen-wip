@@ -1,0 +1,16 @@
+           SPELL=mozjs102
+         VERSION=102.6.0
+     SOURCE_HASH=sha256:d23154a4d876d76122161e7be2659de6e88985802d9e5125baf1d133f37f0ffe
+          SOURCE=firefox-${VERSION}esr.source.tar.xz
+   SOURCE_URL[0]=https://archive.mozilla.org/pub/firefox/releases/${VERSION}esr/source/${SOURCE}
+SOURCE_DIRECTORY="$BUILD_DIRECTORY/firefox-${VERSION}"
+           TMPFS=off
+        WEB_SITE=https://www.mozilla.org/js/spidermonkey
+      LICENSE[0]=MPL
+         ENTERED=20180415
+           SHORT="Mozilla's C implementation of JavaScript"
+cat << EOF
+The embeddable JavaScript engine from the Mozilla project (used among others
+by the Mozilla, Galeon, Netscape6 browsers as well as by the iPlanet WebServer)
+called SpiderMonkey.
+EOF

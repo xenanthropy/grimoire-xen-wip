@@ -1,0 +1,13 @@
+           SPELL=xautomation
+         VERSION=1.09
+          SOURCE=${SPELL}-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}-$VERSION
+   SOURCE_URL[0]=https://hoopajoo.net/static/projects/${SOURCE}
+     SOURCE_HASH=sha256:ee8f2c61165da682f58371a51cfc263d6e54609b614e712320b0987779d95f0d
+      LICENSE[0]=GPL
+        WEB_SITE=https://hoopajoo.net/projects/xautomation.html
+         ENTERED=20230204
+        KEYWORDS="x automation"
+           SHORT="control X from command line and find things on screen"
+cat << EOF
+EOF

@@ -1,0 +1,5 @@
+depends python3          &&
+depends python-packaging &&
+depends setuptools       &&
+depends sip              &&
+depends python-sphinx

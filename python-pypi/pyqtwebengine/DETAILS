@@ -1,0 +1,18 @@
+           SPELL=pyqtwebengine
+		  XSPELL=PyQtWebEngine
+         VERSION=5.15.6
+          SOURCE=$XSPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$XSPELL-$VERSION
+   SOURCE_URL[0]=https://pypi.python.org/packages/source/P/${XSPELL}/$SOURCE
+     SOURCE_HASH=sha256:ae241ef2a61c782939c58b52c2aea53ad99b30f3934c8358d5e0a6ebb3fd0721
+      LICENSE[0]=GPL
+        WEB_SITE=https://pypi.org/project/pyqtwebengine/
+         ENTERED=20230206
+        KEYWORDS="python qt5 web pyqt5"
+           SHORT="python bindings for the Qt WebEngine framework"
+cat << EOF
+PyQtWebEngine is a set of Python bindings for The Qt Company’s Qt WebEngine framework.
+The framework provides the ability to embed web content in applications and is based
+on the Chrome browser. The bindings sit on top of PyQt5 and are implemented as three
+separate modules corresponding to the different libraries that make up the framework.
+EOF

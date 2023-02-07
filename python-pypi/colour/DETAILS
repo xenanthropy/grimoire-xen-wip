@@ -1,0 +1,28 @@
+           SPELL=colour
+         VERSION=0.1.5
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=https://pypi.python.org/packages/source/c/${SPELL}/$SOURCE
+     SOURCE_HASH=sha256:af20120fefd2afede8b001fbef2ea9da70ad7d49fafdb6489025dae8745c3aee
+      LICENSE[0]=BSD
+        WEB_SITE=https://pypi.org/project/colour/
+         ENTERED=20230206
+        KEYWORDS="python color library"
+           SHORT="converts and manipulates common color representation"
+cat << EOF
+Features
+
+   * Damn simple and pythonic way to manipulate color representation (see examples below)
+
+   * Full conversion between RGB, HSL, 6-digit hex, 3-digit hex, human color
+
+   * One object (Color) or bunch of single purpose function (rgb2hex, hsl2rgb …)
+
+   * `web` format that use the smallest representation between 6-digit (e.g. #fa3b2c)
+   * 3-digit (e.g. #fbb), fully spelled color (e.g. white), following W3C color naming
+	 for compatible CSS or HTML color specifications.
+
+   * smooth intuitive color scale generation choosing N color gradients.
+
+   * can pick colors for you to identify objects of your application.
+EOF

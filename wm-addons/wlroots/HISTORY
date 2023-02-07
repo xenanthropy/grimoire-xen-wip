@@ -1,0 +1,48 @@
+2022-12-12 Pavel Vinogradov <public@sourcemage.org>
+	* BUILD: disabled -Werror
+	* DEPENDS: needs hwdata because of libdrm
+
+2022-11-12 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: version 0.16.0
+
+2022-05-28  Florian Franzmann  <bwlf@bandrate.org>
+	* DEPENDS: use MESON_DEPENDS
+
+2022-03-18 Ismael Luceno <ismael@sourcemage.org>
+	* DETAILS: updated spell to 0.15.1
+
+2022-03-16 Ismael Luceno <ismael@sourcemage.org>
+	* DEPENDS: switched to NINJA-BUILD
+	  add version req to libdrm
+
+2022-01-27 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: add gpg checking
+	* DETAILS: version 0.15.0
+	  now at gitlab.freedesktop.org
+	* CONFIGURE DEPENDS: updated
+
+2021-07-24 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: version 0.14.1
+
+2021-06-28 Treeve Jelbert <treeve@sourcemage.org>
+	* DEPENDS: add xcb-util-errors
+
+2021-06-25 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: version 0.14.0
+	* DEPENDS: remove elogind, add seatd
+
+2021-02-28 Ismael Luceno <ismael@sourcemage.org>
+	* DETAILS: PATCHLEVEL++
+	* DEPENDS: updated xwayland dependency
+
+2020-12-23 Ismael Luceno <ismael@sourcemage.org>
+	* DETAILS: updated spell to 0.12.0
+
+2019-06-03 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: version 0.6.0
+
+2019-03-11 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: version 0.5.0, added sourcing of grimoire FUNCTIONS
+
+2018-12-23 Pavel Vinogradov <public@sourcemage.org>
+	* BUILD, CONFIGURE, DEPENDS, DETAILS, PREPARE: created spell

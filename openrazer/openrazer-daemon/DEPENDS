@@ -1,0 +1,10 @@
+depends PKG-CONFIG       &&
+depends openrazer-driver &&
+depends gtk+3            &&
+depends dbus-python      &&
+depends pygobject3       &&
+depends py-setproctitle  &&
+depends py-daemonize     && # NEED TO MAKE SPELL
+depends python-notify2   &&
+depends pyudev           &&
+depends xautomation

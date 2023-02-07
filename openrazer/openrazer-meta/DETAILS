@@ -1,0 +1,9 @@
+           SPELL=openrazer-meta
+         VERSION=1.0
+      LICENSE[0]=GPL
+        WEB_SITE=https://github.com/openrazer/openrazer
+         ENTERED=20230204
+        KEYWORDS="razer meta"
+           SHORT="meta spell for openrazer"
+cat << EOF
+EOF

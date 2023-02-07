@@ -1,0 +1,39 @@
+. "$GRIMOIRE"/VDEPENDS      &&
+. "$GRIMOIRE"/MESON_DEPENDS &&
+
+if [[ '${WLROOTS_BRANCH}' == 'scm' ]]; then
+  depends git
+fi &&
+
+depends python3 &&
+depends DEVICE-MANAGER &&
+#depends libinput &&
+depends libxkbcommon &&
+depends OPENGL &&
+depends pixman &&
+depends seatd  &&
+depends wayland &&
+depends wayland-protocols &&
+depends xcb-util-errors &&
+
+vdepends <<! &&
+	libdrm >= 2.4.109
+!
+
+depends hwdata &&
+
+#optional_depends libcap \
+#                 'libcap=enabled' \
+#                 'libcap=disabled' \
+#                 'to enable rootless session support' &&
+
+
+optional_depends libinput '' '' 'input backend' &&
+optional_depends libxcb '' '' 'enable X11 backend' &&
+
+optional_depends vulkan-headers '' '' 'build Vulkan renderer' &&
+if is_depends_enabled $SPELL vulkan-headers;then
+  depends vulkan-loader &&
+  depends glslang
+fi &&
+optional_depends xwayland '' '' 'X11 support'

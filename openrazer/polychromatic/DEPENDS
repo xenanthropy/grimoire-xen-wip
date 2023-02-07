@@ -1,0 +1,16 @@
+. "${GRIMOIRE}/MESON_DEPENDS" &&
+depends PKG-CONFIG            &&
+depends openrazer-driver      &&
+depends openrazer-daemon      &&
+depends python-openrazer      &&
+depends colorama              &&
+depends colour                && # NEED TO ADD
+depends py-setproctitle       &&
+depends requests              &&
+#depends pyqt5                 &&
+depends pyqt5-sip             &&
+depends qtsvg                 &&
+#depends qtwebengine           &&
+depends libappindicator       && # NEED TO ADD
+depends intltool              &&
+depends sassc

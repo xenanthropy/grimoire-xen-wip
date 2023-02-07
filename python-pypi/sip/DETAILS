@@ -1,0 +1,18 @@
+           SPELL=sip
+         VERSION=6.7.7
+     SOURCE_HASH=sha512:72fba4df3dcdeb2cb4c8edf3be740e0e0c3996f36d2f9a6681239a13d1d30ea11e974670d20d4aca4cece071fed9b24a5ea4449779accfcef5ae2df737f8e166
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=https://pypi.io/packages/source/s/$SPELL/$SOURCE
+      LICENSE[0]=GPL
+        WEB_SITE=https://www.riverbankcomputing.co.uk/software/$SPELL
+         ENTERED=20020721
+        KEYWORDS="python libs"
+           SHORT="SIP is a Python module used to create Python bindings."
+cat << EOF
+From the website:
+SIP is a tool that makes it very easy to create Python bindings for C++
+libraries. It was originally developed to create PyQt, the Python 
+bindings for the Qt toolkit, but can be used to create bindings for any 
+C++ library. 
+EOF

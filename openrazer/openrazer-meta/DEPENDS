@@ -1,0 +1,9 @@
+depends openrazer-driver &&
+depends openrazer-daemon &&
+depends python-openrazer &&
+
+suggest_depends polychromatic '' '' 'Frontend'
+
+# TO BE ADDED
+#optional_depends razergenie '' '' 'Qt frontend'      &&
+#optional_depends razercommander '' '' 'Gtk frontend'

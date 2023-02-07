@@ -1,0 +1,1 @@
+DESTDIR="${INSTALL_ROOT}/" PREFIX="${INSTALL_ROOT}/usr" make daemon_install

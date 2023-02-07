@@ -1,1 +1,10 @@
-dkms add -m ${SPELL} -v ${VERSION}
+default_post_install &&
+if [[ ${DKMS} == 'y' ]]; then
+  if [ -d "${INSTALL_ROOT}/var/lib/dkms/openrazer-driver/" ]; then
+    #rm -r "${INSTALL_ROOT}/var/lib/dkms/${SPELL}"
+    dkms remove -m ${SPELL} -v ${VERSION}
+  fi &&
+  dkms add -m ${SPELL} -v ${VERSION}     &&
+  dkms build -m ${SPELL} -v ${VERSION}   &&
+  dkms install -m ${SPELL} -v ${VERSION}
+fi

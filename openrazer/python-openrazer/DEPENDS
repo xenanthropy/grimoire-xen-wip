@@ -1,0 +1,2 @@
+depends openrazer-daemon &&
+depends numpy

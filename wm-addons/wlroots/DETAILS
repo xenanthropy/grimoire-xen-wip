@@ -1,0 +1,46 @@
+. "${GRIMOIRE}/FUNCTIONS"
+. "${GRIMOIRE}/MESON_FUNCTIONS"
+           SPELL="wlroots"
+if [[ "${WLROOTS_BRANCH}" == "scm" ]]; then
+         VERSION="$(get_scm_version)"
+          SOURCE="${SPELL}-git.tar.xz"
+  FORCE_DOWNLOAD="on"
+   SOURCE_URL[0]="git_http://gitlab.freedesktop.org/wlroots/wlroots.git"
+   SOURCE_IGNORE="volatile"
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-git"
+else
+         VERSION=0.16.0
+          SOURCE="${SPELL}-${VERSION}.tar.gz"
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}"
+   SOURCE_URL[0]="https://gitlab.freedesktop.org/wlroots/wlroots/-/releases/${VERSION}/downloads/$SOURCE"
+         SOURCE2=$SOURCE.sig
+  SOURCE2_URL[0]=${SOURCE_URL[0]}.sig
+      SOURCE_GPG=sway.gpg:$SOURCE.sig:UPSTREAM_KEY
+  SOURCE2_IGNORE=signature
+fi
+      LICENSE[0]="MIT"
+        WEB_SITE="https://swaywm.org"
+         ENTERED="20181223"
+           SHORT="a modular Wayland compositor"
+cat << EOF
+Pluggable, composable, unopinionated modules for building a Wayland compositor;
+or about 50,000 lines of code you were going to write anyway.
+
+  * wlroots provides backends that abstract the underlying display and input
+hardware, including KMS/DRM, libinput, Wayland, X11, and headless backends,
+plus any custom backends you choose to write, which can all be created or
+destroyed at runtime and used in concert with each other.
+  * wlroots provides unopinionated, mostly standalone implementations of many
+Wayland interfaces, both from wayland.xml and various protocol extensions.
+We also promote the standardization of portable extensions across many
+compositors.
+  * wlroots provides several powerful, standalone, and optional tools that
+implement components common to many compositors, such as the arrangement of
+outputs in physical space.
+  * wlroots provides an Xwayland abstraction that allows you to have excellent
+Xwayland support without worrying about writing your own X11 window manager on
+top of writing your compositor.
+  * wlroots provides a renderer abstraction that simple compositors can use to
+avoid writing GL code directly, but which steps out of the way when your needs
+demand custom rendering code.
+EOF
