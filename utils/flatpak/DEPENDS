@@ -119,6 +119,10 @@ else
                    "--disable-xauth"                                                 \
                    "Enable Xauth use?"                                               &&
 
+  if is_depends_enabled $SPELL xauth; then
+    depends libxau
+  fi &&
+
   optional_depends libseccomp                                                        \
                    ""                                                                \
                    "--disable-seccomp"                                               \
