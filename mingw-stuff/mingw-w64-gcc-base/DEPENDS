@@ -1,0 +1,11 @@
+#depends gmp "--with-gmp=${INSTALL_ROOT}/"        &&
+#depends libmpc "--with-mpc=${INSTALL_ROOT}/usr"  &&
+#depends mpfr "--with-mpfr=${INSTALL_ROOT}/"      &&
+depends gmp &&
+depends libmpc &&
+depends mpfr &&
+depends zlib "--with-system-zlib"                &&
+depends isl                                      &&
+
+runtime_depends mingw-w64-binutils &&
+runtime_depends mingw-w64-headers

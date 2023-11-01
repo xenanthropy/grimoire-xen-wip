@@ -1,0 +1,14 @@
+           SPELL=mingw-w64-gcc
+         VERSION=13.2.0
+          SOURCE=gcc-$VERSION.tar.xz
+SOURCE_DIRECTORY="$BUILD_DIRECTORY/gcc-$VERSION"
+   SOURCE_URL[0]=https://ftp.gnu.org/gnu/gcc/gcc-${VERSION}/$SOURCE
+     SOURCE_HASH=sha512:d99e4826a70db04504467e349e9fbaedaa5870766cda7c5cab50cdebedc4be755ebca5b789e1232a34a20be1a0b60097de9280efe47bdb71c73251e30b0862a2
+      LICENSE[0]=GPL
+        WEB_SITE=https://www.gnu.org/software/gcc
+         ENTERED=20231028
+        KEYWORDS="toolchain mingw gcc compiler"
+           SHORT="cross gcc for mingw-w64 cross compiler"
+cat << EOF
+Cross GCC for the MinGW-w64 cross-compiler
+EOF

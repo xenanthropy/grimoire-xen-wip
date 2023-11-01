@@ -1,0 +1,25 @@
+local _targets
+if [[ "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" || "${SMGL_COMPAT_ARCHS[1]}" == "em64t" ]]; then
+  _targets="i686-w64-mingw32 x86_64-w64-mingw32"
+else
+  _targets="i686-w64-mingw32"
+fi &&
+
+local _target
+for _target in ${_targets}; do
+  cd "${SOURCE_DIRECTORY}/gcc-${_target}" &&
+  mkdir -p "${SOURCE_DIRECTORY}/install-gcc" &&
+  
+  # need to install to a DESTDIR to remove some files before actual install
+  make DESTDIR="${SOURCE_DIRECTORY}/install-gcc" install &&
+  ln -s ${_target}-gcc "${SOURCE_DIRECTORY}/install-gcc/${INSTALL_ROOT}/usr/bin/${_target}-cc"
+  
+done &&
+
+  # remove unneeded files
+  rm -r "${SOURCE_DIRECTORY}/install-gcc/${INSTALL_ROOT}/usr/share/" &&
+  rm "${SOURCE_DIRECTORY}/install-gcc/${INSTALL_ROOT}"/usr/lib/libcc1.* &&
+  
+  cd "${SOURCE_DIRECTORY}/install-gcc" &&
+  find . | cpio --pass-through --make-directories --unconditional --verbose \
+              "${INSTALL_ROOT}/"

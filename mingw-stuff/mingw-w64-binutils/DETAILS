@@ -1,0 +1,15 @@
+           SPELL=mingw-w64-binutils
+         VERSION=2.41
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY="$BUILD_DIRECTORY/binutils-$VERSION"
+   SOURCE_URL[0]=https://ftp.gnu.org/gnu/binutils/binutils-${VERSION}.tar.gz
+     SOURCE_HASH=sha512:4c6d90deba4514b06cf2558e3bd695ec80844daee8666b5398a8b6c51f49b4287a7791d0524d9a97be2040e0a0f80c7edb071afd295ef8aa181aa61da6cd595e
+      LICENSE[0]=GPL
+        WEB_SITE=https://www.gnu.org/software/binutils
+         ENTERED=20231028
+        KEYWORDS="toolchain mingw binutils compiler"
+           SHORT="cross binutils for the MinGW-w64 cross-compiler"
+cat << EOF
+The mingw-w64 project is a complete runtime environment for gcc to support
+binaries native to Windows 64-bit and 32-bit operating systems.
+EOF

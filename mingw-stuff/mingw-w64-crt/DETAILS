@@ -1,0 +1,14 @@
+           SPELL=mingw-w64-crt
+         VERSION=11.0.1
+          SOURCE=mingw-w64-v$VERSION.tar.bz2
+SOURCE_DIRECTORY="$BUILD_DIRECTORY/mingw-w64-v$VERSION"
+   SOURCE_URL[0]=https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/${SOURCE}/download
+     SOURCE_HASH=sha512:568702100bbbb11f7f9c9596dd70df3fb2577492459cf55da38691af1504b91127cb5f3eff268850dcbaa461fdc72e4e2379f7a576fd4a0e537ee1fe42531c01
+      LICENSE[0]=CUSTOM
+        WEB_SITE=https://sourceforge.net/projects/mingw-w64/
+         ENTERED=20231028
+        KEYWORDS="mingw windows headers"
+           SHORT="MinGW-w64 CRT for Windows"
+cat << EOF
+MingGW-w64 CRT for windows
+EOF

@@ -1,0 +1,5 @@
+default_pre_build &&
+cd "${SOURCE_DIRECTORY}" &&
+
+# don't install libiberty
+sed -i 's/install_to_$(INSTALL_DEST) //' libiberty/Makefile.in

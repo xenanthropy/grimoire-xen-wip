@@ -1,0 +1,26 @@
+local _targets
+if [[ "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" || "${SMGL_COMPAT_ARCHS[1]}" == "em64t" ]]; then
+  _targets="i686-w64-mingw32 x86_64-w64-mingw32"
+else
+  _targets="i686-w64-mingw32"
+fi &&
+
+local _target
+for _target in ${_targets}; do
+  #cd "${SOURCE_DIRECTORY}/binutils-${_target}" &&
+  mkdir -p "${SOURCE_DIRECTORY}/binutils-${_target}/install" &&
+
+  # need to install to a DESTDIR to remove some files before actual install
+  make -C "${SOURCE_DIRECTORY}/binutils-${_target}" DESTDIR="${SOURCE_DIRECTORY}/binutils-${_target}/install" install &&
+
+  # don't want libdep.so installed, conflicts with host toolchain
+  rm -r "${SOURCE_DIRECTORY}/binutils-${_target}/install/${INSTALL_ROOT}/usr/lib/bfd-plugins" &&
+
+  # don't really need the duplicated binutils documentation
+  rm -r "${SOURCE_DIRECTORY}/binutils-${_target}/install/${INSTALL_ROOT}/usr/share/info" &&
+  rm -r "${SOURCE_DIRECTORY}/binutils-${_target}/install/${INSTALL_ROOT}/usr/share/man" &&
+  
+  cd "${SOURCE_DIRECTORY}/binutils-${_target}/install" &&
+  find . | cpio --pass-through --make-directories --unconditional --verbose \
+              "${INSTALL_ROOT}/"
+done
